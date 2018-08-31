@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WSChefRewardPointsAwayTableViewCell" rowHeight="360" id="ucH-Vj-eEl" customClass="WSChefRewardPointsAwayTableViewCell" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ucH-Vj-eEl" id="J7t-9d-7DK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="359.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChefRewardBanner" translatesAutoresizingMaskIntoConstraints="NO" id="kMX-cN-TcD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="359.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAC-0S-7cX">
+                        <rect key="frame" x="20" y="32" width="280" height="202"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey James, earn 400 points to reach your goal." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htM-z8-RBa">
+                                <rect key="frame" x="25" y="15" width="230" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HlB-4n-10s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6F-1T-gP4">
+                                <rect key="frame" x="119" y="125" width="141" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bYi-We-22D"/>
+                                </constraints>
+                                <string key="text">Ibili Gandia 23cm
+Non Stick Paella Pan
+2000 points</string>
+                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChefReward-ShopNow" translatesAutoresizingMaskIntoConstraints="NO" id="Gkf-CA-yl7">
+                                <rect key="frame" x="30" y="125" width="79" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="0Si-wZ-Sze"/>
+                                    <constraint firstAttribute="width" constant="79" id="hwd-el-llj"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pga-PV-9xj">
+                                <rect key="frame" x="0.0" y="62" width="280" height="58"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mJ8-4F-OpJ">
+                                        <rect key="frame" x="30" y="16.5" width="220" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="15W-yl-BdA"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="1" green="0.35294117650000001" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="trackTintColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LN-6z-UKz">
+                                        <rect key="frame" x="45" y="17" width="42" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="ZnZ-gb-jAj"/>
+                                            <constraint firstAttribute="width" constant="42" id="caB-97-UZi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JX8-ol-3wl">
+                                        <rect key="frame" x="155" y="16.5" width="80" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="62r-U6-qpY"/>
+                                            <constraint firstAttribute="width" constant="80" id="8g5-sA-qgI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="12"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mJ8-4F-OpJ" firstAttribute="leading" secondItem="Pga-PV-9xj" secondAttribute="leading" constant="30" id="1WX-93-Nji"/>
+                                    <constraint firstItem="JX8-ol-3wl" firstAttribute="trailing" secondItem="mJ8-4F-OpJ" secondAttribute="trailing" constant="-15" id="AqR-qF-MGQ"/>
+                                    <constraint firstItem="JX8-ol-3wl" firstAttribute="top" secondItem="mJ8-4F-OpJ" secondAttribute="top" id="KhP-A4-VsC"/>
+                                    <constraint firstItem="3LN-6z-UKz" firstAttribute="leading" secondItem="mJ8-4F-OpJ" secondAttribute="leading" constant="15" id="QMV-0j-0Jb"/>
+                                    <constraint firstAttribute="height" constant="58" id="VdO-TT-E66"/>
+                                    <constraint firstAttribute="trailing" secondItem="mJ8-4F-OpJ" secondAttribute="trailing" constant="30" id="oTK-Fm-szR"/>
+                                    <constraint firstItem="3LN-6z-UKz" firstAttribute="top" secondItem="mJ8-4F-OpJ" secondAttribute="top" constant="1" id="puq-LU-8YR"/>
+                                    <constraint firstItem="mJ8-4F-OpJ" firstAttribute="centerY" secondItem="Pga-PV-9xj" secondAttribute="centerY" id="vZv-aU-mns"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000 points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpy-5r-lIb">
+                                <rect key="frame" x="119" y="170" width="131" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="NUy-ah-TP0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gkf-CA-yl7" firstAttribute="top" secondItem="Pga-PV-9xj" secondAttribute="bottom" constant="5" id="2uw-k1-SBU"/>
+                            <constraint firstItem="htM-z8-RBa" firstAttribute="leading" secondItem="TAC-0S-7cX" secondAttribute="leading" constant="25" id="6cD-RN-QcR"/>
+                            <constraint firstAttribute="trailing" secondItem="htM-z8-RBa" secondAttribute="trailing" constant="25" id="7wn-TL-fjh"/>
+                            <constraint firstItem="Xpy-5r-lIb" firstAttribute="leading" secondItem="Gkf-CA-yl7" secondAttribute="trailing" constant="10" id="Adf-S0-F37"/>
+                            <constraint firstItem="N9A-a8-44Y" firstAttribute="trailing" secondItem="k6F-1T-gP4" secondAttribute="trailing" constant="20" id="Ae3-kH-4ue"/>
+                            <constraint firstItem="Xpy-5r-lIb" firstAttribute="top" secondItem="k6F-1T-gP4" secondAttribute="bottom" id="E6Z-hP-b1S"/>
+                            <constraint firstItem="N9A-a8-44Y" firstAttribute="trailing" secondItem="Pga-PV-9xj" secondAttribute="trailing" id="ETt-EQ-Ahu"/>
+                            <constraint firstItem="Gkf-CA-yl7" firstAttribute="leading" secondItem="N9A-a8-44Y" secondAttribute="leading" constant="30" id="MBT-mu-LE3"/>
+                            <constraint firstItem="k6F-1T-gP4" firstAttribute="top" secondItem="Pga-PV-9xj" secondAttribute="bottom" constant="5" id="NWz-03-p5v"/>
+                            <constraint firstAttribute="height" constant="202" id="cVP-jX-AeR"/>
+                            <constraint firstItem="Pga-PV-9xj" firstAttribute="leading" secondItem="N9A-a8-44Y" secondAttribute="leading" id="eIj-c1-5FJ"/>
+                            <constraint firstItem="htM-z8-RBa" firstAttribute="top" secondItem="TAC-0S-7cX" secondAttribute="top" constant="15" id="kSA-vZ-R6h"/>
+                            <constraint firstItem="N9A-a8-44Y" firstAttribute="trailing" secondItem="Xpy-5r-lIb" secondAttribute="trailing" constant="30" id="kfP-jK-oY2"/>
+                            <constraint firstItem="Pga-PV-9xj" firstAttribute="top" secondItem="htM-z8-RBa" secondAttribute="bottom" constant="2" id="qiD-fy-lYs"/>
+                            <constraint firstItem="k6F-1T-gP4" firstAttribute="leading" secondItem="Gkf-CA-yl7" secondAttribute="trailing" constant="10" id="tU0-Bx-Kqb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N9A-a8-44Y"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lb-C5-TDw" customClass="WSDesignableButton" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="20" y="249" width="280" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="SZA-Yp-Llv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
+                        <state key="normal" title="Shop now to earn more points">
+                            <color key="titleColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="shopNowButtonAction:" destination="ucH-Vj-eEl" eventType="touchUpInside" id="vWk-3S-ymt"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-Fv-ED1" customClass="WSDesignableButton" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="113" y="309" width="93" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="8Bq-KF-B6y"/>
+                            <constraint firstAttribute="height" constant="29" id="jVf-v5-pFh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="13"/>
+                        <state key="normal" title="Change my goal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="changeMyGoalButtonAction:" destination="ucH-Vj-eEl" eventType="touchUpInside" id="Y4p-tY-BSI"/>
+                        </connections>
+                    </button>
+                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-NX-bHp" userLabel="TransparentView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="359.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtI-nw-O7v" userLabel="InnerView">
+                                <rect key="frame" x="20" y="112" width="280" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congrats on reaching your goal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T50-fI-HvR">
+                                        <rect key="frame" x="17" y="30" width="246" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="GUd-uH-hhX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wR-8a-Ugq" customClass="WSDesignableButton" customModule="UFS" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="82" width="247" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="dc6-8L-EQ0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="14"/>
+                                        <state key="normal" title="Visit UFS.com to redeem your reward"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="visitUFSSiteAction:" destination="ucH-Vj-eEl" eventType="touchUpInside" id="daG-Bv-8zu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPR-G6-hpM">
+                                        <rect key="frame" x="234" y="8" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9Jc-hk-auO"/>
+                                            <constraint firstAttribute="width" constant="30" id="AmD-hp-Zi8"/>
+                                        </constraints>
+                                        <state key="normal" image="ufsCross_grey"/>
+                                        <connections>
+                                            <action selector="cancelTransparentViewAction:" destination="ucH-Vj-eEl" eventType="touchUpInside" id="3pX-bc-tnO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="T50-fI-HvR" secondAttribute="trailing" constant="17" id="8Iz-oL-rwU"/>
+                                    <constraint firstItem="T50-fI-HvR" firstAttribute="top" secondItem="EtI-nw-O7v" secondAttribute="top" constant="30" id="N26-hV-HAL"/>
+                                    <constraint firstItem="7wR-8a-Ugq" firstAttribute="leading" secondItem="EtI-nw-O7v" secondAttribute="leading" constant="17" id="Nm0-Cd-qhc"/>
+                                    <constraint firstAttribute="trailing" secondItem="7wR-8a-Ugq" secondAttribute="trailing" constant="16" id="Sr3-qY-kni"/>
+                                    <constraint firstItem="iPR-G6-hpM" firstAttribute="top" secondItem="EtI-nw-O7v" secondAttribute="top" constant="8" id="X8E-gI-Ifw"/>
+                                    <constraint firstItem="T50-fI-HvR" firstAttribute="leading" secondItem="EtI-nw-O7v" secondAttribute="leading" constant="17" id="dLq-Jv-TC8"/>
+                                    <constraint firstAttribute="height" constant="137" id="dr7-Iw-KYs"/>
+                                    <constraint firstAttribute="bottom" secondItem="7wR-8a-Ugq" secondAttribute="bottom" constant="20" id="fKF-bh-LRo"/>
+                                    <constraint firstAttribute="trailing" secondItem="iPR-G6-hpM" secondAttribute="trailing" constant="16" id="ndH-Ln-fXy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EtI-nw-O7v" firstAttribute="centerY" secondItem="HcS-NX-bHp" secondAttribute="centerY" id="Avd-C9-DTc"/>
+                            <constraint firstItem="EtI-nw-O7v" firstAttribute="leading" secondItem="HcS-NX-bHp" secondAttribute="leading" constant="20" id="YEv-TO-qpT"/>
+                            <constraint firstAttribute="trailing" secondItem="EtI-nw-O7v" secondAttribute="trailing" constant="20" id="nU4-4q-m7o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HcS-NX-bHp" firstAttribute="leading" secondItem="J7t-9d-7DK" secondAttribute="leading" id="8jx-a3-dfj"/>
+                    <constraint firstItem="TAC-0S-7cX" firstAttribute="leading" secondItem="J7t-9d-7DK" secondAttribute="leading" constant="20" id="9Xo-NZ-mqj"/>
+                    <constraint firstAttribute="bottom" secondItem="bWQ-Fv-ED1" secondAttribute="bottom" constant="21.5" id="Ahf-FL-fm2"/>
+                    <constraint firstItem="HcS-NX-bHp" firstAttribute="top" secondItem="J7t-9d-7DK" secondAttribute="top" id="CHk-dw-Dyh"/>
+                    <constraint firstItem="bWQ-Fv-ED1" firstAttribute="centerX" secondItem="J7t-9d-7DK" secondAttribute="centerX" id="V9h-oB-Mxq"/>
+                    <constraint firstAttribute="trailing" secondItem="TAC-0S-7cX" secondAttribute="trailing" constant="20" id="Vm8-iK-BII"/>
+                    <constraint firstAttribute="trailing" secondItem="kMX-cN-TcD" secondAttribute="trailing" id="cOD-4n-S0N"/>
+                    <constraint firstItem="TAC-0S-7cX" firstAttribute="top" secondItem="J7t-9d-7DK" secondAttribute="top" constant="32" id="daB-Pe-PKa"/>
+                    <constraint firstItem="kMX-cN-TcD" firstAttribute="leading" secondItem="J7t-9d-7DK" secondAttribute="leading" id="dvH-IK-5V4"/>
+                    <constraint firstAttribute="bottom" secondItem="kMX-cN-TcD" secondAttribute="bottom" id="fN7-ej-lQd"/>
+                    <constraint firstItem="6lb-C5-TDw" firstAttribute="leading" secondItem="J7t-9d-7DK" secondAttribute="leading" constant="20" id="jmN-c7-Jfi"/>
+                    <constraint firstAttribute="trailing" secondItem="HcS-NX-bHp" secondAttribute="trailing" id="o3X-nL-N9H"/>
+                    <constraint firstItem="6lb-C5-TDw" firstAttribute="top" secondItem="TAC-0S-7cX" secondAttribute="bottom" constant="15" id="sDd-7v-rfT"/>
+                    <constraint firstItem="kMX-cN-TcD" firstAttribute="top" secondItem="J7t-9d-7DK" secondAttribute="top" id="wMa-ck-rgi"/>
+                    <constraint firstItem="bWQ-Fv-ED1" firstAttribute="top" secondItem="6lb-C5-TDw" secondAttribute="bottom" constant="15" id="woB-Uk-d7K"/>
+                    <constraint firstAttribute="bottom" secondItem="HcS-NX-bHp" secondAttribute="bottom" id="yLG-uW-lXl"/>
+                    <constraint firstAttribute="trailing" secondItem="6lb-C5-TDw" secondAttribute="trailing" constant="20" id="yyC-9A-UwS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="3UP-XE-Dmh"/>
+            <connections>
+                <outlet property="changeMyGoalButton" destination="bWQ-Fv-ED1" id="85E-Sb-qgR"/>
+                <outlet property="congratsOnReachGoalTextLabel" destination="T50-fI-HvR" id="mhw-1y-w1b"/>
+                <outlet property="goalLoyaltyPointLabel" destination="Xpy-5r-lIb" id="NKH-ii-7wk"/>
+                <outlet property="heightConstantChangeButton" destination="jVf-v5-pFh" id="IlY-5O-MTh"/>
+                <outlet property="productImage" destination="Gkf-CA-yl7" id="r1U-BU-bg5"/>
+                <outlet property="productName" destination="k6F-1T-gP4" id="gon-of-nV5"/>
+                <outlet property="progressLabelEndValue" destination="JX8-ol-3wl" id="qOh-v9-yzZ"/>
+                <outlet property="progressLabelStartValue" destination="3LN-6z-UKz" id="gPz-gf-XqV"/>
+                <outlet property="progressView" destination="mJ8-4F-OpJ" id="f9a-aJ-N4x"/>
+                <outlet property="reachGoalMessageLabel" destination="htM-z8-RBa" id="pXQ-eK-G4o"/>
+                <outlet property="redeemBtn" destination="7wR-8a-Ugq" id="rP1-Af-gYL"/>
+                <outlet property="shopNowButton" destination="6lb-C5-TDw" id="h5n-OQ-kaz"/>
+                <outlet property="transparentView" destination="HcS-NX-bHp" id="QpE-BQ-HU5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ChefReward-ShopNow" width="147" height="111"/>
+        <image name="ChefRewardBanner" width="370" height="348"/>
+        <image name="ufsCross_grey" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefRewardCollectionViewCell" id="gTV-IL-0wX" customClass="ChefRewardCollectionViewCell" customModule="yB2CApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChefReward-ShopNow" translatesAutoresizingMaskIntoConstraints="NO" id="i5F-ea-Qzb">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="71" id="JMn-Mf-4QV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAX-A7-FzQ">
+                        <rect key="frame" x="0.0" y="76" width="110" height="27"/>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.35294117650000001" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-Vm-BEJ">
+                        <rect key="frame" x="0.0" y="103" width="110" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="N6f-24-jYm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chefrewardline" translatesAutoresizingMaskIntoConstraints="NO" id="4KB-aJ-UfO">
+                        <rect key="frame" x="109" y="1" width="1" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="X5i-9c-Ewn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6fv-Vm-BEJ" secondAttribute="bottom" constant="2" id="3vn-ov-do0"/>
+                <constraint firstItem="i5F-ea-Qzb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ABj-Yd-33h"/>
+                <constraint firstItem="6fv-Vm-BEJ" firstAttribute="top" secondItem="UAX-A7-FzQ" secondAttribute="bottom" id="Cjl-9s-ahM"/>
+                <constraint firstItem="UAX-A7-FzQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Db4-87-r6D"/>
+                <constraint firstAttribute="trailing" secondItem="4KB-aJ-UfO" secondAttribute="trailing" id="HA5-Rg-VY1"/>
+                <constraint firstAttribute="trailing" secondItem="i5F-ea-Qzb" secondAttribute="trailing" id="HdK-z5-RRv"/>
+                <constraint firstItem="4KB-aJ-UfO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="WeL-HV-UEh"/>
+                <constraint firstAttribute="trailing" secondItem="UAX-A7-FzQ" secondAttribute="trailing" id="Zuo-Jo-HH9"/>
+                <constraint firstItem="i5F-ea-Qzb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bqA-Ud-MJZ"/>
+                <constraint firstAttribute="bottom" secondItem="4KB-aJ-UfO" secondAttribute="bottom" constant="1" id="mec-Jg-W9e"/>
+                <constraint firstItem="UAX-A7-FzQ" firstAttribute="top" secondItem="i5F-ea-Qzb" secondAttribute="bottom" constant="5" id="mvr-xF-cz0"/>
+                <constraint firstItem="6fv-Vm-BEJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pxS-Tg-RSM"/>
+                <constraint firstAttribute="trailing" secondItem="6fv-Vm-BEJ" secondAttribute="trailing" id="qqg-2X-imp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="itemImageView" destination="i5F-ea-Qzb" id="E98-tE-ToP"/>
+                <outlet property="pointsTextLabel" destination="6fv-Vm-BEJ" id="UbF-MD-dFQ"/>
+                <outlet property="rewardPointLabel" destination="UAX-A7-FzQ" id="ueF-J4-zV7"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ChefReward-ShopNow" width="147" height="111"/>
+        <image name="Chefrewardline" width="1" height="130"/>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WSContactUsHeaderView" id="KGk-i7-Jjw" customClass="WSContactUsHeaderView" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsR-En-NlI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ru4-Cn-t4P">
+                        <rect key="frame" x="15" y="7" width="246" height="44"/>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="7fZ-DZ-ntQ">
+                        <rect key="frame" x="271" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="1iM-LP-cU5"/>
+                            <constraint firstAttribute="width" constant="44" id="tg3-uy-Dq9"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZN-Fm-1fJ">
+                        <rect key="frame" x="0.0" y="59" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="x36-R6-cjH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8ZN-Fm-1fJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8lI-am-lwM"/>
+                    <constraint firstItem="XsR-En-NlI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9MP-Dn-owb"/>
+                    <constraint firstAttribute="trailing" secondItem="8ZN-Fm-1fJ" secondAttribute="trailing" id="ALz-Ni-Zee"/>
+                    <constraint firstAttribute="trailing" secondItem="XsR-En-NlI" secondAttribute="trailing" id="BNl-az-FCD"/>
+                    <constraint firstAttribute="bottom" secondItem="XsR-En-NlI" secondAttribute="bottom" constant="-0.5" id="DaH-Rd-MmI"/>
+                    <constraint firstItem="ru4-Cn-t4P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="Foa-CD-vKJ"/>
+                    <constraint firstAttribute="bottom" secondItem="8ZN-Fm-1fJ" secondAttribute="bottom" id="NBx-24-tvn"/>
+                    <constraint firstItem="8ZN-Fm-1fJ" firstAttribute="top" secondItem="ru4-Cn-t4P" secondAttribute="bottom" constant="7.5" id="OgJ-Ye-0c4"/>
+                    <constraint firstItem="ru4-Cn-t4P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="VrI-dG-7FK"/>
+                    <constraint firstItem="XsR-En-NlI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Zlh-A5-T0U"/>
+                    <constraint firstItem="7fZ-DZ-ntQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gsq-dm-Lcf"/>
+                    <constraint firstAttribute="trailing" secondItem="7fZ-DZ-ntQ" secondAttribute="trailing" constant="5" id="sga-t7-uXW"/>
+                    <constraint firstItem="7fZ-DZ-ntQ" firstAttribute="leading" secondItem="ru4-Cn-t4P" secondAttribute="trailing" constant="10" id="z9t-8L-t6b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowImageView" destination="7fZ-DZ-ntQ" id="uj1-tL-PIW"/>
+                <outlet property="headerTitleLabel" destination="ru4-Cn-t4P" id="gy6-xm-vod"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_arrow" width="6" height="11"/>
+    </resources>
+</document>

@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  yB2CApp
+
+  Created by Ramakrishna on 2/23/18.
+  
+*/
+NSCameraUsageDescription = "The app needs to access your camera.";
+//NSPhotoLibraryUsageDescription = "";

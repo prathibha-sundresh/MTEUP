@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="MaE-pD-3BA">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="lmA-LP-8cf" customClass="SplashViewController" customModule="yB2CApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HNi-Pu-tMI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UFS_Logotype_W" translatesAutoresizingMaskIntoConstraints="NO" id="Kqd-a1-fbP">
+                                <rect key="frame" x="62.5" y="120" width="250" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="BYe-T5-SHF"/>
+                                    <constraint firstAttribute="width" constant="250" id="VEt-FJ-T42"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ufsLoading" translatesAutoresizingMaskIntoConstraints="NO" id="e99-9S-5K1">
+                                <rect key="frame" x="150" y="296.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Qlq-87-Snn"/>
+                                    <constraint firstAttribute="height" constant="75" id="zTn-N7-mIB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kqd-a1-fbP" firstAttribute="top" secondItem="fuC-uj-OlD" secondAttribute="top" constant="100" id="Akx-j3-hjz"/>
+                            <constraint firstItem="e99-9S-5K1" firstAttribute="centerY" secondItem="HNi-Pu-tMI" secondAttribute="centerY" id="EXe-gK-Qh8"/>
+                            <constraint firstItem="e99-9S-5K1" firstAttribute="centerX" secondItem="HNi-Pu-tMI" secondAttribute="centerX" id="GdE-bO-0lc"/>
+                            <constraint firstItem="Kqd-a1-fbP" firstAttribute="centerX" secondItem="HNi-Pu-tMI" secondAttribute="centerX" id="uh1-02-rt7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fuC-uj-OlD"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgProgressIndicator" destination="e99-9S-5K1" id="KiK-4j-NbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oyy-bJ-2gP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263.19999999999999" y="164.16791604197903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UFS_Logotype_W" width="602" height="247"/>
+        <image name="ufsLoading" width="75" height="75"/>
+    </resources>
+</document>

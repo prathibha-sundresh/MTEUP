@@ -1,0 +1,281 @@
+//
+//  WSProductListerCell.swift
+//  yB2CApp
+//
+//  Created by Anandita on 11/30/17.
+//
+
+import UIKit
+
+@objc protocol ProductListerCellDeleagte {
+    
+    func didselectOnProductCell(productDetail:[String:Any])
+    func addToCartFromProductList(productCode:[String])
+    func storeOrDeleteSelectedCellProductNumber(productNumber:String, actionType:Int)
+    
+}
+
+class WSProductListerCell: UITableViewCell {
+    
+    @IBOutlet weak var prodImage: UIImageView!
+    @IBOutlet weak var prodName: UILabel!
+    @IBOutlet weak var unitView: UIView!
+    @IBOutlet weak var caseView: UIView!
+    
+    @IBOutlet weak var favButton: UIButton!
+    @IBOutlet weak var unitButton: UIButton!
+    @IBOutlet weak var caseButton: UIButton!
+    
+    @IBOutlet weak var loyalityPoints: UILabel!
+    
+    @IBOutlet weak var caseTextLabel: UILabel!
+    @IBOutlet weak var unitTextLabel: UILabel!
+    @IBOutlet weak var singleQuantityPrice: UILabel!
+    @IBOutlet weak var multiplePrice: UILabel!
+    @IBOutlet weak var singleAmount: UILabel!
+    
+    @IBOutlet weak var selectPackageLabel: UILabel!
+    
+    @IBOutlet weak var addToCartButton: UIButton!
+    @IBOutlet weak var pointsLabel: UFSLoyaltyPointLabel!
+    // @IBOutlet weak var indicativeLabel: UILabel!
+    
+    weak var delegate:ProductListerCellDeleagte?
+    
+    var productDetail = [String:Any]()
+    var multipleProductSelection = [String]()
+    var duProductCode = ""
+    var cuProductCode = ""
+    var cuEanNumber = ""
+    var duEanNumber = ""
+    var selectedProductCode = ""
+    var selectedEanNumber = ""
+    var duLoyaltyPoint = ""
+    var cuLoyaltyPoint = ""
+    // var selectedCellDict = [String]()
+    
+    fileprivate func unitViewSelected() {
+        self.unitView.layer.borderWidth = 1
+        self.unitView.layer.borderColor = UIColor.init(red:255/255.0, green:90.0/255.0, blue:0.0/255.0, alpha: 1.0).cgColor
+        //setDeSelectMode()
+        
+    }
+    
+    @IBAction func unitViewButton(_ sender: Any) {
+        loyalityPoints.text = cuLoyaltyPoint
+        selectedProductCode = cuProductCode
+        selectedEanNumber = cuEanNumber
+        if(multipleProductSelection.count<2){
+            multipleProductSelection.append(cuEanNumber)
+        }
+        unitViewSelected()
+    }
+    
+    fileprivate func caseViewSelected() {
+        self.caseView.layer.borderWidth = 1
+        self.caseView.layer.borderColor = UIColor.init(red:255/255.0, green:90.0/255.0, blue:0.0/255.0, alpha: 1.0).cgColor
+        //setUnitViewDeSelectMode()
+    }
+    
+    func setDeSelectMode(){
+        self.caseView.layer.borderWidth = 1
+        self.caseView.layer.borderColor = UIColor.init(red:228/255.0, green:229/255.0, blue:236/255.0, alpha: 1.0).cgColor
+    }
+    
+    func setUnitViewDeSelectMode(){
+        
+        self.unitView.layer.borderWidth = 1
+        self.unitView.layer.borderColor = UIColor.init(red:228/255.0, green:229/255.0, blue:236/255.0, alpha: 1.0).cgColor
+    }
+    
+    @IBAction func caseViewButton(_ sender: Any) {
+        loyalityPoints.text = duLoyaltyPoint
+        selectedProductCode = duProductCode
+        selectedEanNumber = duEanNumber
+        if(multipleProductSelection.count<2){
+            multipleProductSelection.append(duEanNumber)
+        }
+        
+        caseViewSelected()
+    }
+    
+    @IBOutlet weak var multipleAmount: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        let packagingText = WSUtility.getlocalizedString(key: "Select the packaging", lang: WSUtility.getLanguage(), table: "Localizable")
+        let excludingVAT = WSUtility.getTranslatedString(forString: "Indicative price (Excluding UAT)")
+        
+        WSUtility.setAttributedLabel(originalText: packagingText! + " \(excludingVAT)", attributedText: excludingVAT, forLabel: selectPackageLabel, withFont: UIFont(name: "DINPro-Regular", size: 10)!, withColor: UIColor(red: 183.0/255.0, green: 183.0/255.0, blue: 183.0/255.0, alpha: 1))
+        
+        //selectPackageLabel.text = WSUtility.getlocalizedString(key: "Select the packaging", lang: WSUtility.getLanguage(), table: "Localizable")
+        pointsLabel.text = WSUtility.getlocalizedString(key: "Points", lang: WSUtility.getLanguage(), table: "Localizable")
+        addToCartButton.setTitle(WSUtility.getlocalizedString(key: "Add to cart", lang: WSUtility.getLanguage(), table: "Localizable"), for: .normal)
+        //indicativeLabel.text = WSUtility.getTranslatedString(forString: "Indicative price (Excluding UAT)")
+        
+        unitView?.layer.borderColor = ApplicationOrangeColor.cgColor
+        caseView?.layer.borderColor = Search_UnitBox_UnSelectedColor.cgColor
+        
+        unitTextLabel.text = WSUtility.getTranslatedString(forString: "Unit")
+        caseTextLabel.text = WSUtility.getTranslatedString(forString: "Case")
+        
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+<<<<<<< HEAD
+    if let myInteger = Double(appVersion) {
+        let myNumber = NSNumber(value:myInteger)
+//    UFSGATracker.trackEvent(withCategory: "add to cart", action: "Button click", label: "added product to cart", value: myNumber)
+    FBSDKAppEvents.logEvent("add to cart Button clicked")
+=======
+    func setUI(dict: [String: Any], selectedCellArray:[String]){
+        
+        productDetail = dict
+        if let productname = dict["name"] as? String {
+            prodName.text = productname
+        }
+        
+        
+        if selectedCellArray.contains("\(productDetail["number"]!)") {
+            self.favButton.isSelected = true
+            self.favButton.setImage(#imageLiteral(resourceName: "star-selected"), for: .normal)
+        }else{
+            self.favButton.isSelected = false
+            self.favButton.setImage(#imageLiteral(resourceName: "star"), for: .normal)
+        }
+        
+        if let points = dict["loyalty"] as? String {
+            loyalityPoints.text = points
+        }
+        
+        unitView?.isHidden = true
+        caseView?.isHidden = true
+        
+        if let variants = dict["variantOptions"] as? [[String:Any]]{
+            for varaintInfo in variants{
+                
+                // let varaintDict = varaintInfo["container"] as? [String:Any]
+                
+                if varaintInfo["container"] as! String == "Unit"{
+                    let priceInfo = varaintInfo["priceData"] as? [String:Any]
+                    let formattedString = priceInfo!["formattedValue"] as? String
+                    singleQuantityPrice?.text = formattedString?.replacingOccurrences(of: ".", with: ",")
+                    
+                    singleAmount?.text = "\(varaintInfo["packaging"]!)"
+                    // loyalityPoints.text = "\(varaintInfo["loyalty"]!)"
+                    cuProductCode = "\(varaintInfo["code"]!)"
+                    cuEanNumber = "\(varaintInfo["ean"]!)" + "-cu"
+                    unitView?.isHidden = false
+                    cuLoyaltyPoint = "\(varaintInfo["loyalty"]!)"
+                }else if varaintInfo["container"] as! String == "Case" {
+                    let priceInfo = varaintInfo["priceData"] as? [String:Any]
+                    let formattedString = priceInfo!["formattedValue"] as? String
+                    
+                    multiplePrice?.text = formattedString?.replacingOccurrences(of: ".", with: ",")
+                    multipleAmount?.text = "\(varaintInfo["packaging"]!)"
+                    caseView?.isHidden = false
+                    // loyalityPoints.text = "\(varaintInfo["loyalty"]!)"
+                    duProductCode = "\(varaintInfo["code"]!)"
+                    duLoyaltyPoint = "\(varaintInfo["loyalty"]!)"
+                    duEanNumber = "\(varaintInfo["ean"]!)" + "-du"
+                }
+            }
+            //let a = "StackOverFlow"
+            //let last4 = a.substringFromIndex(a.endIndex.advancedBy(-4))
+            if unitView?.isHidden == false{
+                selectedProductCode = cuProductCode
+                loyalityPoints.text = cuLoyaltyPoint
+                selectedEanNumber = cuEanNumber
+            }else{
+                selectedProductCode = duProductCode
+                loyalityPoints.text = duLoyaltyPoint
+                selectedEanNumber = duEanNumber
+            }
+            if(multipleProductSelection.count == 0){
+                multipleProductSelection.append(selectedEanNumber)
+            }
+            
+        }
+        
+        if let product_image_url = dict["thumbnailUrl"] as? String {
+            prodImage.sd_setImage(with: URL.init(string:product_image_url), placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        }else{
+            prodImage.image = #imageLiteral(resourceName: "placeholder")
+        }
+        
+>>>>>>> Added the files that are modified
+    }
+    
+    @IBAction func addToCartButtonActiom(_ sender: UIButton) {
+        let productCode = selectedProductCode //cuProductCode.count > 0 ? cuProductCode : duProductCode
+        delegate?.addToCartFromProductList(productCode: multipleProductSelection)
+        var appVersion = ""
+        
+        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+            appVersion = version
+        }
+        if let myInteger = Double(appVersion) {
+            let myNumber = NSNumber(value:myInteger)
+            //    UFSGATracker.trackEvent(withCategory: "add to cart", action: "Button click", label: "added product to cart", value: myNumber)
+            FBSDKAppEvents.logEvent("add to cart Button clicked")
+        }
+    }
+    
+    func deleteProductFromSifu()  {
+        
+        UFSProgressView.showWaitingDialog("")
+        let productNumber = "\(productDetail["number"]!)"
+        
+        let serviceBussinessLayer =  WSWebServiceBusinessLayer()
+        serviceBussinessLayer.deleteFavoriteProductFromSifu(productNumber: productNumber, successResponse: { (response) in
+            
+            self.favButton.setImage(#imageLiteral(resourceName: "star"), for: .normal)
+            self.favButton.isSelected = false
+            self.delegate?.storeOrDeleteSelectedCellProductNumber(productNumber: "\(self.productDetail["number"]!)", actionType: 0)
+            UFSProgressView.stopWaitingDialog()
+            
+        }) { (errorMessage) in
+            UFSProgressView.stopWaitingDialog()
+        }
+        
+    }
+    
+    @IBAction func addFavouriteOrUnFavourite(sender: UIButton){
+        
+        if favButton.isSelected {
+            
+            deleteProductFromSifu()
+            
+        }else{
+            
+            favButton.isSelected = true
+            
+            var dict:[String: Any] = [:]
+            dict["countryCode"] = WSUtility.getCountryCode()
+            dict["favoriteListId"] = "0"
+            dict["languageCode"] = WSUtility.getLanguageCode()
+            dict["productNumber"] = "\(productDetail["number"]!)"
+            
+            self.favButton.setImage(#imageLiteral(resourceName: "star-selected"), for: .normal)
+            
+            delegate?.storeOrDeleteSelectedCellProductNumber(productNumber: "\(productDetail["number"]!)", actionType: 1)
+            
+            UFSProgressView.showWaitingDialog("")
+            let businessLayer = WSWebServiceBusinessLayer()
+            businessLayer.addFavouriteItemRequest(parameter: dict, successResponse: { (response) in
+                UFSProgressView.stopWaitingDialog()
+            }) { (errorMessage) in
+                UFSProgressView.stopWaitingDialog()
+                self.favButton.isSelected = false
+                self.favButton.setImage(#imageLiteral(resourceName: "star"), for: .normal)
+                
+            }
+        }
+    }
+}
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TRACKING_ID</key>
+	<string>UA-112079493-1</string>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>996326281947-76pr51u8664lum57999ttp77c29s3m3k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.996326281947-76pr51u8664lum57999ttp77c29s3m3k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDQPokE3rCg1oRwvxhYOUCtvkrq4ujTCN8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>996326281947</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.unilever.WebShop</string>
+	<key>PROJECT_ID</key>
+	<string>webshop-ios-demo</string>
+	<key>STORAGE_BUCKET</key>
+	<string>webshop-ios-demo.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:996326281947:ios:150b8e2bb634b57e</string>
+	<key>DATABASE_URL</key>
+	<string>https://webshop-ios-demo.firebaseio.com</string>
+</dict>
+</plist>

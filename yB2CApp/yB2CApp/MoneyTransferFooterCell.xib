@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoneyTransferFooterCell" id="KGk-i7-Jjw" customClass="MoneyTransferFooterCell" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="290"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="289.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTd-E9-4sa">
+                        <rect key="frame" x="0.0" y="19" width="336" height="1"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="bBP-wK-lNG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Placeholder title) Disclaimer. Payment Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="i2I-J6-f25">
+                        <rect key="frame" x="0.0" y="32" width="336" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="0Hy-cM-Vzb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Xqu-eL-qp1">
+                        <rect key="frame" x="0.0" y="94" width="336" height="195.5"/>
+                        <mutableString key="text">Havale/EFT işlemlerinde, siparişinizin gecikmemesi için bankanızın size sunduğu açıklama bölümüne firma isminizi ve sipariş numaranızı girmeniz gereklidir. Sipariş numaranız, siparişinizi onayladıktan sonra size belirtilecektir. Sipariş numaranızı "Sipariş Geçmişim" sayfasından da görüntüleyebilirsiniz. Siparişinizin sevkiyatı, Havale / EFT işleminizin bize ulaşmasını takiben 2 iş günü içerisinde yapılacaktır. HAVALE / EFT işleminizin siparişi takip eden 3 iş günü içerisinde bize ulaşmaması halinde, siparişiniz iptal edilecektir.</mutableString>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pTd-E9-4sa" secondAttribute="trailing" id="1DG-Bt-OoI"/>
+                    <constraint firstItem="pTd-E9-4sa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Q8-nw-cCj"/>
+                    <constraint firstItem="pTd-E9-4sa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="Een-36-dex"/>
+                    <constraint firstItem="Xqu-eL-qp1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HpF-gj-O25"/>
+                    <constraint firstAttribute="trailing" secondItem="Xqu-eL-qp1" secondAttribute="trailing" id="LAO-X2-zhq"/>
+                    <constraint firstAttribute="bottom" secondItem="Xqu-eL-qp1" secondAttribute="bottom" id="QJ8-sa-Nbc"/>
+                    <constraint firstItem="Xqu-eL-qp1" firstAttribute="top" secondItem="i2I-J6-f25" secondAttribute="bottom" constant="20" id="YXF-PN-3Md"/>
+                    <constraint firstAttribute="trailing" secondItem="i2I-J6-f25" secondAttribute="trailing" id="ePe-4z-lkp"/>
+                    <constraint firstItem="i2I-J6-f25" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fmA-py-PhN"/>
+                    <constraint firstItem="i2I-J6-f25" firstAttribute="top" secondItem="pTd-E9-4sa" secondAttribute="bottom" constant="12" id="qcG-0X-WcA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDesc" destination="Xqu-eL-qp1" id="okv-cd-yOm"/>
+                <outlet property="lblHeader" destination="i2I-J6-f25" id="Ff5-Zl-zc1"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

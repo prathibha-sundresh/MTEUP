@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Debug</key>
+	<dict>
+		<key>BASE_URL_KEY</key>
+		<string>https://apihbs.ufs.com</string>
+		<key>HOST_ATTRIBUTE_KEY</key>
+		<string>apihbs.ufs.com</string>
+		<key>PORT_ATTRIBUTE_KEY</key>
+		<string></string>
+	</dict>
+	<key>Release</key>
+	<dict>
+		<key>BASE_URL_KEY</key>
+		<string>https://apihbs.ufs.com</string>
+		<key>HOST_ATTRIBUTE_KEY</key>
+		<string>apihbs.ufs.com</string>
+		<key>PORT_ATTRIBUTE_KEY</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

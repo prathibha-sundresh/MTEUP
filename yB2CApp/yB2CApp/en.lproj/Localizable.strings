@@ -1,0 +1,740 @@
+/* 
+  Localizable.strings
+  yB2CApp
+
+  Created by Anandita on 12/11/17.
+  
+*/
+"Country selector" = "Country selector";
+"Select your country" = "SELECT YOUR COUNTRY";
+"Continue" = "Continue";
+"Register with Facebook" = "Register with Facebook";
+"Order our products and get them delivered by your trusted trade partner" = "Order our products and get them delivered by your trusted trade partner";
+"Log in" = "Log in";
+"Create a FREE account" = "Create a FREE account";
+"Create a FREE account - Register Page" = "Create a FREE account";
+"Change location and language" = " Change location and language";
+"Location and Language" = "Location and Language";
+"Setting_Change" = "Change";
+"Selected Language" = "Selected Language";
+"Selected Location" = "Selected Location";
+"Settings" = "Settings";
+"Change Password" = "Change Password";
+"Terms and Conditions" = "Terms and Conditions";
+"Log out" = "Log out";
+"Select a country" = "Select a country";
+"Select language" = "Select language";
+"Austria" = "Austria";
+"Email already registered" = "Email already registered";
+"Turkey"="Turkey";
+"Germany"="Germany";
+"Switzerland"="Switzerland";
+
+
+
+"Please enter your first name. If the message is long it goes over several lines." = "Please enter your first name. If the message is long it goes over several lines.";
+"Please enter your last name. If the message is long it goes over several lines." = "Please enter your last name. If the message is long it goes over several lines.";
+"Please enter a correct email address" = "Please enter a correct email address";
+"Please enter what type of business you are working in" = "Please enter what type of business you are working in";
+"Please select your tradepartner name" = "Please select your tradepartner name";
+"Your password needs to be minimum 8 characters long one and contain at least one of each: upper case, lowercase, number special character [eg. !. %. +]" = "Your password needs to be minimum 8 characters long one and contain at least one of each: upper case, lowercase, number special character [eg. !. %. +]";
+"I have read the terms and conditions " = "I have read the terms and conditions ";
+"Yes, I have read the conditions and would like to subscribe to the newsletter." = "Yes, I have read the conditions and would like to subscribe to the newsletter.";
+"news_letter_Link" = "unter diesem Link";
+"You may unsubsribe at any time." = "Ich kann mein Einverständnis jederzeit widerrufen.";
+
+"Please verify your email" = "Please verify your email";
+"An email has been sent to" = "An email has been sent to";
+"Resend verification email" = "Resend verification email";
+
+"Email verified" = "Email verified";
+"Brilliant, thanks for verifying your email" = "Brilliant, thanks for verifying your email";
+"Login with Facebook" = "Login";
+"Please enter a correct password" = "Please enter a correct password";
+"Forgot Password" = "Forgot Password";
+"Please confirm your password" = "Bitte Neues Passwort bestätigen";
+"We have sent an email to" = "We have sent an email to";
+"Unfortunately we can not find a profile with this e-mail address. Please check the entered e-mail address again." = "Unfortunately we can not find a profile with this e-mail address. Please check the entered e-mail address again.";
+
+"Password" = "PASSWORD";
+"Email" = "E-MAIL";
+
+"Almost done" = "Almost done";
+"My Detail" = "My details";
+"My business" = "My business";
+"I have read and accepted the terms and conditions" = "I have read and accepted the";
+
+"Please select the type of business you are working in" = "Please select the type of business you are working in";
+"Oops, you forgot your password?" = "Oops, you forgot your password?";
+"Enter your email" = "Enter you email";
+"Easily re-order from your Shopping List." = "Easily re-order from your Shopping List.";
+
+"Earn loyalty points for kitchen equipment." = "Earn loyalty points for kitchen equipment.";
+"Earn loyalty points with Chef Rewards and save for cool gifts!" = "Earn loyalty points with Chef Rewards and save for cool gifts!";
+"Get rewarded! Register now and get 50 loyalty points." = "Get rewarded! Register now and get %@ loyalty points.";
+"Register now and get" = "Registriere Dich jetzt und Du kriegst";
+"50 loyalty points" = "%@ loyalty points";
+"Register" = "Register";
+"Select a business type" = "Select a business type";
+"extra loyatly points" = "extra loyatly points";
+"Order product and get extra loyatly points" = "Order product and get extra loyatly points %@";
+//***Tutorial**//
+
+"Welcome <First Name> to Chef Rewards." = "Welcome <%@> to Chef Rewards.";
+"Here's 50 points ,on us" = "Here's %@ points ,on us";
+"50 points" = "%@ points";
+"Quick Tips" = "Quick Tips";
+"Earn loyalty points when you order with us" = "Earn loyalty points when you order with us";
+"Save up points and redeem them for great gifts" = "Save up points and redeem them for great gifts";
+"Next" = "Next";
+
+"Shopping List" = "Shopping List";
+"Easy Re-ordering" = "Easy Re-ordering";
+"Quick Tip" = "Quick Tip";
+"Quick Tips Tutorail" = "Quick Tip";
+"Scan Tutorail" = "Scan";
+"Skip" = "Skip";
+"Build your list of products for easy order and re-order." = "Build your list of products for easy order and re-order";
+"Scan" = "Scan";
+"Short for time?" = "Short for time?";
+"Scan products barcodes for quick re-ordering" = "Scan products barcodes for quick re-ordering";
+"Recipes inspiration right at the tip of your fingers." = "Recipes inspiration right at the tip of your fingers.";
+"Recipes" = "Recipes";
+"recipes" = "recipes";
+"Finish" = "Finish";
+"%@ Points" = "%@ Points";
+
+"Points" = "Points";
+"Selected trade partner" = "Selected trade partner";
+"Edit account information" = "Edit account information";
+"Need Help, Call your sales rep" = "Need Help, Call your sales rep";
+"Save recipes by tapping on the heart." = "Save recipes by tapping on the heart.";
+
+"Buy and earn Chef rewards" = "Buy and earn Chef rewards";
+"Earn loyalty points on all your orders" = "Earn loyalty points on all your orders";
+"Save for great gifts" = "Save for great gifts";
+"Start ordering and get a free X over XX" = "Start ordering and get a free X over XX";
+"Learn more about Chef Rewards" = "Learn more about Chef Rewards";
+"Place your first order now and receive a 200 points for free" = "Place your first order now and receive a 200 points for free";
+"Shop now" = "Shop now";
+"Earn points for great rewards" = "Earn points for great rewards";
+"Earn loyalty points on all your orders-Home" = "Earn loyalty points on all your orders";
+"Save for great gifts-Home" = "Save for great gifts";
+"Start ordering and get a free X over XX-Home" = "Start ordering and get a free %@ over €%@";
+
+"Your deal" = "Your deal";
+"Careful these are hot 🔥" = "Careful these are hot 🔥";
+"20% off all dairy alternative products" = "20% off all dairy alternative products";
+"Shopping list" = "Shopping list";
+"Easy ordering via your lists!  ATENTION: we have just one list" = "Easy ordering via your lists!  ATENTION: we have just one list";
+"Easy ordering via your lists!  ATTENTION: we have just one list" = "Easy ordering via your lists!  ATTENTION: we have just one list";
+"Go to my list" = "Go to my list";
+"Go to" = "Go to";
+"my list" = "my list";
+"We reckon you'll like these" = "We reckon you'll like these";
+"View all rewards" = "View all rewards";
+
+"All recipes" = "All recipes";
+"Your points balance 50" = "Your points balance 50";
+"Earn loyalty points on all your orders" = "Earn loyalty points on all your orders";
+"Save for great gifts" = "Save for great gifts";
+"Place your first order now and receive a 200 points for free" = "Place your first order now and receive a 200 points for free";
+"Hey James, you've earned 1500 points" = "Hey %@, you've earned %@ points";
+"Save for a great reward by setting a goal_Home" = "Save for a great reward by setting a goal";
+"Earn points for great rewards" = "Earn points for great rewards";
+"Order Knorr Professional Schnaaldierenfond and receive double points" = "Order Knorr Professional Schnaaldierenfond and receive double points";
+"1500 points" = "%@ points";
+"Hey James, earn 400 points to reaching your goal" = "Hey James, earn 400 points to reaching your goal";
+"Shop now to earn more points" = "Shop now to earn more points";
+"Nice one!" = "Nice one!";
+"You reached your goal" = "You reached your goal";
+"Redeem your gift" = "Redeem your gift";
+"Congrats on reaching your goal" = "Congrats on reaching your goal";
+"Visit UFS.com to redeem your reward" = "Visit UFS.com to redeem your reward";
+
+"Call your sales representative" = "Call %@";
+"See a product you like? Then favourite it" = "See a product you like? Then favourite it";
+"Start building your list" = "Start building your list";
+"Easy ordering via your lists!" = "Easy ordering via your lists!";
+"Add more products to you favourites list" = "Add more products to you favourites list";
+"Go to my list" = "Go to my list";
+
+"Order product and get double loyatly points" = "Order %@ and receive double loyalty points";
+"Order product and get triple loyatly points" = "Order %@ and receive triple loyalty points";
+"double loyalty points" = "double loyalty points";
+"triple loyatly points" = "triple loyatly points";
+"Only applicable upon first purchase" = "Only applicable upon first purchase";
+"Get 250 FREE points on your first order. Spend over €300 and get a FREE digital roast barometer*." = "Get %@ FREE points on your first order. Spend over €%@ and get a FREE %@*.";
+"250 FREE" = "%@ FREE";
+"first order" = "erste Bestellung";
+"FREE digital roast barometer*." = "%@ GRATIS!";
+"Easy ordering via your lists!_one_product" = "Easy ordering via your lists!_one_product";
+"Easy ordering via your lists!_multiple_products" = "Easy ordering via your lists!_multiple_products";
+"My Cart" = "My Cart";
+"My Cart[value]" = "My Cart[%@]";
+"%@ loyalty points" = "%@ loyalty points";
+"Mobile Number" = "Mobile Number";
+"You have earned" = "You have earned";
+"Recommended price (excl. VAT)" = "Recommended price (excl. VAT)";
+"%@ Complete" = "%@ Complete";
+
+//MARK: CART
+"An empty cart breaks my heart" = "An empty cart breaks my heart";
+"Start shopping" = "Start shopping";
+"My Cart [value]" = "My Cart [%@]";
+"You're £65 away from getting a gift name" = "You're €%@ away from getting a JBL Bluetooth Lautsprecher";
+"Total items [value]" = "Total items [%@]";
+"Reward Points" = "Reward Points";
+"121 Loyalty points" = "%@ Loyalty points";
+"Order now" = "Order now";
+"delete" = "delete";
+
+"Congrats, you now have enough items to get a gift name" = "Congrats, you now have enough items to get a free %@";
+
+/****SCAN****/
+
+"Scan UFS product barcode" = "Scan UFS product barcode";
+"Add to cart" = "Add to cart";
+"add to favourites" = "add to favourites";
+
+/***CHECKOUT***/
+"Back to cart" = "Back to cart";
+"Checkout" = "Checkout";
+"Delivery" = "Delivery";
+"Summary" = "Summary";
+"First Name" = "FIRST NAME";
+"Surname" = "SURNAME";
+"Last Name" = "LAST NAME";
+"Mobile Phone" = "MOBILE PHONE";
+"My trade partner" = "MY TRADE PARTNER";
+"Trade Partner" = "TRADE PARTNER";
+"Trade partner location" = "TRADE PARTNER LOCATION";
+"Account number" = "ACCOUNT NUMBER";
+"Continue Shopping" = "Continue Shopping";
+"Next Step" = "Next Step";
+"Select tradepartner location" = "Select tradepartner location";
+"Delivery Address" = "Delivery Address";
+"Business name (optional)" = "Business name (optional)";
+"House number" = "House number";
+//"Street" =  "Street";
+"City" =  "City";
+"Postal Code" = "Postal Code";
+"Billing address is the same as delivery address" = "Billing address is the same as delivery address";
+"Delivered by" = "Delivered by";
+"Tap on prefered delivery date" = "Tap on prefered delivery date";
+"Available dates are highlighted in orange" = "Available dates are highlighted in orange";
+"Done" = "Done";
+"Billing" = "Billing";
+
+
+
+"Address" = "Address";
+"Business name (optional)" = "Business name (optional)";
+"House number" = "House number";
+"Street" = "Street";
+"City" = "City";
+"Postal Code" = "Postal Code";
+"Billing address is the same as delivery address." = "Billing address is the same as delivery address.";
+
+
+"Delivered by Deli XL Amsterdam" = "Delivered by Deli XL Amsterdam";
+"This order will be added to the next delivery" = "This order will be added to the next delivery";
+"Choose different day (optional)" = "Choose different day (optional)";
+"Delivery notes (optional)" = "Delivery notes (optional)";
+"Delivery notes" = "Delivery notes";
+"Back to details" = "Back to details";
+
+"Billing Address" = "Billing Address";
+"Name (optional)" = "Name (optional)";
+
+"Tap on prefered delivery date" = "Tap on prefered delivery date";
+"Cancel" = "Cancel";
+
+"Change my default Trade Partner" = "Change my default Trade Partner";
+"Place Order" = "Place order";
+"Change" = "Change";
+"Change-Summary" = "change";
+"Delivery and Billing" = "Delivery and Billing";
+"Items" = "Items";
+
+"Total Items" = "Total Items";
+"Rewards points " = "Rewards points ";
+
+"Order Successful" = "Order Successful";
+"You have earned 1500 points" = "You have earned %@ points";
+"Your points balance <number>" = "Your points balance <number>";
+"Your order has been sent to your trade partner" = "Your order has been sent to you trade partner";
+"Your order number is" = "Your order number is";
+
+"Hey James, you've earned 1500 points" = "Hey James, you've earned 1500 points";
+"Save for a great reward by setting a goal" = "Save for a great reward by setting a goal";
+
+
+"Hey James, earn 400 points to reach your goal" = "Hey %@, earn %@ points to reach your goal";
+"Shop now to earn more points" = "Shop now to earn more points";
+"You reached your goal" = "You reached your goal";
+"Redeem your gift" = "Redeem your gift";
+
+/****SEARCH****/
+
+"Search for a product" = "Search for a product";
+"Scan" = "SCAN";
+"Results" = "Results";
+
+"Recommended price from UFS" = "Recommended price from UFS";
+"Load more products" = "Load more products";
+
+/*****SHOPPING LIST****/
+
+"Products" = " Products";
+"Sort by" = "Sort by";
+"Recent orders" = "Recent orders";
+"Remove" = "Remove";
+"Proceed to order" = "Proceed to order";
+"Indicative prices from UFS" = "Indicative prices from UFS";
+"Removed" = "Removed";
+
+"Bought before" = "Bought before";
+"Favourites" = "Favourites";
+"Filter List" = "Filter List";
+//"Remove" = "Remove";
+"Most Bought" = "Most Bought";
+"Favourite items" = "Favourite items";
+
+"You have not placed an order with us yet." = "You have not placed an order with us yet.";
+"Shop with us and earn points for great gifts." = "Shop with us and earn points for great gifts.";
+
+"Your favourites list is empty" = "Your favourites list is empty";
+"Get favouriting" = "Get favouriting";
+
+//MARK: MY ACCOUNT
+
+"Your points balance" = "Your points balance";
+"Complete your profile" = "Complete your profile";
+"%@ Complete" = "%@ Complete";
+"Please fill in your phone number" = "Please fill in your phone number";
+"Name" = "NAME";
+"Edit my details" = "Edit my details";
+"My trade partners details" = "My trade partners details";
+"Selected as my default trade partner" = "Selected as my default trade partner";
+"Trade partner name" = "Trade partner name";
+"Trade partner location" = "Trade partner location";
+"Trade Partner's Account Number" = "Trade Partner's Account Number";
+"Edit Trade Partner Details" = "Edit Trade Partner Details";
+"Add another trade partner" = "Add another trade partner";
+"Business details"= "Business details";
+"Business name" = "Business name";
+"Business type" = "Business type";
+"Building number" = "Building number";
+"Area Code" = "Area Code";
+"Thank you for ordering a sample of" = "Thank you for ordering a sample of";
+"Unit" = "Unit";
+"Case" = "Case";
+"Cancelled" = "Cancelled";
+"Your supplier determines your delivery and payment conditions." = "Your supplier determines your delivery and payment conditions.";
+"We reckon you’ll like these" = "We reckon you’ll like these";
+"Nutritional Information" = "Nutritional Information";
+"Portion Selector" = "Portion Selector";
+"Use" = "Use";
+"Please fill in your business name" = "Please fill in your business name";
+"Your password has been changed" = "Your password has been changed";
+"This is your default trade partner" = "This is your default trade partner";
+"The passwords you entered do not match, please try again." = "The passwords you entered do not match, please try again.";
+"Edit Business Details" = "Edit Business Details";
+"Save Changes" = "Save Changes";
+"Back" = "Back";
+"Unfortunately, your password could not be changed, please try again later." = "Unfortunately, your password could not be changed, please try again later.";
+"Please enter your e-mail address." = "Please enter your e-mail address.";
+"Please enter your first name." = "Please enter your first name.";
+"Please enter your last name." = "Please enter your last name.";
+"Please enter your valid phone number." = "Please enter your valid phone number.";
+"Please enter trade partner name." = "Please enter trade partner name.";
+"Please enter trade partner location." = "Please enter trade partner location.";
+"Please enter trade partner account number." = "Please enter trade partner account number.";
+"Please enter the name of your company." = "Please enter the name of your company.";
+"Please enter your house number." = "Please enter your house number.";
+"Please enter your street." = "Please enter your street.";
+"Please enter your location." = "Please enter your location.";
+"Please enter your postal code." = "Please enter your postal code.";
+"Have questions about the app, shop, loyalty program, products etc?" = "Have questions about the app, shop, loyalty program, products etc?";
+"We are available Monday - Friday 08.00 - 19.00" = "We are available Monday - Friday 08.00 - 19.00";
+"(except public holidays)" = "(except public holidays)";
+"Customer Support" = "Customer Support";
+"Trade partner is not available" = "Trade partner is not available";
+"Product Codes" = "Product Codes";
+"There is no product with code %@ matching this value in the system." = "There is no product with code %@ matching this value in the system.";
+"08 00 / 220 096 (free phone)" = "08 00 / 220 096 (free phone)";
+"Change promotion code" = "Change promotion code";
+"Add promotion code" = "Add promotion code";
+"Promo" = "Promo";
+"Invalid code. Please try again." = "Invalid code. Please try again.";
+
+"Account number" = "Account number";
+"Your trade partner's account number" = "Your trade partner's account number";
+"Edit trade partner's details" = "Edit trade partner's details";
+"Add another Trade Partner" = "Add another Trade Partner";
+
+"Please fill in your trade partner's location" = "Please fill in your trade partner's location";
+"Previous" = "Previous";
+"Profile Complete" = "Profile Complete";
+
+
+"Display native gallery and users can select a photo to upload" = "Display native gallery and users can select a photo to upload";
+"Use photo" = " Use photo";
+"Take a photo" = "Take a photo";
+"Upload from gallery" = "Upload from gallery";
+"Remove Photo" = "Remove Photo";
+"Cancel" = "Cancel";
+
+"Retake photo" = "Retake photo";
+"Profile Updated Successfully" = "Profile Updated Successfully";
+"Promotion code added" = "Promotion code added";
+"Product Not found" = "Product Not found";
+"Hi %@, we have upgraded you to our direct delivery service." = "Hi %@, we have upgraded you to our direct delivery service.";
+"Direct Delivery" = "Direct Delivery";
+"Minimun order value is 300. You are 120 away from reaching this." = "Minimun order value is 300. You are 120 away from reaching this.";
+"Minimun order value is 300." = "Minimun order value is 300.";
+"This trade partner is already on your list!" = "This trade partner is already on your list!";
+
+
+//MARK: ****SAMPLE FLOW****/
+
+"Free sample" = "Free sample";
+"Fill in your details below and get your free sample" = "Fill in your details below and get your free sample";
+"Details" = "Details";
+"Delivery" = "Delivery";
+"Building number" = "Building number";
+"Back to my details" = "Back to my details";
+"terms and conditions"= "Terms and Conditions";
+"By continuing you are agree with our" = "By continuing you are agree with our";
+"By continuing you agree with our terms and conditions" = "By continuing you agree with our terms and conditions";
+"By continuing, you agree with our Terms and Conditions and Online Selling Contract" = "By continuing, you agree with our Terms and Conditions and Online Selling Contract";
+"Online Selling Contract" = "Online Selling Contract";
+"Order Sample" = "Order Sample";
+"Discover how UFS products can be used in recipes" = "Discover how UFS products can be used in recipes";
+"Explore Recipes" = "Explore Recipes";
+
+
+"Thank you for ordering a sample of <product name>" = "Thank you for ordering a sample of <product name>";
+"We will get in touch with you shortly to confirm" = "We will get in touch with you shortly to confirm";
+"Business details" = "Mein Unternehmen";
+
+/****PRODUCT CATEGORIES****/
+
+"Order with my shopping list" = "Order with my shopping list";
+"Product categories" = "Product categories ";
+"See all products" = "See all products";
+"Selected tradepartner:" = "Selected tradepartner:";
+"Change tradepartner" = "Change tradepartner";
+"All products" = "All products";
+"Clear all" = "Clear all";
+
+"More information" = "More information";
+"Select the packaging" = "Select the packaging";
+"Filter" = "Filter";
+"Clear all" = "Clear all";
+
+"Filter 1" = "Filter 1";
+"Filter 2" = "Filter 2";
+"Filter 3" = "Filter 3";
+"Filter 4" = "Filter 4";
+"Option 1" = "Option 1";
+"Option 2" = "Option 2";
+"Option 3" = "Option 3";
+
+"Nice one!You reached your goal" = "Nice one!You reached your goal";
+"Select a new trade partner" = "Select a new trade partner";
+"Trade partnername" = "Trade partnername";
+"Trade partner location" = "Trade partner location";
+"Trade partner account number for popup" = "TRADE PARTNER ACCOUNT NUMBER";
+"Enter Your Trade Partner Account Number" = "Enter your trade partner's account number";
+
+"Make this my default trade partner" = "Make this my default trade partner";
+"Add new Trade Partner" = "Add new Trade Partner";
+"Select a Trade Partner" = "Select a Trade Partner";
+"Select this Trade Partner" = "Select this Trade Partner";
+"Indicative price (Excluding UAT)" = "Indicative price (Excluding UAT)";
+
+
+//MARK: ORDER HISTORY
+
+"My Order History" = "My Order History";
+"Review and reorder your previous items." = "Review and reorder your previous items.";
+"You can adjust product quantities in the cart." = "You can adjust product quantities in the cart.";
+"Order Number:" = "Order Number:";
+"Date Ordered:" = "Date Ordered:";
+
+"Completed" = "Completed";
+"Status:" = "Status:";
+"Trade Partner:" = "Trade Partner:";
+"See full order details" = "See full order details";
+"Points earned:" = "Points earned:";
+"Re-order all" = "Re-order all";
+"Total price" = "Total price";
+"Points spent:" = "Points spent:";
+
+"Your order <order number> has been passed to your trade partner <trade partner name> with your client number <client number>" = "Your order %@ has been passed to your trade partner %@ with your client number %@";
+"For further questions about handling of this order please contact <trade partner name>" = "For further questions about handling of this order please contact %@";
+"Total points" = "Total points";
+
+/****RECIPE CATAGORIES & CATALOGUE****/
+
+"Search for a recipe" = "Search for a recipe";
+"Search recipes" = "Search recipes";
+"Swipe right if you might" = "Swipe right if you might";
+"All recipes" = "All recipes";
+"Starters" = "Starters ";
+"Main dishes" = "Main dishes";
+"Desserts" = "Desserts";
+
+"You're all swiped out" = "You're all swiped out";
+"Go to My Recipe" = "Go to My Recipe";
+"See more recipes" = "See more recipes";
+"Your deal" = "Your deal";
+
+"Select the packaging" = "Select the packaging";
+"Product Details" = "Product Details";
+"Allergens" = "Allergens";
+
+"Yield" = "Yield";
+"See all details" = "See all details";
+
+"My Recipes" = "My Recipes";
+"UFS Ingredients in this recipe" = "UFS Ingredients in this recipe";
+
+
+/*CHEF REWARD**/
+"Our video on how Chef Rewards work" = "Our video on how Chef Rewards work";
+"Explore the Chef Rewards Catalogue" = "Explore the Chef Rewards Catalogue";
+"See all Chef Rewards" = "See all Chef Rewards";
+"Place your first order now and receive 200 points free" = "Place your first order now and receive 200 points free";
+"Save for a great reward by setting a goal-CR" = "Save for a great reward by setting a goal";
+"Have more questions?" = "Have more questions?";
+"See Chef Rewards FAQs" = "See Chef Rewards FAQs";
+"Chef Rewards Frequently Asked Questions" = "Chef Rewards Frequently Asked Questions";
+"Chef Rewards" = "Chef Rewards";
+"All rewards" = "All rewards";
+"Earn loyalty points on all your orders" = "Earn loyalty points on all your orders";
+"Save for great gifts" = "Save for great gifts";
+"Start ordering and get a free X over XX chefrewards" = "Start ordering and get a free JBL Bluetooth Lautsprecher over € 300";
+"€ 1" = "€ 1";
+"Change my goal" = "Change my goal";
+"ChefReward_1_Point" = "1 POINT";
+"Chef Rewards Terms and Conditions apply" = "Chef Rewards Terms and Conditions";
+
+/***HAMBURGER MENU***/
+"My UFS" = "My UFS";
+"Chef Rewards" = "Chef Rewards";
+"Notifications" = "Notifications";
+"Order History" = "Order History";
+"App Settings" = "App Settings";
+"Edit Account Information" = "Edit Account Information";
+
+"Create your list and start ordering" = "Create your list and start ordering";
+"Favorite list" = "Favorite list";
+"Easy ordering via your lists!" = "Easy ordering via your lists!";
+//"View all rewards" = "":
+"Create a Password" = "Create a Password";
+"Enter password" = "Enter password";
+"Explore all recipes"  = "Explore all recipes";
+"First order offer" = "First order offer";
+
+//"Get rewarded! Register now and get 50 loyalty points." = "Get rewarded! Register now and get 50 loyalty points.";
+"Earn loyalty points for kitchen equipment." = "Earn loyalty points for kitchen equipment.";
+"Preparation" = "Preparation";
+"Explore all reward and set a goal" = "Explore all reward and set a goal";
+
+//MARK: ProductDetail
+"Full product details" = "Full product details";
+"Product Information" = "Product Information";
+"Nutrition" = "Nutrition";
+"Ingredients" = "Ingredients";
+"Allergy" = "Allergy";
+"Nutritional Information" = "Nutritional Information";
+"Nutrients per serving" = "Nutrients per serving";
+"Quantity" = "Quantity";
+"Loyalty Points" = "Loyalty Points";
+"Order a Sample" = "Order a Sample";
+"Get rewarded with Chef Rewards" = "Get rewarded with Chef Rewards";
+"Delivery and payment via your trusted trade partner" = "Delivery and payment via your trusted trade partner";
+"Product Description" = "Product Description";
+"Packaging" = "Packaging";
+"Container" = "Container";
+"Preparation" = "Preparation";
+"Storage" = "Storage";
+"Shelf Life" = "Shelf Life";
+"Benefits" = "Benefits";
+"More product and allergy information" = "More product and allergy information";
+"product Quantity" = "product Quantity";
+"Water" = "Water";
+"Yield in liters" = "Yield in liters";
+"Yield per serving" = "Yield per serving";
+"no information available" = "no information available";
+"Portion size" = "Portion size";
+"days" = "days";
+
+
+//NOTIFICATION
+"My Notifications" = "My Notifications";
+"Start Shopping" = "Start Shopping";
+"See details" = "See details";
+"Load More" = "Load More";
+
+"Added to cart" = "Added to cart";
+//MARK: Change Password
+"Your password needs to be minimum 8 characters long and contain at least one of each: Upper Case, Lower Case, Number, Special character (e.g. !,%,+)" = "Your password needs to be minimum 8 characters long and contain at least one of each: Upper Case, Lower Case, Number, Special character (e.g. @,#,$)";
+"Current password" = "Current password";
+"New password" = "New password";
+"Confirm new password" = "Confirm new password";
+"Save new password" = "Save new password";
+"minimum 8 characters" = "minimum 8 characters";
+"Upper Case, Lower Case, Number, Special character (e.g. !,%,+)" = "Upper Case, Lower Case, Number, Special character (e.g. @, #, $)";
+
+// No results strings
+"No data found" = "No data found";
+
+//MARK: Loyalty Category
+"Reward Categories" = "Reward Categories";
+"All rewards" = "All rewards";
+"Keep & Organize" = "Keep & Organize";
+"Dishes, glasses and cutlery" = "Dishes, glasses and cutlery";
+"Kitchenware & Textiles" = "Kitchenware & Textiles";
+"kitchen appliances" = "kitchen appliances";
+"Kitchen helpers and kitchen utensils" = "Kitchen helpers and kitchen utensils";
+"Pots & pans" = "Pots & pans";
+"Product presentation & decoration" = "Product presentation & decoration";
+
+//MARK: Loyalty Product
+"Set as a goal" = "Set as a goal";
+"This reward is set as your goal" = "This reward is set as your goal";
+"rewards" = "rewards";
+
+"Up to 500 points" = "Up to 500 points";
+"501 - 1,500 points" = "501 - 1,500 points";
+"Above 1,501 points" = "Above 1,501 points";
+"Without filter" = "Without filter";
+
+//MARK: Loyalty Detail
+"Chef Rewards Points" = "Chef Rewards Points";
+"Re-order all" = "Re-order all";
+
+//MARK: Email Verification
+"Please follow the instructions in the email to verify your address" = "Check your spam folder for confirmation e-mail.\nPlease follow the instructions in the email to verify your address";
+
+//MARK: Chef Rewards FAQS
+"FAQQ1" = "1. HOW CAN I COLLECT FESTIVALS?";
+"FAQA1" = "As a participant in the UFS loyalty program, you have two options for earning loyalty points:\n\na. Online-Shop loyalty program: Collect loyalty points automatically with every order via the UFS online shop. For each Euro you receive a loyalty point.";
+"FAQQ2" = "2. HOW CAN I PARTICIPATE?";
+"FAQA2" = "Registration is only possible online.\n\nOnline-Shop loyalty program :\n\nIf you complete your first order with your personal data in our online shop, you can register for the online shop loyalty program by clicking on the appropriate field.";
+"FAQQ3" = "3. WHERE DO I FIND THE PARTICIPATION TERMS?";
+"FAQA3" = "More information about the terms and conditions for the loyalty program and the online shop platform can be found here .";
+"FAQQ4" = "4. WHAT DO I GET FOR MY LOYALTY?";
+"FAQA4" = "Go to the Loyalty Reward Overview Loyalty Program to select your Loyalty Bonus.\n\nOur premiums are divided into several point categories, so the products relevant to you can be called up quickly and the appropriate premium selected.\n\nBrowse through our premium catalog and select your premium, which you would like to order directly or simply set a desired bonus for which you would like to collect. After each order, you can now check how many points you still need for your desired bonus.";
+"FAQQ5" = "5. HOW DO I RECEIVE MY LOYALTY PREMIUMS AND ADDITIVES?";
+"FAQA5" = "All articles from the loyalty program as well as add-on items, such as knives, glasses etc. are delivered via a commissioned company or directly through Unilever Food Solutions.\n\nPlease note that the added items and premiums will not arrive at the same time as your supplier's delivery, but may arrive later due to processing time.";
+"FAQQ6" = "6. HOW DO I SOLVE MY FIDES?";
+"FAQA6" = "Redeem your loyalty points whenever you want: You do not need to place an order in advance if you already have enough loyalty points. You simply order your desired premium with your collected points and that at any time. Choose your preferred bonus and add it to your shopping cart.";
+"FAQQ7" = "7. WHERE DO I EXPERIENCE MY FIDELITY STAND?";
+"FAQA7" = "As a registered user, you can view the current status of your loyalty points through the \"My Account\" section or through the loyalty program page.\n\nYou can also find valuable information in our video loyalty program on this page , or contact the UFS Online Shop Support:\n\nUFS support contact\nTelephone: 0800 220 096 (toll-free)\nMonday to Friday 8:00 to 19:00\n(excluding public holidays)\n\nE-mail: ufsservice@unilever.com";
+"FAQQ8" = "8. WHAT HAPPENS TO MY DATA?";
+"FAQA8" = "The Unilever Group (Unilever Germany GmbH, Unilever Germany Holding GmbH, Unilever Austria GmbH, Unilever Switzerland GmbH, Oswald Nahrungsmittel GmbH, Switzerland) takes the protection of your personal data very seriously. We encourage you to read our Privacy Policy for the principles and procedures we use to protect your privacy and to educate you about how we handle the information you provide to us. Here you can see the privacy policy";
+
+
+//Recipe
+"No_Favourite_Message" = "You currently have no favourites 😱 \n\n While exploring, tap on the heart icon ❤️ \n to make your own favourites list.";
+
+//MARK: Login
+"Error while authenticating user." = "Error while authenticating user.";
+"Please provide valid login credentials" = "Please provide valid login credentials";
+"Looks like you aren't connected to a network. Please try again after you get connected." = "Looks like you aren't connected to a network. Please try again after you get connected.";
+"Error occurred. Please try after sometime." = "Error occurred. Please try after sometime.";
+
+"User Not Found" = "User Not Found";
+"Password Changed Successfully." = "Password Changed Successfully.";
+"Please enter  all mandatory field first." = "Please enter  all mandatory field first.";
+
+//MARK:EMAIL SENT DIALOGS
+"User already confirmed account." = "Your account is already confirmed";
+"Confirmation mail successfully sent." = "Confirmation mail successfully sent.";
+"Email not registered!" = "Email not registered!";
+"No_Internet" = "You are not connected to the internet";
+"Please give the permission to use Camera/Gallery for this app feature." = "Please give the permission to use Camera/Gallery for this app feature";
+"Open Settings" = "Open Settings";
+"NotNow" = "NotNow";
+"Play_Video" = "Play Video";
+"Pause_Video" = "Pause Video";
+
+"Your order will be delivered on" = "Your order will be delivered on";
+"Chat with your sales representative" = "Chat with your sales representative";
+"Need help? Chat with our chef." = "Need help? Chat with our chef";
+"Complete your details to get personalised pricing and points" = "Complete your details to get personalised pricing and points";
+"Complete your details to get your prices" = "Complete your details to get your prices";
+"Business Tax Number" = "Business Tax Number";
+"Pay by Card" = "Pay by Card";
+"Pay by Credit Card" = "Pay by Credit Card";
+"Pay by Money Transfer" = "Pay by Money Transfer";
+"Payment by mail order" = "Payment by mail order";
+"Select your city" = "Select your city";
+"We have done some critical enhancements to the app. Please update now." = "We have done some critical enhancements to the app. Please update now.";
+"Trade Partner City" = "Trade Partner City";
+
+
+//Mark: GDPR
+"Yes - I confirm that I am over 16 years old" = "Yes - I confirm that I am over 16 years old";
+"Yes - I consent to my personal data being processed for all the below marketing purposes" = "Yes - I consent to my personal data being processed for all the below marketing purposes";
+"Yes - I want to receive personalized newsletters from Unilever Food Solutions on new products, recipes ideas and inspirations" = "Yes - I want to receive personalized newsletters from Unilever Food Solutions on new products, recipes ideas and inspirations";
+"Yes - I want to participate to marketing campaigns and to receive discount, promotional, loyalty offers and competition invites" = "Yes - I want to participate to marketing campaigns and to receive discount, promotional, loyalty offers and competition invites";
+"Yes - I want to receive personalized communication about event training and surveys invites" = "Yes - I want to receive personalized communication about event training and surveys invites";
+"TnC Signup" = "Please read our privacy policy and Cookie notices to understand how we use your personal data. By clicking  the below button, you agree to our Legal Terms";
+"privacy policy" = "privacy policy";
+"Legal Terms" = "Legal Terms";
+"Trade Partner Account number" = "Trade Partner Account number";
+"Total:" = "Total:";
+"category" = "category";
+"allergens" = "allergens";
+"dachClaims" = "dachClaims";
+"No trade partner location available for selected trade partner" = "No trade partner location available for selected trade partner";
+"Are you sure you would like to remove this item from the cart?" = "Are you sure you would like to remove this item from the cart?";
+"Yes, I am sure" = "Yes, I am sure";
+"Item Removal" = "Item Removal";
+"No" = "No";
+"Address Line 1" = "Address Line 1";
+"Address Line 2" = "Address Line 2";
+"Please enter all mandatory fields first" = "Lütfen önce tüm zorunlu alanları doldurun";
+"Please enter a valid card detail." = "Please enter a valid card detail.";
+"Enter a valid expiration date" = "Enter a valid expiration date";
+"Enter Security card code" = "Enter Security card code";
+"Enter the card number" = "Enter the card number";
+"Enter Name on Card" = "Enter Name on Card";
+"Select a month" = "Select a month";
+"Select a year" = "Select a year";
+"chat" = "chat";
+"Payment" = "payment";
+"processing" = "processing";
+"Migrated" = "Migrated";
+"Shipped" = "Shipped";
+"Delivered" = "Delivered";
+"Partially cancelled" = "Partially cancelled";
+"Refunded" = "Refunded";
+"(Placeholder title) Disclaimer. Payment Terms and Conditions" = "(Placeholder title) Disclaimer. Payment Terms and Conditions";
+"Card ending in" = "Card ending in";
+"Expiry date" = "Expiry date";
+"Are you sure you want to delete card details?" = "Are you sure you want to delete card details?";
+"Delete Card" = "Delete Card";
+"Add another card" = "Add another card";
+"Expiry" = "Expiry";
+"please select saved card" = "please select saved card";
+"item number" = "item number";
+"Error" = "Error";
+"Name" = "Name";
+"100g" = "100 g";
+"100ml" = "100 ml";
+"server error" = "server error";
+"No IBAN available" = "No IBAN available";
+"The passwords you entered do not match, please try again." = "The passwords you entered do not match, please try again.";
+"Trade partner is not available"="Trade partner is not available";
+"Error in SignUp" = "Error in SignUp";
+"Error while placing order" = "Error while placing order";
+"Cart not found" = "Cart not found";
+"Hata This field is required" = "Hata This field is required";
+

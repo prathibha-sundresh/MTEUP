@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WSAllergyInfoTableViewCell" id="KGk-i7-Jjw" customClass="WSAllergyInfoTableViewCell" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpt-ho-xp7">
+                        <rect key="frame" x="5" y="0.0" width="80" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="EUN-7k-bCX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRU-BU-qOu">
+                        <rect key="frame" x="93" y="0.0" width="52" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="jU4-UF-m7k"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQg-T9-GFy">
+                        <rect key="frame" x="150" y="0.0" width="25" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="wRT-ud-LQW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Koo-h3-Esd">
+                        <rect key="frame" x="180" y="0.0" width="25" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="e1h-Kp-8My"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrP-Zp-QIk">
+                        <rect key="frame" x="210" y="0.0" width="52" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="9l9-1W-SG3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch9-gm-3od">
+                        <rect key="frame" x="267" y="0.0" width="50" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="fpq-K1-EwQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ch9-gm-3od" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3A2-IT-WG1"/>
+                    <constraint firstItem="Koo-h3-Esd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4JU-qh-jeh"/>
+                    <constraint firstAttribute="bottom" secondItem="Xpt-ho-xp7" secondAttribute="bottom" id="5kC-P0-bqk"/>
+                    <constraint firstAttribute="bottom" secondItem="Ch9-gm-3od" secondAttribute="bottom" id="76N-lr-SdX"/>
+                    <constraint firstItem="eQg-T9-GFy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8WO-N0-Vbk"/>
+                    <constraint firstAttribute="bottom" secondItem="QrP-Zp-QIk" secondAttribute="bottom" id="DKf-Ti-AYt"/>
+                    <constraint firstItem="Xpt-ho-xp7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FII-HS-6WG"/>
+                    <constraint firstAttribute="bottom" secondItem="XRU-BU-qOu" secondAttribute="bottom" id="GUH-1a-MHS"/>
+                    <constraint firstAttribute="bottom" secondItem="Xpt-ho-xp7" secondAttribute="bottom" id="Gay-DM-ZSE"/>
+                    <constraint firstItem="Xpt-ho-xp7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="LSz-yE-MUo"/>
+                    <constraint firstItem="eQg-T9-GFy" firstAttribute="leading" secondItem="XRU-BU-qOu" secondAttribute="trailing" constant="5" id="LbD-AT-jC8"/>
+                    <constraint firstItem="Ch9-gm-3od" firstAttribute="leading" secondItem="QrP-Zp-QIk" secondAttribute="trailing" constant="5" id="St5-9m-eVm"/>
+                    <constraint firstAttribute="bottom" secondItem="eQg-T9-GFy" secondAttribute="bottom" id="XTJ-GL-dkw"/>
+                    <constraint firstItem="QrP-Zp-QIk" firstAttribute="leading" secondItem="Koo-h3-Esd" secondAttribute="trailing" constant="5" id="eMu-N6-FQ9"/>
+                    <constraint firstItem="QrP-Zp-QIk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kif-mp-t4h"/>
+                    <constraint firstItem="XRU-BU-qOu" firstAttribute="leading" secondItem="Xpt-ho-xp7" secondAttribute="trailing" constant="8" id="nF5-do-Vmh"/>
+                    <constraint firstAttribute="bottom" secondItem="Koo-h3-Esd" secondAttribute="bottom" id="oAI-vh-7j2"/>
+                    <constraint firstItem="Koo-h3-Esd" firstAttribute="leading" secondItem="eQg-T9-GFy" secondAttribute="trailing" constant="5" id="rwP-dl-qlS"/>
+                    <constraint firstItem="XRU-BU-qOu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ygC-V6-iKi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="fourthComponentLabel" destination="Koo-h3-Esd" id="Ma4-qe-ALK"/>
+                <outlet property="productQuantityLabel" destination="Xpt-ho-xp7" id="8Ig-sn-z44"/>
+                <outlet property="thirdComponentLabel" destination="eQg-T9-GFy" id="hDd-rR-vaC"/>
+                <outlet property="waterLabel" destination="XRU-BU-qOu" id="vzw-Yn-cud"/>
+                <outlet property="yieldLabel" destination="QrP-Zp-QIk" id="3wl-dN-N2q"/>
+                <outlet property="yieldPerServingLabel" destination="Ch9-gm-3od" id="r4J-DV-w0G"/>
+            </connections>
+            <point key="canvasLocation" x="-41.5" y="-98"/>
+        </tableViewCell>
+    </objects>
+</document>

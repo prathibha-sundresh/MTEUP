@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="TRBlueLabelCustomCell" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOG-F3-YMN">
+                        <rect key="frame" x="0.0" y="10" width="333" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="Ödül programı anlaşmalı işyerlerinde ve toptancılarda geçerli değildir." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="PIe-7V-Sdp">
+                                <rect key="frame" x="41" y="0.0" width="284" height="45"/>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="14"/>
+                                <color key="textColor" red="0.41568627450000001" green="0.70196078429999997" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXx-IA-flt">
+                                <rect key="frame" x="10" y="16" width="22" height="22"/>
+                                <color key="backgroundColor" red="0.30895206330000002" green="0.71156078580000004" blue="0.87447124720000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="eQX-69-tSa"/>
+                                    <constraint firstAttribute="width" constant="22" id="vRY-YS-zdm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.98039215690000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PIe-7V-Sdp" secondAttribute="bottom" constant="5" id="3UK-WN-Lwa"/>
+                            <constraint firstItem="PIe-7V-Sdp" firstAttribute="leading" secondItem="iXx-IA-flt" secondAttribute="trailing" constant="9" id="749-qx-zP4"/>
+                            <constraint firstItem="PIe-7V-Sdp" firstAttribute="top" secondItem="uOG-F3-YMN" secondAttribute="top" id="Caf-s8-aLQ"/>
+                            <constraint firstAttribute="trailing" secondItem="PIe-7V-Sdp" secondAttribute="trailing" constant="8" id="GR2-XR-fuK"/>
+                            <constraint firstAttribute="height" constant="50" id="Z6b-EJ-fqZ"/>
+                            <constraint firstItem="iXx-IA-flt" firstAttribute="top" secondItem="uOG-F3-YMN" secondAttribute="top" constant="16" id="bgc-bg-wC1"/>
+                            <constraint firstItem="iXx-IA-flt" firstAttribute="leading" secondItem="uOG-F3-YMN" secondAttribute="leading" constant="10" id="lTU-vL-HaW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uOG-F3-YMN" secondAttribute="bottom" constant="9.5" id="9sn-uh-zrg"/>
+                    <constraint firstAttribute="trailing" secondItem="uOG-F3-YMN" secondAttribute="trailing" id="NsQ-mH-kkK"/>
+                    <constraint firstItem="uOG-F3-YMN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nUx-Kb-rfw"/>
+                    <constraint firstItem="uOG-F3-YMN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wez-58-bP1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="htConstVwBase" destination="Z6b-EJ-fqZ" id="eI4-Gu-jGg"/>
+                <outlet property="vwBase" destination="uOG-F3-YMN" id="Hs3-aM-soz"/>
+            </connections>
+            <point key="canvasLocation" x="-490" y="-7"/>
+        </tableViewCell>
+    </objects>
+</document>

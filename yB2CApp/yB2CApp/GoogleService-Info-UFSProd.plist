@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TRACKING_ID</key>
+	<string>UA-112079493-1</string>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>403178811373-6r71tbj54ne5v0aengo6ql2asn3dbn7d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.403178811373-6r71tbj54ne5v0aengo6ql2asn3dbn7d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDoNn--NhZfk8LcSWv6tYOXnlEc1Ra_QiY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>403178811373</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.unilever.WebShop</string>
+	<key>PROJECT_ID</key>
+	<string>ufs-beta</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ufs-beta.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:403178811373:ios:150b8e2bb634b57e</string>
+	<key>DATABASE_URL</key>
+	<string>https://ufs-beta.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Bold.otf">
+            <string>DINPro-Bold</string>
+        </array>
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="myBusinessDetailCell" rowHeight="620" id="KGk-i7-Jjw" customClass="WSBusinessDetailTableViewCell" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="620"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="619.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="BUSINESS NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bpy-qm-l5T" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="15" width="290" height="50"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="BR8-Az-qca"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="textDidchange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="X75-BL-k6h"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="Ncg-gR-YxE"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9a-EF-Ipm">
+                        <rect key="frame" x="15" y="80" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hNa-3x-SDs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="BUSINESS TAX NUMBER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfk-UK-lYJ" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="96" width="290" height="50"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="E6u-d9-dwz"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="textDidchange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="XKT-RN-pG7"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="V0B-V0-t03"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvY-pG-l7X">
+                        <rect key="frame" x="15" y="161" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RQl-JJ-FUh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="BUSINESS TYPE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omv-TS-wvt" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="171" width="290" height="50"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Hiw-A7-Cm9"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xj6-Me-5GS">
+                        <rect key="frame" x="251" y="173" width="53" height="46"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="4Wq-nF-TvY"/>
+                            <constraint firstAttribute="height" constant="46" id="sQt-ND-Vw7"/>
+                        </constraints>
+                        <state key="normal" image="arrow_down"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfm-5u-dwe">
+                        <rect key="frame" x="15" y="236" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="S6u-dK-dXG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="BUILDING NUMBER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jLo-eB-8af" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="252" width="290" height="50"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Eck-Q8-nYK"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="textDidchange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="Vbs-3c-O3N"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="EYT-TZ-hqq"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0m1-AC-UZC">
+                        <rect key="frame" x="15" y="317" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OG8-tz-7Xv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="STREET" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQD-bC-cix" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="333" width="290" height="50"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="7Qv-N7-lN6"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="textDidchange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="TL3-rH-JZA"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="2Oj-8y-2yM"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32y-RH-lkT">
+                        <rect key="frame" x="15" y="398" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kW7-1X-NkO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="AREA CODE" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zwF-Ha-LWT" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="414" width="290" height="50"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="LJk-QE-IKN"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="textDidchange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="xqO-1R-6Zs"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="wYd-U5-kPH"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gd-y9-nyE">
+                        <rect key="frame" x="15" y="479" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8Bu-Hc-Vpg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="CITY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRA-Wr-FWl" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="495" width="290" height="50"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="t4E-Az-7hk"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="textDidchange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="rNo-Sl-KG1"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="PnC-CI-fUF"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvp-ce-PK8">
+                        <rect key="frame" x="15" y="560" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3gk-Ow-VbE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrK-7n-KmU">
+                        <rect key="frame" x="15" y="576" width="289" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Mxl-jG-uov"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="14"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="140" maxY="0.0"/>
+                        <state key="normal" title="  Edit Business Details" image="pencilEditButton">
+                            <color key="titleColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="editbutton_clickWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hMx-Y3-oY0"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zwF-Ha-LWT" firstAttribute="leading" secondItem="32y-RH-lkT" secondAttribute="leading" id="0aY-GA-YhZ"/>
+                    <constraint firstItem="BRA-Wr-FWl" firstAttribute="trailing" secondItem="7Gd-y9-nyE" secondAttribute="trailing" id="2rd-dn-JFR"/>
+                    <constraint firstItem="32y-RH-lkT" firstAttribute="top" secondItem="aQD-bC-cix" secondAttribute="bottom" constant="15" id="5MW-cS-vHn"/>
+                    <constraint firstItem="zvp-ce-PK8" firstAttribute="top" secondItem="BRA-Wr-FWl" secondAttribute="bottom" constant="15" id="6Ko-8Q-HtL"/>
+                    <constraint firstItem="nfk-UK-lYJ" firstAttribute="top" secondItem="W9a-EF-Ipm" secondAttribute="bottom" constant="15" id="6qm-KU-27p"/>
+                    <constraint firstItem="32y-RH-lkT" firstAttribute="trailing" secondItem="aQD-bC-cix" secondAttribute="trailing" id="6zh-Sd-vc2"/>
+                    <constraint firstItem="0m1-AC-UZC" firstAttribute="trailing" secondItem="jLo-eB-8af" secondAttribute="trailing" id="7b1-I7-BUa"/>
+                    <constraint firstItem="OrK-7n-KmU" firstAttribute="top" secondItem="zvp-ce-PK8" secondAttribute="bottom" constant="15" id="8JJ-pl-h4B"/>
+                    <constraint firstItem="nfk-UK-lYJ" firstAttribute="leading" secondItem="W9a-EF-Ipm" secondAttribute="leading" id="9Xw-eu-fUJ"/>
+                    <constraint firstItem="bpy-qm-l5T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="B2R-x1-iDH"/>
+                    <constraint firstItem="zvp-ce-PK8" firstAttribute="leading" secondItem="BRA-Wr-FWl" secondAttribute="leading" id="Bnx-f5-xjZ"/>
+                    <constraint firstItem="omv-TS-wvt" firstAttribute="trailing" secondItem="W9a-EF-Ipm" secondAttribute="trailing" id="DJT-Rf-htX"/>
+                    <constraint firstItem="aQD-bC-cix" firstAttribute="leading" secondItem="0m1-AC-UZC" secondAttribute="leading" id="ECK-YY-Fby"/>
+                    <constraint firstItem="NvY-pG-l7X" firstAttribute="top" secondItem="nfk-UK-lYJ" secondAttribute="bottom" constant="15" id="GS9-5q-WEf"/>
+                    <constraint firstItem="W9a-EF-Ipm" firstAttribute="top" secondItem="bpy-qm-l5T" secondAttribute="bottom" constant="15" id="H5z-ZG-5MW"/>
+                    <constraint firstItem="7Gd-y9-nyE" firstAttribute="top" secondItem="zwF-Ha-LWT" secondAttribute="bottom" constant="15" id="I2f-Jq-ZUs"/>
+                    <constraint firstItem="jLo-eB-8af" firstAttribute="trailing" secondItem="wfm-5u-dwe" secondAttribute="trailing" id="I9a-LK-QXA"/>
+                    <constraint firstItem="32y-RH-lkT" firstAttribute="leading" secondItem="aQD-bC-cix" secondAttribute="leading" id="Ixn-Ze-eu0"/>
+                    <constraint firstItem="Xj6-Me-5GS" firstAttribute="trailing" secondItem="omv-TS-wvt" secondAttribute="trailing" constant="-1" id="JoK-mR-N6v"/>
+                    <constraint firstItem="OrK-7n-KmU" firstAttribute="leading" secondItem="zvp-ce-PK8" secondAttribute="leading" id="Kml-xF-cSj"/>
+                    <constraint firstItem="omv-TS-wvt" firstAttribute="leading" secondItem="W9a-EF-Ipm" secondAttribute="leading" id="N57-kb-T7X"/>
+                    <constraint firstItem="bpy-qm-l5T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Oah-Dk-AvX"/>
+                    <constraint firstItem="zvp-ce-PK8" firstAttribute="trailing" secondItem="BRA-Wr-FWl" secondAttribute="trailing" id="Q6h-f7-SMA"/>
+                    <constraint firstItem="W9a-EF-Ipm" firstAttribute="trailing" secondItem="bpy-qm-l5T" secondAttribute="trailing" id="QgC-3H-Tlc"/>
+                    <constraint firstItem="zwF-Ha-LWT" firstAttribute="trailing" secondItem="32y-RH-lkT" secondAttribute="trailing" id="Sy4-Zt-wSB"/>
+                    <constraint firstItem="W9a-EF-Ipm" firstAttribute="leading" secondItem="bpy-qm-l5T" secondAttribute="leading" id="W73-3z-szd"/>
+                    <constraint firstAttribute="trailing" secondItem="bpy-qm-l5T" secondAttribute="trailing" constant="15" id="XUw-3l-y1I"/>
+                    <constraint firstItem="aQD-bC-cix" firstAttribute="top" secondItem="0m1-AC-UZC" secondAttribute="bottom" constant="15" id="ZLH-gp-eQC"/>
+                    <constraint firstItem="Xj6-Me-5GS" firstAttribute="centerY" secondItem="omv-TS-wvt" secondAttribute="centerY" id="a1G-lx-b1i"/>
+                    <constraint firstItem="BRA-Wr-FWl" firstAttribute="leading" secondItem="7Gd-y9-nyE" secondAttribute="leading" id="aBw-8K-GMl"/>
+                    <constraint firstItem="wfm-5u-dwe" firstAttribute="top" secondItem="omv-TS-wvt" secondAttribute="bottom" constant="15" id="awJ-rP-24D"/>
+                    <constraint firstItem="omv-TS-wvt" firstAttribute="top" secondItem="W9a-EF-Ipm" secondAttribute="bottom" constant="90" id="b8R-Kc-PvP"/>
+                    <constraint firstItem="0m1-AC-UZC" firstAttribute="leading" secondItem="jLo-eB-8af" secondAttribute="leading" id="bbC-fX-Nvn"/>
+                    <constraint firstItem="0m1-AC-UZC" firstAttribute="top" secondItem="jLo-eB-8af" secondAttribute="bottom" constant="15" id="byW-30-XDt"/>
+                    <constraint firstItem="7Gd-y9-nyE" firstAttribute="leading" secondItem="zwF-Ha-LWT" secondAttribute="leading" id="cZm-IL-J13"/>
+                    <constraint firstItem="jLo-eB-8af" firstAttribute="top" secondItem="wfm-5u-dwe" secondAttribute="bottom" constant="15" id="eQI-9a-g7v"/>
+                    <constraint firstItem="aQD-bC-cix" firstAttribute="trailing" secondItem="0m1-AC-UZC" secondAttribute="trailing" id="ev2-Sm-vpM"/>
+                    <constraint firstItem="wfm-5u-dwe" firstAttribute="trailing" secondItem="omv-TS-wvt" secondAttribute="trailing" id="h1C-0y-btH"/>
+                    <constraint firstItem="jLo-eB-8af" firstAttribute="leading" secondItem="wfm-5u-dwe" secondAttribute="leading" id="nUV-Zy-Cxo"/>
+                    <constraint firstItem="BRA-Wr-FWl" firstAttribute="top" secondItem="7Gd-y9-nyE" secondAttribute="bottom" constant="15" id="oK8-vA-oZ1"/>
+                    <constraint firstItem="wfm-5u-dwe" firstAttribute="leading" secondItem="omv-TS-wvt" secondAttribute="leading" id="pBz-rg-gt0"/>
+                    <constraint firstItem="NvY-pG-l7X" firstAttribute="trailing" secondItem="nfk-UK-lYJ" secondAttribute="trailing" id="sN1-C3-s77"/>
+                    <constraint firstItem="nfk-UK-lYJ" firstAttribute="trailing" secondItem="W9a-EF-Ipm" secondAttribute="trailing" id="scJ-5I-8iK"/>
+                    <constraint firstItem="7Gd-y9-nyE" firstAttribute="trailing" secondItem="zwF-Ha-LWT" secondAttribute="trailing" id="tqI-2a-Key"/>
+                    <constraint firstItem="NvY-pG-l7X" firstAttribute="leading" secondItem="nfk-UK-lYJ" secondAttribute="leading" id="xTL-Vm-t5C"/>
+                    <constraint firstItem="zwF-Ha-LWT" firstAttribute="top" secondItem="32y-RH-lkT" secondAttribute="bottom" constant="15" id="xhS-5f-VGf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="areaCodeTextFeild" destination="zwF-Ha-LWT" id="mod-W0-Uzs"/>
+                <outlet property="buildingNumberTextFeild" destination="jLo-eB-8af" id="gmS-cj-QYw"/>
+                <outlet property="businessNameTextFeild" destination="bpy-qm-l5T" id="t8k-Vh-cwq"/>
+                <outlet property="businessTaxNoTextFeild" destination="nfk-UK-lYJ" id="0fU-eT-eTV"/>
+                <outlet property="businessTaxNumberH" destination="E6u-d9-dwz" id="f7W-8I-ERs"/>
+                <outlet property="businessTaxNumberSeperatorH" destination="RQl-JJ-FUh" id="Zod-xO-FuW"/>
+                <outlet property="businessTypeTextFeild" destination="omv-TS-wvt" id="11y-1x-Zlz"/>
+                <outlet property="businessTypeY" destination="b8R-Kc-PvP" id="yJZ-8F-zSF"/>
+                <outlet property="cityNameTextFeild" destination="BRA-Wr-FWl" id="UaU-xh-iVd"/>
+                <outlet property="dropDownBusinessTypeButton" destination="Xj6-Me-5GS" id="43E-EA-kEV"/>
+                <outlet property="editButton" destination="OrK-7n-KmU" id="xcr-5d-E5r"/>
+                <outlet property="streetTextFeild" destination="aQD-bC-cix" id="QRk-u1-RBs"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="28.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_down" width="12" height="7"/>
+        <image name="pencilEditButton" width="9" height="9"/>
+    </resources>
+</document>

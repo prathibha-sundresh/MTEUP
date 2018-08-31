@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="UFSSavedCardCollectionViewCell" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwJ-xs-0AX">
+                        <rect key="frame" x="5" y="5" width="325" height="105"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbr-qg-AdA">
+                                <rect key="frame" x="13" y="42.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0UO-gF-g4L"/>
+                                    <constraint firstAttribute="width" constant="20" id="U4Y-Ll-qzL"/>
+                                </constraints>
+                                <state key="normal" image="radio_unsel"/>
+                                <state key="selected" image="radio_dot"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="master.png" translatesAutoresizingMaskIntoConstraints="NO" id="WlL-Z5-alN">
+                                <rect key="frame" x="250" y="15" width="64" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="3Ue-5Q-acW"/>
+                                    <constraint firstAttribute="width" constant="64" id="ZSq-kR-yJf"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Lw-PT-sW7">
+                                <rect key="frame" x="54" y="15" width="193" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mastercard ending in 9898" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Vzd-38-Fmb">
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="18"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Essex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="aaQ-ye-Fbh">
+                                        <rect key="frame" x="0.0" y="18" width="193" height="20"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiry 11/30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="UbA-Y5-8Md">
+                                        <rect key="frame" x="0.0" y="38" width="193" height="20"/>
+                                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aaQ-ye-Fbh" secondAttribute="bottom" constant="20" symbolic="YES" id="DEV-F5-gOU"/>
+                                    <constraint firstItem="UbA-Y5-8Md" firstAttribute="top" secondItem="Vzd-38-Fmb" secondAttribute="bottom" constant="20" id="ZvN-bc-JMJ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYH-jU-Pme">
+                                <rect key="frame" x="54" y="78" width="44" height="29"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="delete">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="14"/>
+                                                <font key="NSOriginalFont" size="15" name=".SFNSText"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dbr-qg-AdA" firstAttribute="centerY" secondItem="uwJ-xs-0AX" secondAttribute="centerY" id="1yq-R0-Y99"/>
+                            <constraint firstItem="qYH-jU-Pme" firstAttribute="leading" secondItem="9Lw-PT-sW7" secondAttribute="leading" id="2i4-4f-U8J"/>
+                            <constraint firstAttribute="trailing" secondItem="WlL-Z5-alN" secondAttribute="trailing" constant="11" id="DGq-dL-Rju"/>
+                            <constraint firstItem="WlL-Z5-alN" firstAttribute="top" secondItem="uwJ-xs-0AX" secondAttribute="top" constant="15" id="cEw-0X-Cnu"/>
+                            <constraint firstItem="WlL-Z5-alN" firstAttribute="leading" secondItem="9Lw-PT-sW7" secondAttribute="trailing" constant="3" id="dOG-F8-pCL"/>
+                            <constraint firstItem="dbr-qg-AdA" firstAttribute="leading" secondItem="uwJ-xs-0AX" secondAttribute="leading" constant="13" id="dd0-63-2RU"/>
+                            <constraint firstItem="qYH-jU-Pme" firstAttribute="top" secondItem="9Lw-PT-sW7" secondAttribute="bottom" constant="5" id="hTA-uV-u7Z"/>
+                            <constraint firstItem="WlL-Z5-alN" firstAttribute="top" secondItem="9Lw-PT-sW7" secondAttribute="top" id="tSd-k8-pvv"/>
+                            <constraint firstItem="9Lw-PT-sW7" firstAttribute="leading" secondItem="dbr-qg-AdA" secondAttribute="trailing" constant="21" id="z2j-wk-XtH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="uwJ-xs-0AX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="0WB-gQ-XVB"/>
+                <constraint firstAttribute="trailing" secondItem="uwJ-xs-0AX" secondAttribute="trailing" constant="5" id="aIb-mG-d0p"/>
+                <constraint firstItem="uwJ-xs-0AX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="jOG-7J-fq4"/>
+                <constraint firstAttribute="bottom" secondItem="uwJ-xs-0AX" secondAttribute="bottom" constant="5" id="xWC-C4-TsG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="cardImgV" destination="WlL-Z5-alN" id="4cf-PV-8yD"/>
+                <outlet property="cardOwnerNameLbl" destination="aaQ-ye-Fbh" id="k5K-Sj-A5Z"/>
+                <outlet property="cardTitleLbl" destination="Vzd-38-Fmb" id="zlR-uK-bAt"/>
+                <outlet property="continerV" destination="uwJ-xs-0AX" id="1PO-Se-rZm"/>
+                <outlet property="deleteBtn" destination="qYH-jU-Pme" id="ych-3D-RDw"/>
+                <outlet property="expiryDateLbl" destination="UbA-Y5-8Md" id="HEb-Vu-Quv"/>
+                <outlet property="radioBtn" destination="dbr-qg-AdA" id="7Es-Lz-f4A"/>
+            </connections>
+            <point key="canvasLocation" x="-82.5" y="-15.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="master.png" width="48" height="48"/>
+        <image name="radio_dot" width="9" height="9"/>
+        <image name="radio_unsel" width="20" height="19"/>
+    </resources>
+</document>

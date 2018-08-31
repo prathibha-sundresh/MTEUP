@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WSOrderChefRewardState2TableViewCell" id="9LV-WA-mGH" customClass="WSOrderChefRewardState2TableViewCell" customModule="yB2CApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9LV-WA-mGH" id="ioy-Ly-Txz">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="376.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChefRewardBanner" translatesAutoresizingMaskIntoConstraints="NO" id="lVt-J4-x0T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="377" id="Vkg-AM-GWm"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLZ-8C-g27">
+                        <rect key="frame" x="20" y="15" width="280" height="83"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThJ-QT-D51" userLabel="Hey James, your earned 1500 points Save for a great reward by setting a goal.">
+                                <rect key="frame" x="5" y="5" width="270" height="73"/>
+                                <string key="text">Hey James, your earned 1500 points
+Save for a great reward by setting a goal.</string>
+                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ThJ-QT-D51" firstAttribute="leading" secondItem="tLZ-8C-g27" secondAttribute="leading" constant="5" id="Edv-mc-6EO"/>
+                            <constraint firstAttribute="height" constant="83" id="QSC-52-utd"/>
+                            <constraint firstItem="ThJ-QT-D51" firstAttribute="top" secondItem="tLZ-8C-g27" secondAttribute="top" constant="5" id="UbS-EC-Gf4"/>
+                            <constraint firstAttribute="bottom" secondItem="ThJ-QT-D51" secondAttribute="bottom" constant="5" id="VKe-hy-g7F"/>
+                            <constraint firstAttribute="trailing" secondItem="ThJ-QT-D51" secondAttribute="trailing" constant="5" id="ZHE-qd-tfO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-oK-srn" customClass="ChefRewardCollectionView" customModule="yB2CApp" customModuleProvider="target">
+                        <rect key="frame" x="20" y="118" width="280" height="180"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn points for great rewards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7p-du-aeo">
+                                <rect key="frame" x="10" y="10" width="260" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="bQY-DF-tTX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="duu-tw-g9U">
+                                <rect key="frame" x="0.0" y="43" width="280" height="127"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="1" minimumInteritemSpacing="1" id="sFX-II-zW2">
+                                    <size key="itemSize" width="162" height="198"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="1" maxX="1" maxY="1"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9LV-WA-mGH" id="JPi-Kc-1Ew"/>
+                                    <outlet property="delegate" destination="9LV-WA-mGH" id="Rx1-bs-adY"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="duu-tw-g9U" firstAttribute="leading" secondItem="PL7-oK-srn" secondAttribute="leading" id="Hsi-Go-6qy"/>
+                            <constraint firstAttribute="height" constant="180" id="W9E-nK-8HZ"/>
+                            <constraint firstAttribute="trailing" secondItem="A7p-du-aeo" secondAttribute="trailing" constant="10" id="XNh-Fy-A5h"/>
+                            <constraint firstItem="A7p-du-aeo" firstAttribute="top" secondItem="PL7-oK-srn" secondAttribute="top" constant="10" id="esC-TZ-UWK"/>
+                            <constraint firstItem="A7p-du-aeo" firstAttribute="leading" secondItem="PL7-oK-srn" secondAttribute="leading" constant="10" id="mW3-gJ-2bb"/>
+                            <constraint firstItem="duu-tw-g9U" firstAttribute="top" secondItem="A7p-du-aeo" secondAttribute="bottom" constant="10" id="nDt-gj-nxw"/>
+                            <constraint firstAttribute="bottom" secondItem="duu-tw-g9U" secondAttribute="bottom" constant="10" id="scq-33-ZpP"/>
+                            <constraint firstAttribute="trailing" secondItem="duu-tw-g9U" secondAttribute="trailing" id="wui-I0-NIx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o4x-Xo-0m7"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJh-s7-9We" customClass="WSDesignableButton" customModule="yB2CApp" customModuleProvider="target">
+                        <rect key="frame" x="20" y="313" width="280" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="bat-VE-ofe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="15"/>
+                        <state key="normal" title="Explore all reward and set a goal">
+                            <color key="titleColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="exploreRewardButtonAction:" destination="9LV-WA-mGH" eventType="touchUpInside" id="kca-Tl-Y57"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tLZ-8C-g27" firstAttribute="leading" secondItem="ioy-Ly-Txz" secondAttribute="leading" constant="20" id="8dt-R3-GTB"/>
+                    <constraint firstItem="lVt-J4-x0T" firstAttribute="top" secondItem="ioy-Ly-Txz" secondAttribute="top" id="Bga-4t-N16"/>
+                    <constraint firstItem="PL7-oK-srn" firstAttribute="top" secondItem="tLZ-8C-g27" secondAttribute="bottom" constant="20" id="GD0-ve-G8d"/>
+                    <constraint firstItem="kJh-s7-9We" firstAttribute="leading" secondItem="ioy-Ly-Txz" secondAttribute="leading" constant="20" id="JAA-bm-nho"/>
+                    <constraint firstItem="lVt-J4-x0T" firstAttribute="leading" secondItem="ioy-Ly-Txz" secondAttribute="leading" id="ORW-ta-yCS"/>
+                    <constraint firstAttribute="trailing" secondItem="kJh-s7-9We" secondAttribute="trailing" constant="20" id="RGj-Hi-sOL"/>
+                    <constraint firstAttribute="trailing" secondItem="PL7-oK-srn" secondAttribute="trailing" constant="20" id="RLg-EF-VDE"/>
+                    <constraint firstItem="tLZ-8C-g27" firstAttribute="top" secondItem="ioy-Ly-Txz" secondAttribute="top" constant="15" id="a2s-II-Sk0"/>
+                    <constraint firstAttribute="trailing" secondItem="tLZ-8C-g27" secondAttribute="trailing" constant="20" id="kcM-83-FQ0"/>
+                    <constraint firstAttribute="trailing" secondItem="lVt-J4-x0T" secondAttribute="trailing" id="kiL-gy-i28"/>
+                    <constraint firstItem="PL7-oK-srn" firstAttribute="leading" secondItem="ioy-Ly-Txz" secondAttribute="leading" constant="20" id="v8Y-ay-N6I"/>
+                    <constraint firstItem="kJh-s7-9We" firstAttribute="top" secondItem="PL7-oK-srn" secondAttribute="bottom" constant="15" id="wVt-w0-xET"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="e9D-4I-Yjs"/>
+            <connections>
+                <outlet property="chefRewardCollectionView" destination="duu-tw-g9U" id="kI7-vY-ad0"/>
+                <outlet property="earnRewardsLabel" destination="A7p-du-aeo" id="jb8-2n-mHc"/>
+                <outlet property="exploreAllRewardButton" destination="kJh-s7-9We" id="KpX-Gr-Tkd"/>
+                <outlet property="pointEarnMessageLabel" destination="ThJ-QT-D51" id="jBc-dM-wwE"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ChefRewardBanner" width="370" height="348"/>
+    </resources>
+</document>

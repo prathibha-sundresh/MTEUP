@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UFSMenuCell" rowHeight="80" id="KGk-i7-Jjw" customClass="UFSMenuCell" customModule="yB2CApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="91" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="91" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pm7-aX-7lX">
+                        <rect key="frame" x="26" y="10" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.3529411764705882" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="C7B-qg-CXo"/>
+                            <constraint firstAttribute="height" constant="40" id="g7e-3L-HgZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUB-Mn-Fra">
+                        <rect key="frame" x="8" y="60" width="75" height="9.5"/>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JUB-Mn-Fra" secondAttribute="bottom" constant="10" id="6qb-fe-uhR"/>
+                    <constraint firstItem="Pm7-aX-7lX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dpV-3j-0fc"/>
+                    <constraint firstItem="JUB-Mn-Fra" firstAttribute="top" secondItem="Pm7-aX-7lX" secondAttribute="bottom" constant="10" id="hQi-3y-Ccw"/>
+                    <constraint firstItem="Pm7-aX-7lX" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hXx-hJ-9nL"/>
+                    <constraint firstItem="JUB-Mn-Fra" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="sU9-8Z-prp"/>
+                    <constraint firstAttribute="trailing" secondItem="JUB-Mn-Fra" secondAttribute="trailing" constant="8" id="zEY-Xd-nv3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="menuIconView" destination="Pm7-aX-7lX" id="O6e-bL-iUu"/>
+                <outlet property="menuLabel" destination="JUB-Mn-Fra" id="ZAe-bt-F8T"/>
+            </connections>
+            <point key="canvasLocation" x="4.5" y="134"/>
+        </tableViewCell>
+    </objects>
+</document>

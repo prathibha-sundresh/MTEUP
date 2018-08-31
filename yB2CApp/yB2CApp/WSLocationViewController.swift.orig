@@ -1,0 +1,326 @@
+//
+//  WSLocationViewController.swift
+//  yB2CApp
+//
+//  Created by Anandita on 11/30/17.
+//
+
+import UIKit
+
+class WSLocationViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+<<<<<<< HEAD
+  @IBOutlet weak var locationAndLanguageLabel: UILabel!
+  @IBOutlet weak var selectLanguageTextLabel: UILabel!
+  @IBOutlet weak var selectCountryTextLabel: UILabel!
+  
+  var selectedlanguageRow: Int = -1
+  var selectedRow: Int = -1
+  var languageList = ["German","English"]
+  var countryList = [WSUtility.getTranslatedString(forString: "Austria")]
+  var selectedCountry : String = WSUtility.getTranslatedString(forString: "Austria")
+  var selectedLanguage : String = "German"
+  @IBOutlet weak var countryTableView: UITableView!
+  
+  @IBAction func closeButtonLanguageTapped(_ sender: Any) {
+    languageView.isHidden = true
+    languageTableView.reloadData()
+    translations()
+  }
+  @IBAction func goToBack(_ sender: Any) {
+    self.dismiss(animated: true, completion: nil)
+  }
+  @IBOutlet var languageView: UIView!
+  @IBOutlet weak var languageTableView: UITableView!
+  @IBOutlet var countryView: UIView!
+  @IBOutlet weak var locationTableView: UITableView!
+  
+  @IBAction func closeButtonTapped(_ sender: Any) {
+    countryView.isHidden = true
+    locationTableView.reloadData()
+    translations()
+=======
+ 
+    @IBOutlet weak var locationAndLanguageLabel: UILabel!
+    @IBOutlet weak var selectLanguageTextLabel: UILabel!
+    @IBOutlet weak var selectCountryTextLabel: UILabel!
+>>>>>>> Added the files that are modified
+    
+    var selectedlanguageRow: Int = -1
+    var selectedRow: Int = -1
+    var languageList = ["German","French","Turkish","English"]
+    var countryList = [WSUtility.getTranslatedString(forString: "Austria"),WSUtility.getTranslatedString(forString: "Turkey"),WSUtility.getTranslatedString(forString: "Germany"),WSUtility.getTranslatedString(forString: "Switzerland")]
+    var selectedCountry = ""
+    var selectedLanguage = ""
+    @IBOutlet weak var countryTableView: UITableView!
+    
+    @IBAction func closeButtonLanguageTapped(_ sender: Any) {
+        languageView.isHidden = true
+        languageTableView.reloadData()
+        translations()
+    }
+    @IBAction func goToBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBOutlet var languageView: UIView!
+    @IBOutlet weak var languageTableView: UITableView!
+    @IBOutlet var countryView: UIView!
+    @IBOutlet weak var locationTableView: UITableView!
+    
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        countryView.isHidden = true
+        locationTableView.reloadData()
+        translations()
+        
+    }
+    
+    @IBAction func changeLanguagePressed(_ sender: Any) {
+        languageTableView.tableFooterView = UIView(frame: CGRect.zero)
+        languageView.frame = UIScreen.main.bounds
+        self.view.addSubview(languageView)
+        languageView.isHidden = false
+        languageTableView.isHidden = false
+        
+    }
+    
+    @IBAction func changeLocationPressed(_ sender: Any) {
+        countryTableView.tableFooterView = UIView(frame: CGRect.zero)
+        countryView.frame = UIScreen.main.bounds
+        self.view.addSubview(countryView)
+        countryView.isHidden = false
+        countryTableView.isHidden = false
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        UISetUP()
+        let serviceBussinessLayer =  WSWebServiceBusinessLayer()
+        serviceBussinessLayer.trackingScreens(screenName: "Location and Language Setting Screen")
+        UFSGATracker.trackScreenViews(withScreenName: "Location and Language Setting Screen")
+        FireBaseTracker.ScreenNaming(screenName: "Location and Language Setting Screen", ScreenClass: String(describing: self))
+        FBSDKAppEvents.logEvent("Location and Language Setting Screen")
+        settingInitialCountryandLanguage()
+    }
+    //    override func viewWillAppear(_ animated: Bool) {
+    //        WSUtility.addNavigationBarBackButton(controller: self)
+    //    }
+    func UISetUP()  {
+        locationTableView.tableFooterView = UIView(frame: CGRect.zero)
+        WSUtility.addNavigationBarBackButton(controller: self)
+        translations()
+    }
+    func settingInitialCountryandLanguage()
+    {
+        if WSUtility.getCountryCode() == "AT" {
+            selectedCountry  =  WSUtility.getTranslatedString(forString: "Austria")
+            selectedLanguage = "German"
+        }else if WSUtility.getCountryCode() == "CH"{
+            selectedCountry  =  WSUtility.getTranslatedString(forString: "Switzerland")
+            selectedLanguage = "French"
+            
+        }else if WSUtility.getCountryCode() == "TR"{
+            selectedCountry  =  WSUtility.getTranslatedString(forString: "Turkey")
+            selectedLanguage = "Turkish"
+        }else{
+            selectedCountry  =  WSUtility.getTranslatedString(forString: "Germany")
+            selectedLanguage = "German"
+        }
+    }
+    func translations()  {
+        locationAndLanguageLabel.text = WSUtility.getlocalizedString(key: "Location and Language", lang: WSUtility.getLanguage(), table: "Localizable")
+        selectLanguageTextLabel.text = WSUtility.getlocalizedString(key: "Select language", lang: WSUtility.getLanguage(), table: "Localizable")
+        selectCountryTextLabel.text = WSUtility.getlocalizedString(key: "Select a country", lang: WSUtility.getLanguage(), table: "Localizable")
+        
+    }
+    
+    @IBAction func backAction(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if(tableView == locationTableView )
+        {
+            if indexPath.row == 0 {
+                let cell:WSLocationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "WSLocationTableViewCell") as! WSLocationTableViewCell
+                
+                cell.textLabel?.font = UIFont(name:"DINPro-Regular", size: 16.0)
+                cell.locationLabel.text = selectedCountry
+                cell.updateCellContent()
+                return cell
+            }
+            if indexPath.row == 1 {
+                let cell:WSLanguageTableViewCell = tableView.dequeueReusableCell(withIdentifier: "WSLanguageTableViewCell") as! WSLanguageTableViewCell
+                cell.textLabel?.font = UIFont(name:"DINPro-Regular", size: 16.0)
+                if WSUtility.getLanguage() == "de"{
+                    cell.languageLabel.text = "German"
+                }else if WSUtility.getLanguage() == "fr"{
+                    cell.languageLabel.text = "French"
+                }else if WSUtility.getLanguage() == "tr"{
+                    cell.languageLabel.text = "Turkish"
+                }else{
+                    cell.languageLabel.text = "English"
+                }
+                cell.updateCellContent()
+                return cell
+            }
+        }
+        if(tableView == countryTableView ){
+            let notifyCell: NotificationCell = countryTableView.dequeueReusableCell(withIdentifier: "cell") as! NotificationCell
+            
+            if indexPath.row == 0 {
+                notifyCell.discriptionLabel.text = "\(countryList[indexPath.row] as String)" //"\(countryList[indexPath.row] as String) 🇦🇹"
+            }
+            else if indexPath.row == 1 {
+                notifyCell.discriptionLabel.text = "\(countryList[indexPath.row] as String)"
+            }
+            else{
+                notifyCell.discriptionLabel.text = "\(countryList[indexPath.row] as String)"
+            }
+            
+            
+            if selectedRow == indexPath.row {
+                notifyCell.discriptionLabel.textColor = UIColor.init(red: 255/255.0, green: 90/255.0, blue: 0, alpha: 1.0)
+                notifyCell.rightIndicatorImage.isHidden = false
+            }
+            else{
+                notifyCell.discriptionLabel.textColor = UIColor.black
+                notifyCell.rightIndicatorImage.isHidden = true
+            }
+            if selectedRow != -1 {
+                selectedCountry = countryList[selectedRow] as String
+            }
+            return notifyCell
+        }
+        if(tableView == languageTableView ){
+            let notifyCell: NotificationCell = languageTableView.dequeueReusableCell(withIdentifier: "cell") as! NotificationCell
+            
+            if indexPath.row == 0 {
+                notifyCell.discriptionLabel.text = "\(languageList[indexPath.row] as String)" //"\(countryList[indexPath.row] as String) 🇦🇹"
+            }
+            else if indexPath.row == 1 {
+                notifyCell.discriptionLabel.text = "\(languageList[indexPath.row] as String)"
+            }
+            else{
+                notifyCell.discriptionLabel.text = "\(languageList[indexPath.row] as String)"
+            }
+            
+            
+            if selectedlanguageRow == indexPath.row {
+                notifyCell.discriptionLabel.textColor = UIColor.init(red: 255/255.0, green: 90/255.0, blue: 0, alpha: 1.0)
+                notifyCell.rightIndicatorImage.isHidden = false
+            }
+            else{
+                notifyCell.discriptionLabel.textColor = UIColor.black
+                notifyCell.rightIndicatorImage.isHidden = true
+            }
+            if selectedlanguageRow != -1 {
+                selectedLanguage = languageList[selectedlanguageRow] as String
+            }
+            return notifyCell
+        }
+        
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(tableView == countryTableView){
+            return countryList.count
+        }
+        else if(tableView == languageTableView){
+            return languageList.count
+        }
+        return 2
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tableView == locationTableView{
+            return 80
+        }
+        return 50
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if(tableView == countryTableView){
+            selectedRow = indexPath.row
+            countryTableView.reloadData()
+            if countryList[selectedRow] == WSUtility.getTranslatedString(forString: "Austria") {
+                UserDefaults.standard.set(countryList[selectedRow], forKey: "SelectedLocation")
+                UserDefaults.standard.set("AT", forKey: "CountryCode")
+                UserDefaults.standard.set("de", forKey: "lang")
+                UserDefaults.standard.set("de", forKey: "LanguageCode")
+                UserDefaults.standard.set("ufs-at", forKey: "Site")
+                
+            }
+            else if countryList[selectedRow] == WSUtility.getTranslatedString(forString: "Turkey") {
+                UserDefaults.standard.set(countryList[selectedRow], forKey: "SelectedLocation")
+                UserDefaults.standard.set("AT", forKey: "CountryCode")
+                UserDefaults.standard.set("tr", forKey: "lang")
+                UserDefaults.standard.set("ufs-at", forKey: "Site")
+                UserDefaults.standard.set("de", forKey: "LanguageCode")
+                //        UserDefaults.standard.set("TR", forKey: "CountryCode")
+                //        UserDefaults.standard.set("tr", forKey: "lang")
+                //        UserDefaults.standard.set("tr-TR", forKey: "LanguageCode")
+                //        UserDefaults.standard.set("ufs-tr", forKey: "Site")
+            }
+            else if countryList[selectedRow] == WSUtility.getTranslatedString(forString: "Germany"){
+                UserDefaults.standard.set(countryList[selectedRow], forKey: "SelectedLocation")
+                UserDefaults.standard.set("AT", forKey: "CountryCode")
+                UserDefaults.standard.set("de", forKey: "lang")
+                UserDefaults.standard.set("ufs-at", forKey: "Site")
+                UserDefaults.standard.set("de", forKey: "LanguageCode")                //        UserDefaults.standard.set("DE", forKey: "CountryCode")
+                //        UserDefaults.standard.set("de", forKey: "lang")
+                //        UserDefaults.standard.set("de-DE", forKey: "LanguageCode")
+                //        UserDefaults.standard.set("ufs-de", forKey: "Site")
+                
+            }else{
+                UserDefaults.standard.set(countryList[selectedRow], forKey: "SelectedLocation")
+                UserDefaults.standard.set("AT", forKey: "CountryCode")
+                UserDefaults.standard.set("fr", forKey: "lang")
+                UserDefaults.standard.set("ufs-at", forKey: "Site")
+                UserDefaults.standard.set("de", forKey: "LanguageCode")                //        UserDefaults.standard.set("CH", forKey: "CountryCode")
+                //        UserDefaults.standard.set("fr", forKey: "lang")
+                //        UserDefaults.standard.set("fr-CH", forKey: "LanguageCode")
+                //        UserDefaults.standard.set("ufs-ch", forKey: "Site")
+            }
+            
+            
+        }
+        locationTableView.reloadData()
+        if(tableView == languageTableView){
+            selectedlanguageRow = indexPath.row
+            languageTableView.reloadData()
+            if languageList[selectedlanguageRow] == "German" {
+                //        UserDefaults.standard.set(languageList[selectedlanguageRow], forKey: "SelectedLanguage")
+                //        UserDefaults.standard.set("AT", forKey: "CountryCode")
+                //        UserDefaults.standard.set("de", forKey: "LanguageCode")
+                //        UserDefaults.standard.set("ufs-at", forKey: "Site")
+                UserDefaults.standard.set("de", forKey: "lang")
+            }
+            else if languageList[selectedlanguageRow] == "French" {
+                /*
+                 UserDefaults.standard.set(languageList[selectedlanguageRow], forKey: "SelectedLanguage")
+                 // UserDefaults.standard.set("SA", forKey: "CountryCode")
+                 UserDefaults.standard.set("en", forKey: "lang")
+                 
+                 // UserDefaults.standard.set("ufs-sa", forKey: "Site")
+                 */
+                // UserDefaults.standard.set("en", forKey: "LanguageCode")
+                UserDefaults.standard.set("fr", forKey: "lang")
+            }
+            else if languageList[selectedlanguageRow] == "Turkish"{
+                UserDefaults.standard.set("tr", forKey: "lang")
+            }
+            else if languageList[selectedlanguageRow] == "English"{
+                UserDefaults.standard.set("en", forKey: "lang")
+            }
+        }
+        locationTableView.reloadData()
+    }
+}
+
+
+

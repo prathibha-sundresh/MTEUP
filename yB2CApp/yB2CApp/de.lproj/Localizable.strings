@@ -1,0 +1,769 @@
+/*
+ Localizable.strings
+ yB2CApp
+ 
+ Created by Anandita on 12/11/17.
+ 
+ */
+"Country selector" = "Länderauswahl";
+"Select your country" = "Wähle Dein Land ";
+"Continue" = "Weiter";
+"Register" = "Registrieren";
+"Register with Facebook" = "Mit Facebook registrieren";
+"Order our products and get them delivered by your trusted trade partner" = "Bei Unilever Food Solutions bestellen - von deinem bevorzugten Lieferanten bekommen";
+"Log in" = "Log in";
+"Create a FREE account" = "Benutzerkonto erstellen";
+"Create a FREE account - Register Page" = "Los geht’s";
+"Change location and language" = " Land und Sprache ändern";
+"Location and Language" = "Land und Sprache";
+"Setting_Change" = "Ändern";
+"Selected Language" = "Ausgewählte Sprache";
+"Selected Location" = "Ausgewähltes Land";
+"Settings" = "Einstellungen";
+"Change Password" = "Passwort ändern";
+"Terms and Conditions" = "Allgemeinen Geschäftsbedingungen (AGB's)";
+"Log out" = "Log out";
+"Select a country" = "Länderauswahl";
+"Select language" = "Sprache auswählen";
+"Austria" = "Österreich";
+"Email already registered" = "Sie sind bereits registriert. Bitte loggen Sie sich ein.";
+
+"Please enter your first name. If the message is long it goes over several lines." = "Bitte Deinen Vornamen eintragen";
+"Please enter your last name. If the message is long it goes over several lines." = "Bitte Deinen Nachnamen eintragen";
+"Please enter a correct email address" = "Bitte eine gültige E-Mail Adresse eintragen";
+"Please enter what type of business you are working in" = "Bitte wähle die Art Deines Unternehmens aus";
+"Please select your tradepartner name" = "Bitte wähle Deinen Lieferanten";// itte Deinen Lieferanten auswählen[almost done screen]
+
+"Your password needs to be minimum 8 characters long one and contain at least one of each: upper case, lowercase, number special character [eg. !. %. +]" = "Das Passwort muss mindestens 8 Zeichen lang sein sowie Gross- und Kleinbuchstaben, eine Nummer und einen Sonderzeichen enthalten (bspw. @, #, $)";
+"Password" = "PASSWORT";
+"I have read the terms and conditions " = "Ich habe die Allgemeinen Geschäftsbedingungen gelesen";
+"Yes, I have read the conditions and would like to subscribe to the newsletter." = "Ja, gerne bestelle ich den Newsletter von Unilever Food Solutions (UFS), zu den Bedingungen wie unter diesem Link näher beschrieben.";
+"news_letter_Link" = "unter diesem Link";
+"You may unsubsribe at any time." = "Ich kann mein Einverständnis jederzeit widerrufen.";
+
+"Please verify your email" = "Bitte bestätige Deine E-Mail Adresse";
+"An email has been sent to" = "Wir haben eine E-Mail gesendet an";
+"Please follow the instructions in the email to verify your address" = "Vergiss nicht, Deinen Spam-Ordner zu überprüfen.\nBitte folge der Anleitung in der E-Mail um die Adresse zu bestätigen";
+"Resend verification email" = "Bestätigungsmail erneut senden";
+"Email" = "E-MAIL";
+
+
+"Email verified" = "E-Mail Adresse bestätigt";
+"Brilliant, thanks for verifying your email" = "Danke für die Bestätigung Deiner E-Mailadresse";
+"Login with Facebook" = "Log in";
+"Please enter a correct password" = "Bitte ein gültiges Passwort eingeben";
+"Forgot Password" = "Passwort vergessen ?";
+"Please confirm your password" = "Bitte Neues Passwort bestätigen";
+"We have sent an email to" = "Wir haben eine E-Mail gesendet an";
+"Unfortunately we can not find a profile with this e-mail address. Please check the entered e-mail address again." = "Leider können wir kein Profil mit dieser E-Mailadresse finden. Bitte prüfen Sie nochmals die eingegebene E-Mailadresse";
+
+"Almost done" = "Fast geschafft";
+"My business" = "Mein Unternehmen";
+"I have read and accepted the terms and conditions" = "Ich akzeptiere die";
+
+"Please select the type of business you are working in" = "Bitte die Art Deines Unternehmens auswählen";
+"Oops, you forgot your password?" = "Bitte geben Sie Ihre E-Mail Adresse ein, um das Passwort zurückzusetzen.";
+"Enter your email" = "E-Mail Adresse eintragen";
+"Points" = "Punkte";
+
+"Easily re-order from your Shopping List." = "Einfache Nachbestellung über die Bestell-Historie.";
+"Earn loyalty points with Chef Rewards and save for cool gifts!" = "Jetzt im Chef Rewards Club Treuepunkte sammeln und gegen tolle Prämien eintauschen!";
+//"Get rewarded! Register now and get 50 loyalty points." = "Jetzt profitieren! Registriere Dich jetzt und Du kriegst 50 Punkte geschenkt!";
+"50 loyalty points" = "%@ Punkte geschenkt";
+"Order product and get double loyatly points" = "Jetzt doppelte Punkte sichern, beim Kauf von %@";
+"Order product and get triple loyatly points" = "Jetzt dreifache Punkte sichern, beim Kauf von %@";
+"Order product and get extra loyatly points" = "Jetzt zusätzliche Punkte sichern, beim Kauf von %@";
+"double loyalty points" = "doppelte Punkte";
+"triple loyatly points" = "dreifache Punkte";
+"Select a business type" = "Art des Unternehmens";
+"extra loyatly points" = "zusätzliche Punkte";
+//***Tutorial**//
+
+"Welcome <First Name> to Chef Rewards." = "Willkommen <%@> im Chef Rewards Club.";
+
+"Here's 50 points ,on us" = "Glückwunsch! Hier sind Deine ersten %@ punkte";
+"Quick Tips" = "Schnelle Tips";
+"Earn loyalty points when you order with us" = "Erhalte bei jedem Kauf Treuepunkte";
+"Save up points and redeem them for great gifts" = "Tausche Deine Treuepunkte gegen tolle Prämien ein";
+"Next" = "Weiter";
+"Skip" = "Überspringen";
+
+"Shopping List" = "Meine Einkaufsliste";
+"Easy Re-ordering" = "Einfach & schnell nachbestellen";
+"Quick Tip" = "Tip";
+"Quick Tips Tutorail" = "Schnelle Tips";
+"Scan Tutorail" = "Barcode scannen";
+"Build your list of products for easy order and re-order." = "Bestelle noch einfacher & schneller über Deine Einkaufsliste.";
+"Short for time?" = "Keine Zeit zum Tippen?";
+"Scan products barcodes for quick re-ordering" = "Scanne den Barcode und bestelle in Rekordzeit";
+
+"Recipes" = "Rezepte";
+
+"Recipes inspiration right at the tip of your fingers." = "Hol Dir  Inspiration aus einer Vielzahl an tollen Rezepten";
+"Save recipes by tapping on the heart." = "Drücke auf das Herz & Dein Rezept ist für später gespeichert.";
+
+"recipes" = "rezepte";
+
+
+"Finish" = "Weiter";
+"50 points" = "%@ punkte";
+
+"%@ Points" = "%@ Punkte";
+"Selected trade partner" = "Ausgewählter Lieferant";
+"Edit account information" = "Profil bearbeiten";
+"Need Help, Call your sales rep" = "Brauchst du Hilfe? Rufe deinen UFS Ansprechpartner %@ an.";
+
+"Buy and earn Chef rewards" = "Einkaufen und Punkte sammeln";
+//"Earn loyalty points on all your orders" = "Bei jedem Einkauf Treuepunkte sammeln";
+"Earn loyalty points on all your orders" = "Erhalte bei jedem Kauf Treuepunkte";
+//"Save for great gifts" = "Treuepunkte gegen tolle Prämien tauschen";
+"Save for great gifts" = "Tausche Deine Treuepunkte gegen tolle Prämien ein";
+"Start ordering and get a free X over XX" = "Ist die erste Bestellung über 299€, erhältst Du xy GRATIS  (damit vermeiden wir, dass der Kunde glaubt er MUSS über 300€ bestellen)";
+"Learn more about Chef Rewards" = "Erfahre mehr über den Chef Rewards Club";
+"Place your first order now and receive a 200 points for free" = "Sichere Dir ZUSÄTZLICH %@ Treuepunkte für Deine erste Bestellung";
+"Shop now" = "Jetzt bestellen";
+//"Earn points for great rewards" = "Punkte sammeln & tolle Prämien sichern";
+"Earn points for great rewards" = "Sammle Treuepunkte für tolle Prämien";
+"Earn loyalty points on all your orders-Home" = "Erhalte bei jedem Kauf Treuepunkte";
+"Save for great gifts-Home" = "Tausche Deine Treuepunkte gegen tolle Prämien ein";
+"Start ordering and get a free X over XX-Home" = "Ist die erste Bestellung über %@€, erhältst Du einen %@ GRATIS";
+"Your deal" = "AKTION";
+"Careful these are hot 🔥" = "Achtung - Heiss!!🔥";
+"20% off all dairy alternative products" = "20% auf alle alternativen Milchprodukte";
+"Shopping list" = "Meine Einkaufsliste";
+"Easy ordering via your lists!  ATENTION: we have just one list" = "Einfach & schnell bestellen";
+"Go to my list" = "Meine \n Einkaufsliste";
+"We reckon you'll like these" = "Diese Produkte könnten Dir auch gefallen";
+"All products" = "Alle Produkte";
+
+"All recipes" = "Alle Rezepte";
+"Your points balance" = "Gesammelte Treuepunkte";
+"Earn loyalty points on all your orders" = "Bei jedem Einkauf Treuepunkte sammeln";
+"Place your first order now and receive a 200 points for free" = "Sichere Dir ZUSÄTZLICH 200 Treuepunkte für Deine erste Bestellung";
+"Hey James, you've earned 1500 points" = "Hallo %@, Du hast %@ Treuepunkte";
+//"Save for a great reward by setting a goal_Home" = "Spare für Deine persönliche Wunschprämie";
+"Save for a great reward by setting a goal_Home" = "Setz Dir eine Wunschprämie als Ziel und sammle dafür Punkte";
+"Order Knorr Professional Schnaaldierenfond and receive double points" = "Jetzt doppelte Punkte sichern, beim Kauf von xxx";
+"1500 points" = "%@ Treuepunkte";
+"Hey James, earn 400 points to reaching your goal" = "Hallo %, nur noch %@ Punkte bis zu Deiner Wunschprämie";
+"Shop now to earn more points" = "Jetzt bestellen und weitere Punkte sammeln";
+"Get 250 FREE points on your first order. Spend over €300 and get a FREE digital roast barometer*." = "Sichere Dir ZUSÄTZLICH %@ Treuepunkte für Deine erste Bestellung. Wenn Du bei der ersten Bestellung über %@€ ausgibst, bekommst Du ZUSÄTZLICH %@ GRATIS!";
+"250 FREE" = "ZUSÄTZLICH %@";
+"first order" = "erste Bestellung";
+"FREE digital roast barometer*." = "%@ GRATIS!";
+
+"Nice one!You reached your goal" = "Gratulation! Du hast Deine Wunschprämie erreicht";
+"Nice one!" = "Gratulation!";
+"You reached your goal" = "Du hast Deine Wunschprämie erreicht";
+"Redeem your gift" = "Hol Dir jetzt Deine Prämie";
+"Congrats on reaching your goal" = "Gratulation - Du hast Deine Wunschprämie erreicht!";
+"Visit UFS.com to redeem your reward" = "Hol Dir Deine Prämie auf ufs.com";
+
+"Call your sales representative" = "%@ anrufen";
+"See a product you like? Then favourite it" = "Ein Produkt gefällt Dir? Füge es zu Deiner Einkaufsliste hinzu";
+"Start building your list" = "Erstelle Deine persönliche Einkaufsliste";
+"Easy ordering via your lists!_one_product" = "Einfach bestellen mit Deiner Einkaufsliste";
+"Add more products to you favourites list" = "Mehr Produkte zur Einkaufsliste hinzufügen";
+"Go to" = "Meine";
+"my list" = "Einkaufsliste";
+"View all rewards" = "Alle Treueprämien anzeigen";
+
+"Easy ordering via your lists!_multiple_products" = "Einfach nachbestellen mit Deiner Einkaufsliste";
+
+"Only applicable upon first purchase" = "Nur gültig für die erste Bestellung";
+
+
+//MARK: CART
+"An empty cart breaks my heart" = "Dein Warenkorb ist leer";
+"Start shopping" = "Jetzt bestellen";
+"My Cart" = "Mein Warenkorb";
+"My Cart[value]" = "Mein Warenkorb[%@]";
+"Total items [value]" = "Alle Produkte [%@]";//Total Produkte
+
+"You're £65 away from getting a gift name" = "Für Deine Wunschprämie fehlen noch: %@€ %@";
+"Total items" = "Alle Produkte";
+
+"Reward Points" = "Gesammelte Treuepunkte";
+"121 Loyalty points" = "%@ Loyalty points";
+"%@ loyalty points" = "%@ Treuepunkte";
+"Order now" = "Jetzt bestellen";
+"Loyalty Points" = "Treuepunkte";
+
+"Congrats, you now have enough items to get a gift name" = "Gratulation, Du hast nun genügend Punkte für %@";
+"Create a Password" = "Erstelle jetzt Dein Passwort ";
+"Enter password" = "Passwort eingeben";
+"Explore all recipes" = "Entdecke alle Rezeptideen";
+//****SCAN****//
+
+"Scan UFS product barcode" = "Scanne den Barcode (EAN) des Produktes";
+"Add to cart" = "In den Warenkorb";//Zu Warenkorb hinzufügen
+//"add to favourites" = "Zu \T"Meiner Einkaufsliste" hinzufügen";
+
+//MARK: CHECKOUT
+
+"Back to cart" = "Warenkorb";
+"Checkout" = "Bestellung abschliessen";
+"Delivery" = "Lieferung";
+"My Detail" = "Meine Daten";
+"Summary" = "Bestellübersicht";
+"First Name" = "Vorname";
+"Surname" = "Nachname";
+"Last Name" = "Nachname";
+"Mobile Phone" = "Telefonnummer";
+"Mobile Number"= "Telefonnummer";
+"My trade partner" = "Mein Lieferant";
+"Trade partner" = "Lieferant";
+"Trade Partner:" = "Lieferant:";
+"Trade partner location" = "Standort Lieferant";
+"Account number" = "Kundennummer beim Lieferanten";
+"Continue Shopping" = "Weiter Einkaufen";
+"Next Step" = "Nächster Schritt";
+"Select tradepartner location" = "Wähle Standort Lieferant";
+"Delivery Address" = "Lieferadresse";
+"Business name (optional)" = "Name des Unternehmens";
+"House number" = "Hausnummer";
+"Street" =  "Strasse";
+"City" =  "Ort";
+"Postal Code" = "PLZ";
+"Billing address is the same as delivery address" = "Rechnungsadresse entspricht der Lieferadresse";
+"Delivered by" = "Belieferung durch";
+"Tap on prefered delivery date" = "Gewünschten Liefertag auswählen";
+"Available dates are highlighted in orange" = "Verfügbare Daten sind orange markiert.";
+"Done" = "Erledigt";
+"Billing" = "Rechnungsadresse";
+
+
+
+"Change my default Trade Partner" = "Standardlieferant ändern";
+"Address" = "Lieferadresse";
+"Business name (optional)" = "Name des Unternehmens";
+"House number" = "Hausnummer";
+//"Street" = "Strasse";
+"City" = "Ort";
+"Postal Code" = "PLZ";
+"Billing address is the same as delivery address." = "Rechnungsadresse entspricht der Lieferadresse.";
+
+"Delivered by Deli XL Amsterdam" = "Belieferung durch <trade partner name>";
+"This order will be added to the next delivery" = "Diese Bestellung wird zu Ihrer nächsten Lieferung hinzugefügt.";
+"Choose different day (optional)" = "Anderes Lieferdatum wählen (optional)";
+"Delivery notes (optional)" = "Kommentar für den Lieferanten (optional)";
+"Delivery notes" = "Kommentar für den Lieferanten";
+"Back to details" = "Meine Daten";
+
+
+"Billing Address" = "Rechnungsadresse";
+"Name (optional)" = "NAME";
+
+"Tap on prefered delivery date" = "Gewünschten Liefertag auswählen";
+"Cancel" = "Abbrechen";
+
+"Place Order" = "Bestellung abschicken";
+"Change" = "ändern";
+"Change-Summary" = "ändern";
+"delete" = "löschen";
+"Delivery and Billing" = "Liefer- und Rechnungsadresse";
+"Items" = "Produkte";
+
+"Total Items" = "Alle Produkte";
+"Rewards points " = "Gesammelte Treuepunkte";
+"Order Successful" = "Danke, die Bestellung war erfolgreich!";
+"You have earned" = "Du hast gesammelt";
+"You have earned 1500 points" = "Du hast %@ Punkte gesammelt";
+
+"Your points balance <number>" = "Dein Punktestand: <number>";
+"Your order has been sent to your trade partner" = "Die Bestellung wurde an Deinen Lieferanten weitergeleitet";
+"Your order number is" = "Deine Bestellnummer lautet: " ;
+
+"Save for a great reward by setting a goal" = "Setz Dir eine Wunschprämie als Ziel und sammle dafür Punkte.";
+//"Explore all rewards and set a goal" = "Sammle Deine Treuepunkte für tolle Prämien";
+
+
+"Hey James, earn 400 points to reach your goal" = "Hallo %@, nur noch %@ Punkte bis zu Deiner Wunschprämie";
+"Shop now to earn more points" = "Jetzt bestellen und weitere Punkte sammeln";
+"You reached your goal" = "Du hast Deine Wunschprämie erreicht";
+"Redeem your gift" = "Hol Dir jetzt Deine Prämie";
+
+/****SEARCH****/
+
+"Search for a product" = "Produkt suchen";
+"Results" = "Resultate";
+//"Select the packaging Indicative Price (Excluding VAT)" = "Wählen Sie die Verpackung Richtpreis (ohne MwSt.)";
+"Recommended price from UFS" = "unverbindliche Preisempfehlung von UFS";
+"Load more products" = "Mehr Produkte anzeigen";
+"Recommended price (excl. VAT)"="Empfohlen Preis (excl. VAT)";
+"Indicative price (Excluding UAT)" = "Unverbindliche Preisempfehlung von UFS (ohne MwSt)";
+/****SHOPPING LIST****/
+
+"Products" = " Produkte";
+"Sort by" = "Sortiert nach";
+"Recent orders" = "Zuletzt gekauft";
+"Remove" = "Entfernen";
+"Proceed to order" = "Bestellung abschliessen";
+"Indicative prices from UFS" = "Unverbindliche Preisempfehlung von UFS";
+"Removed" = "Entfernt";
+
+"Bought before" = "Zuvor gekauft";
+"Favourites" = "Favoriten";
+"Filter List" = "Filter Liste";
+//"Remove" = "Löschen";//Entfernen
+"Proceed to order" = "Bestellung abschliessen";
+"Most Bought" = "Meist gekauft";
+"Favourite items" = "Von mir hinzugefügt";
+"You have not placed an order with us yet." = "Du hast noch keine Produkte bestellt.";
+"Shop with us and earn points for great gifts." = "Einkaufen und Punkte sammeln für tolle Prämien.";
+
+"Your favourites list is empty" = "Ihre Favoritenliste ist leer";
+"Get favouriting" = "Favoriten werden";
+
+
+//MARK: MY ACCOUNT
+
+"Your points balance" = "Dein Punktestand";
+"Complete your profile" = "Vervollständige Dein Profil";
+"%@ Complete" = "%@ vollständig";
+"Please fill in your phone number" = "Bitte Telefonnummer eintragen";
+"Name" = "Vor- und Nachname";
+"Edit my details" = "Meine Daten ändern";
+"My trade partners details" = "Mein Lieferant";
+"Selected as my default trade partner" = "Als Standardlieferanten festlegen";
+"Trade partner name" = "NAME LIEFERANT";
+"Trade partner location" = "STANDORT LIEFERANT";
+"Trade Partner's Account Number" = "Kundennummer beim Lieferanten";
+"Edit Trade Partner Details" = "Angaben Lieferant ändern";
+"Add another trade partner" = "Weiteren Lieferanten hinzufügen";
+"Business details" = "Mein Unternehmen";
+"Business name" = "Name des Unternehmens";
+"Business type" = "Art des Unternehmens";
+//"Street"="Straße";
+"Building number" = "Hausnummer";
+"Area Code" = "PLZ";
+"City"="Ort";
+
+
+"Edit Business Details" = "Angaben Unternehmen ändern";
+"Save Changes" = "Änderungen speichern";
+"Back" = "Zurück";
+
+
+"Account number" = "Kundennummer";
+"Your trade partner's account number" = "Kontonummer Ihres Handelspartners";
+"Edit trade partner's details" = "Angaben Lieferant ändern";
+"Add another Trade Partner" = "Weiteren Lieferanten hinzufügen";
+
+"Please fill in your trade partner's location" = "Bitte trage den Standort Deines Lieferanten ein";
+"Previous" = "Zurück";
+"Profile Complete" = "Profil vollständig";
+
+"Display native gallery and users can select a photo to upload" = "Bildergallerie anzeigen und Profilfoto auswählen";
+"Use photo" = " Foto verwenden";
+"Take a photo" = "Mache ein Foto";
+"Upload from gallery" = "Aus Meiner Bildergallerie hochladen";
+"Remove Photo" = "Foto löschen";
+
+"Retake photo" = "Aufnahme wiederholen";
+"Profile Updated Successfully" = "Profil erfolgreich aktualisiert";
+
+//MARK: SAMPLE FLOW****/
+
+"Free sample" = "Gratis Muster";
+"Fill in your details below and get your free sample" = "Nachstehende Angaben ausfüllen & GRATIS-MUSTER erhalten";
+"Details" = "Meine Daten";
+"Delivery" = "Lieferdaten";
+"Building number" = "Hausnummer";
+"Back to my details" = "Meine Daten";
+"terms and conditions"= "Allgemeinen\nGeschäftsbedingungen (AGB's)";
+"By continuing you are agree with our" = "Mit der Bestellung akzeptiere ich die";
+"By continuing you agree with our terms and conditions" = "Mit der Bestellung akzeptiere ich die Allgemeinen Geschäftsbedingungen";
+"By continuing, you agree with our Terms and Conditions and Online Selling Contract" = "By continuing, you agree with our Terms and Conditions and Online Selling Contract";
+
+"Order Sample" = "Produktmuster bestellen";
+"Discover how UFS products can be used in recipes" = "Lass Dich von Rezeptideen inspirieren";
+"Explore Recipes" = "Rezepte entdecken";
+
+"Thank you for ordering a sample of" = "Danke für die Bestellung! xy ist auf dem Weg zu Dir.";
+"We will get in touch with you shortly to confirm" = "Wir kontaktieren Dich in Kürze um die Bestellung zu bestätigen";
+"Business details" = "Mein Unternehmen";
+
+/****PRODUCT CATEGORIES****/
+
+"Order with my shopping list" = "Mit Meiner Einkaufsliste bestellen";
+"Product categories" = "Produkt Kategorien";
+"See all products" = "Alle Produkte anzeigen";
+"Selected tradepartner:" = "Mein Lieferant:";
+"Change tradepartner" = "Lieferant ändern";
+"All products" = "Alle Produkte";
+
+"More information" = "Mehr Informationen";
+"Select the packaging" = "Verpackungseinheit wählen";
+"Filter" = "Filter";
+"Clear all" = "Alle löschen";
+"Unit" = "Verbrauchereinheit";
+"Case" = "Verpackungseinheit";
+"Recommended price (excl. VAT)" = "Unverbindliche Preisempfehlung von UFS (ohne MwSt)";
+
+"Filter 1" = "Filter 1";
+"Filter 2" = "Filter 2";
+"Filter 3" = "Filter 3";
+"Filter 4" = "Filter 4";
+"Option 1" = "Option 1";
+"Option 2" = "Option 2";
+"Option 3" = "Option 3";
+
+"Select a new trade partner" = "Neuen Lieferanten auswählen";
+"Trade partner name" = "Name Lieferant";
+"Trade partner location" = "Standort Lieferant";
+"Enter Your Trade Partner Account Number" = "Kundennummer bei meinem Lieferanten";
+"Make this my default trade partner" = "Als  Standardlieferanten festlegen";
+"Add new Trade Partner" = "Weiteren Lieferanten hinzufügen";
+"Select a Trade Partner" = "Lieferanten auswählen";
+"Select this Trade Partner" = "Diesen Lieferanten auswählen";
+
+
+
+/****ORDER HISTORY****/
+
+"My Order History" = "Meine Bestellungen";
+"Review and reorder your previous items." = "Zuvor bestellte Produkte ansehen und wiederbestellen.";
+"You can adjust product quantities in the cart." = "Die Produktbestellmenge kann im Warenkorb noch geändert werden.";
+"Order Number:" = "Bestellnummer:";
+"Date Ordered:" = "Datum der Bestellung:";
+
+"Completed" = "Abgeschlossen";
+"Status:" = "Status: ";
+"Cancelled" = "Storniert";
+"See full order details"= "Vollständige Bestelldetails anzeigen";
+"Points earned:" = "Gesammelte Punkte:";
+"Re-order all" = "Alles nachbestellen";
+"Total price" = "Gesamtpreis";
+"Points spent:" = "Eingelöste Punkte:";
+"Your supplier determines your delivery and payment conditions." = "Ihr Lieferant bestimmt Ihre Liefer- und Zahlungsbedingungen.";
+"Your order <order number> has been passed to your trade partner <trade partner name> with your client number <client number>" = "Diese Bestellung mit der Nummer %@ wurde an Deinen Lieferanten %@ mit Deiner Kundennummer %@ weitergegeben.";
+"For further questions about handling of this order please contact <trade partner name>" = "Für weiter Fragen zu dieser Bestellung wende Dich bitte an Deinen Ansprechpartner bei %@";
+"Total points" = "Alle Punkte";
+
+
+/****RECIPE CATAGORIES & CATALOGUE****/
+
+"Search recipes" = "Nach Rezepten suchen";
+"Swipe right if you might" = "Gefällt es Dir? Dann wische das Bild nach rechts!";
+"All recipes" = "Alle Rezepte";
+"Starters" = "Vorspeisen";
+"Main dishes" = "Hauptgerichte";
+"Desserts" = "Nachspeisen";
+"Search for a recipe" = "Nach Rezepten suchen";
+"You're all swiped out" = "Das war alles für heute";
+"Go to My Recipe" = "Meine gespeicherten Rezepte";
+"See more recipes" = "Mehr Rezepte ansehen";
+"Your deal" = "AKTION";
+
+"We reckon you’ll like these" = "Diese Produkte könnten Dir auch gefallen";
+"Select the packaging" = "Verkaufseinheit wählen";
+"Product Details" = "Produktdetails";
+"Allergens" = "Allergene";
+"Nutritional Information" = "Nährwerte";
+"Yield" = "Ergiebigkeit";
+"See all details" = "Vollständige Produtdetails ansehen";
+
+"More product and allergy information" = "Mehr Produkt- und Allergeneinformationen";
+"Without filter" = "Ohne Filter";
+
+"My Recipes" = "Meine Rezepte";
+"Portion Selector" = "Anzahl Portionen ändern";
+"UFS Ingredients in this recipe" = "UFS Zutaten in Rezept";
+
+
+/*CHEF REWARD**/
+"Our video on how Chef Rewards work" = "Wie funktioniert der Chef Rewards Club? ";
+"Explore the Chef Rewards Catalogue" = "Sieh Dir die Prämien vom Chef Rewards Club an";
+"See all Chef Rewards" = "Alle Prämien ansehen";
+"Place your first order now and receive 200 points free" = "Sichere Dir ZUSÄTZLICH 200 Treuepunkte für Deine erste Bestellung";
+"Save for a great reward by setting a goal-CR" = "Setz Dir eine Wunschprämie als Ziel und sammle dafür Punkte";
+"Have more questions?" = "Hast Du weitere Fragen?";
+"See Chef Rewards FAQs" = "FAQs zum Chef Rewards Club lesen";
+"Chef Rewards Frequently Asked Questions" = "Häufige Fragen zum Chef Rewards Club";
+"Chef Rewards" = "Chef Rewards";
+"This reward is set as your goal" = "Deine Wunschprämie";
+"Earn loyalty points on all your orders" = "Erhalte bei jedem Kauf Treuepunkte";
+"Save for great gifts" = "Tausche Deine Treuepunkte gegen tolle Prämien ein";
+"Start ordering and get a free X over XX chefrewards" = "Ist die erste Bestellung über %@€, erhältst Du einen %@ GRATIS  ";
+"Change my goal" = "Wunschprämie ändern";
+"Explore all reward and set a goal" = "Sieh Dir alle Prämien an und setz Dir ein Wunschprämie als Ziel";
+"€ 1" = "1 €";
+"ChefReward_1_Point" = "1 Treuepunkt";
+//MARK: Chef Rewards
+"Chef Rewards Terms and Conditions apply" = "Chef Rewards Allgemeinen Geschäftsbedingungen (AGB's)";
+
+/***HAMBURGER MENU***/
+"My UFS" = "Mein UFS";
+"Chef Rewards" = "Chef Rewards";
+"Notifications" = "Benachrichtigungen";
+"Order History" = "Bestell-Historie";
+"App Settings" = "App Einstellungen";
+"Edit Account Information" = "Profil bearbeiten";
+"Selected trade partner" = "Ausgewählter Lieferant";
+
+
+"Create your list and start ordering" = "Erstelle Deine persönliche Einkaufsliste";
+"Favorite list" = "Von mir hinzugefügt";
+"Easy ordering via your lists!" = "Einfach & schnell bestellen";
+
+"Trade partner name" = "Name Lieferant";
+"Trade Partner Account number" = "meine Kundennummer beim Lieferanten";
+"Trade partner account number for popup" = "KUNDENNUMMER BEIM LIEFERANTEN";
+
+
+"First order offer" = "Angebot für Erstkauf";
+"Get rewarded! Register now and get 50 loyalty points." = "Jetzt profitieren! Registriere Dich jetzt und Du kriegst %@ Punkte geschenkt.";
+"Get rewarded!" = "Jetzt profitieren!";
+"Register now and get" = "Registriere Dich jetzt und Du kriegst";
+"Earn loyalty points for kitchen equipment." = "Jetzt Treuepunkte sammeln und gegen tolle Prämien eintauschen!";
+"Preparation" = "Zubereitung";
+
+//MARK: ProductDetail
+"Nutrients per serving" = "Nährwertangaben pro Portion";
+"Quantity" = "Menge: ";
+"Loyalty Points" = "Treuepunkte";
+"Order a Sample" = "Produktmuster bestellen";
+"Get rewarded with Chef Rewards" = "Treuepunkte sammeln";
+"Get rewarded with Chef Rewards-loyaltyDetail" = "Mit Treuepunkten belohnt werden";
+"Delivery and payment via your trusted trade partner -loyaltyDetail" = "Lieferung und Rechnung durch Deinen Lieferanten";
+"Full product details" = "Vollständige Produktinformationen";
+"Product Information" = "Produktinformationen";
+"Nutrition" = "Nährwerte";
+"Ingredients" = "Zutaten";
+"Preparation" = "Zubereitung";
+"Allergy" = "Allergene";
+"Nutritional Information" = "Nährwertangaben";
+"Delivery and payment via your trusted trade partner" = "Ware und Rechnung von Deinem  Lieferanten erhalten";
+"Buy now" = "Jetzt bestellen";
+"Product Description" = "Beschreibung";
+"Packaging" = "Verpackung";
+"Container" = "Gebinde";
+"Preparation" = "Zubereitung";
+"Storage" = "Lagerhinweis";
+"Use" = "Benutzen";
+"Benefits" = "Leistungen";
+"Shelf Life" = "Haltbarkeit";
+"product Quantity" = "Produktmenge";
+"Water" = "Wasser";
+"Yield in liters" = "Ergiebigkeit in Litern";
+"Yield per serving" = "Ergiebigkeit pro Portion";
+"no information available" = "Keine Information verfügbar";
+"Portion size" = "Portionsgröße";
+"days" = "Tage";
+
+//new added
+"Please fill in your business name" = "Bitte trage den Namen Deines Unternehmens ein";
+"My Notifications" = "Meine Mitteilungen";
+"Start Shopping" = "Jetzt bestellen";
+"See details" = "Siehe Details";
+"Load More" = "Mehr anzeigen";
+"Your password has been changed" = "Ihr Passwort wurde geändert";
+"Invalid username or password." = "";
+"My details" = "Meine Details";
+"Added to cart" = "in den Warenkorb gelegt";
+"This is your default trade partner" = "Als Standardlieferant festgelegt";
+
+//MARK: Change Password
+"Your password needs to be minimum 8 characters long and contain at least one of each: Upper Case, Lower Case, Number, Special character (e.g. !,%,+)" = "Das Passwort muss mindestens 8 Zeichen lang sein sowie Gross- und Kleinbuchstaben, eine Nummer und einen Sonderzeichen enthalten (bspw. @, #, $)";
+"Current password" = "Aktuelles Passwort";
+"New password" = "Neues Passwort";
+"Confirm new password" = "Neues Passwort bestätigen";
+"Save new password" = "Neues Passwort speichern";
+"minimum 8 characters" = "mindestens 8 Zeichen";
+"Upper Case, Lower Case, Number, Special character (e.g. !,%,+)" = "Gross- und Kleinbuchstaben, eine Nummer und einen Sonderzeichen enthalten (bspw. @, #, $)";
+"The passwords you entered do not match, please try again." = "Die von Ihnen eingegebenen Passwörter stimmen nicht überein, bitte versuchen Sie es nochmals.";
+//No results found
+"No data found" = "Keine Daten gefunden";
+
+//MARK: Loyalty Category
+"Reward Categories" = "Prämien Kategorien";
+"All rewards" = "Alle Prämien";
+"Keep & Organize" = "Aufbewahren & Ordnen";
+"Dishes, glasses and cutlery" = "Geschirr, Gläser & Besteck";
+"Kitchenware & Textiles" = "Küchenbekleidung & Textilien";
+"kitchen appliances" = "Küchengeräte";
+"Kitchen helpers and kitchen utensils" = "Küchenhelfer & Küchenutensilien";
+"Pots & pans" = "Töpfe & Pfannen";
+"Product presentation & decoration" = "Warenpräsentation & Dekoration";
+
+//MARK: Loyalty Product
+"Set as a goal" = "Als Wunschprämie auswählen";
+"This reward is set as your goal" = "Deine Wunschprämie";
+"Loyalty points" = "Treuepunkte";
+"rewards" = "Prämien";
+"Up to 500 points" = "Bis 500 Treuepunkte";
+"501 - 1,500 points" = "501 - 1.500 Treuepunkte";
+"Above 1,501 points" = "Mehr als 1.501 Treuepunkte";
+
+//MARK: Loyalty Detail
+"Chef Rewards Points" = "Benötigte Treuepunkte";
+
+//MARK: Email Varificatio
+"Re-order all" = "Alles nachbestellen";
+
+//MARK: Chef Rewards FAQS
+"FAQQ1" = "1. WIE KANN ICH TREUEPUNKTE SAMMELN?";
+"FAQA1" = "Als Teilnehmer am UFS Treueprogramm haben Sie zwei Möglichkeiten, um Treuepunkte zu sammeln:\n\na. Online-Shop Treueprogramm:\nSammeln Sie mit jeder Bestellung über den UFS Online-Shop automatisch Treuepunkte. Für jeden eingesetzten Euro erhalten Sie einen Treuepunkt.";
+"FAQQ2" = "2. WIE KANN ICH TEILNEHMEN?";
+"FAQA2" = "Die Registrierung ist ausschließlich online möglich.\n\nOnline-Shop Treueprogramm:\nWenn Sie Ihre erste Bestellung mit Angabe Ihrer persönlichen Daten in unserem Online-Shop abschließen, können Sie sich für das Online-Shop-Treueprogramm mit dem Anklicken des entsprechenden Felds registrieren.";
+"FAQQ3" = "3. WO FINDE ICH DIE TEILNAHMEBEDINGUNGEN?";
+"FAQA3" = "Weitere Informationen über die Allgemeinen Geschäftsbedingungen für das Treueprogramm und die Online-Shop-Plattform finden Sie hier.";
+"FAQQ4" = "4. WAS BEKOMME ICH FÜR MEINE TREUEPUNKTE?";
+"FAQA4" = "Im Treueprogramm Chef Rewards Club können Sie Ihre Treueprämie auswählen.\n\nUnsere Prämien sind in verschiedene Punkte-Kategorien aufgeteilt, damit Sie die für Sie interessanten Produkte schnell aufrufen und die gewünschten Prämien auswählen können.\n\nSehen Sie sich unseren Prämienkatalog an und wählen Sie die Prämien aus, die Sie direkt bestellen möchten, oder speichern Sie eine gewünschte Prämie, für die Sie Punkte sammeln möchten. Nach jeder Bestellung können Sie nun sehen, wie viele Punkte Sie noch für die gewünschte Prämie benötigen.";
+"FAQQ5" = "5. WIE ERHALTE ICH MEINE TREUEPRÄMIEN UND ZUGABEARTIKEL?";
+"FAQA5" = "Alle Artikel des Treueprogramms sowie Ergänzungsartikel wie Messer, Brillen usw. werden über ein beauftragtes Unternehmen oder direkt über Unilever Food Solutions verschickt.\n\nBitte beachten Sie, dass die hinzugefügten Artikel und Prämien nicht gleichzeitig mit der Lieferung Ihres Lieferanten ankommen werden, sondern aufgrund der Verarbeitungszeit später eintreffen können.";
+"FAQQ6" = "6. WIE LÖSE ICH MEINE TREUEPUNKTE EIN?";
+"FAQA6" = "Lösen Sie Ihre Treuepunkte ein, wann immer Sie möchten: Sie müssen vorab keine Bestellung aufgeben, wenn Sie bereits genug Treuepunkte zur Verfügung haben. Ihre gewünschte Prämie bestellen Sie ganz einfach mit Ihren gesammelten Punkten und das jederzeit. Wählen Sie Ihre bevorzugte Prämie und fügen Sie diese Ihrem Warenkorb hinzu.";
+"FAQQ7" = "7. WO ERFAHRE ICH MEINEN TREUEPUNKTE-STAND?";
+"FAQA7" = "Wenn Sie in der App eingeloggt sind, sehen Sie Ihren Treuepunkte-Stand direkt auf der ersten Seite oben in der Mitte. Sie können ihn aber auch jeder Zeit über die Menufunktion abrufen.\nBei Fragen bieten wir Ihnen die Möglichkeit unseren Support zu kontaktieren:\n\nUFS Support Kontakt\nTelefon: 0800 220 096 (gebührenfrei)\nMontag bis Freitag 8:00 Uhr bis 19:00 Uhr\n(ausgenommen sind die gesetzlichen Feiertage)\n\nE-Mail: ufsservice@unilever.com";
+"FAQQ8" = "8. WAS PASSIERT MIT MEINEN DATEN?";
+"FAQA8" = "Die Unilever Gruppe (Unilever Deutschland GmbH, Unilever Deutschland Holding GmbH, Unilever Austria GmbH, Unilever Schweiz GmbH, Oswald Nahrungsmittel GmbH, Schweiz) nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst. Wir möchten Sie mit unserer Datenschutzerklärung über die Grundsätze und Verfahren informieren, mit denen wir Ihre Privatsphäre schützen und Sie über unseren Umgang mit den Daten, die Sie uns überlassen aufklären. Hier können Sie die Datenschutzerklärung einsehen";
+
+// Recipe
+"No_Favourite_Message" = "Du hast noch keine Favoriten angegeben 😱 \n\n Klicke beim Erkunden auf das Herz-Zeichen ❤, \n um Deine Favoriten-Liste zu kreieren";
+
+//MARK: Login
+"Error while authenticating user." = "Fehler beim Authentifizieren des Benutzers.";
+
+"Please provide valid login credentials" = "Bitte gib gültige Login Daten an.";
+"Looks like you aren't connected to a network. Please try again after you get connected." = "Looks like you aren't connected to a network. Please try again after you get connected.";
+"Error occurred. Please try after sometime." = "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.";
+
+"User Not Found" = "Benutzer nicht gefunden";
+"Password Changed Successfully." = "Passwort erfolgreich geändert";
+"Unfortunately, your password could not be changed, please try again later." = "Leider konnte Ihr Passwort nicht geändert werden, bitte versuchen Sie es später erneut.";
+"Please enter all mandatory field first." = "Bitte fülle zuerst alle Pflichtfelder aus";
+
+//MARK:- Checkout error messages
+"Please enter your e-mail address."="Bitte geben Sie Ihre E-Mail Adresse an.";
+"Please enter your first name." = "Bitte geben Sie Ihren Vornamen ein.";
+"Please enter your last name." = "Bitte geben Sie Ihren Nachnamen ein.";
+"Please enter your valid phone number."="Bitte geben Sie Ihre gültige Telefonnummer ein.";
+"Please enter trade partner name."="Bitte geben Sie Name Lieferant.";
+"Please enter trade partner location."="Bitte geben Sie Standort Lieferant.";
+"Please enter trade partner account number."="Bitte geben Sie Kundennummer.";
+"Please enter the name of your company." = "Bitte geben Sie den Namen Ihres Unternehmens an.";
+"Please enter your house number." = "Bitte geben Sie Ihre Hausnummer an.";
+"Please enter your street." = "Bitte geben Sie Ihre Strasse an.";
+"Please enter your location."="Bitte geben Sie Ihren Ort an.";
+"Please enter your postal code."="Bitte geben Sie Ihre PLZ an.";
+
+
+//MARK:EMAIL SENT DIALOGS
+"User already confirmed account." = "Dein Account ist bereits bestätigt";
+"Confirmation mail successfully sent." = "Bestätigungsmail wurde versendet";
+"Email not registered!" = "Email ist nicht registriert";
+
+"Have questions about the app, shop, loyalty program, products etc?" = "Hast Du Fragen zur App, Online-Shop, Treueprogramm oder Produkten?";
+"We are available Monday - Friday 08.00 - 19.00" = "Unser Serviceteam ist Montag - Freitag zwischen 08.00h - 19.00h erreichbar.";
+"(except public holidays)" = "(ausgenommen sind gesetzliche Feiertage)";
+"Customer Support"="Kontakt Serviceteam";
+"Trade partner is not available"="Handelspartner ist nicht verfügbar";
+"Product Codes" = "Produkte Codes";
+"There is no product with code %@ matching this value in the system." = "Es wurde kein Produkt mit diesem Code gefunden %@";
+"08 00 / 220 096 (free phone)" = "08 00 / 220 096 (gebührenfrei)";
+"08 00 / 220 096 (free phone)-DE" = "08 00 / 832 4636 (gebührenfrei)";
+"08 00 / 220 096 (free phone)-CH" = "0800 800 820 (gebührenfrei)";
+//promoCode
+"Change promotion code" = "Promotioncode ändern";
+"Add promotion code" = "Promotioncode eingeben";
+"Promo" = "Promo";
+"Invalid code. Please try again." = "Ungültiger Code. Bitte erneut versuchen.";
+"Promotion code added" =" Prmotioncode hinzugefügt";
+"Product Not found" = "Produkt nicht gefunden";
+
+// DTO
+"Hi %@, we have upgraded you to our direct delivery service." = "Hallo %@, Du bist jetzt für die Direktbelieferung freigeschaltet.";
+"Direct Delivery"="Direktbelieferung";
+"Minimun order value is 300. You are 120 away from reaching this." = "Der Mindestbestellwert ist €%@. Dir fehlen noch €%@ bei Deiner Bestellung.";
+"Minimun order value is 300." = "Der Mindestbestellwert ist €%@.";
+"This trade partner is already on your list!"="Dieser Lieferant ist bereits auf Deiner Liste";
+"The product is currently not available."="Das Produkt ist aktuell nicht verfügbar.";
+"No_Internet" = "Sie sind nicht mehr mit dem Internet verbunden. Bitte versuchen Sie es später noch einmal.";
+"Please give the permission to use Camera/Gallery for this app feature."="Bitte erteile die Erlaubnis zum Zugriff auf Deine  Kamera und Deine Fotos/Galerie.";
+"Open Settings" = "Einstellungen öffnen";
+"NotNow" = "Nicht jetzt";
+"Play_Video" = "Video abspielen";
+"Pause_Video" = "Video pausieren";
+
+"5 sec ago"="Vor %@ Sekunden";
+"5 min ago"="Vor %@ Minuten";
+"5 hrs ago"="Vor %@ Studen";
+"5 days ago"="Vor %@ Tagen";
+"5 weeks ago"="Vor %@ Wochen";
+
+"Your order will be delivered on" = "Deine Bestellung wird am …. geliefert";
+"Chat with your sales representative" = "Chatten Sie mit Ihrem Vertriebsmitarbeiter.";
+"Need help? Chat with our chef." = "Brauchst du Hilfe? Rufe deinen UFS Ansprechpartner an.";
+"Complete your details to get personalised pricing and points" = "Complete your details to get personalised pricing and points";
+"Complete your details to get your prices" = "Complete your details to get your prices";
+"Business Tax Number" = "Business Tax Number";
+"Pay by Card" = "Pay by Card";
+"Pay by Credit Card" = "Pay by Credit Card";
+"Pay by Money Transfer" = "Pay by Money Transfer";
+"Payment by mail order" = "Payment by mail order";
+"Select your city" = "Wählen Sie Ihre Ortschaft aus.";
+"We have done some critical enhancements to the app. Please update now." = "Wir haben die App in wesentlichen Punkten verbessert. Führen Sie bitte ein Update durch.";
+"Trade Partner City" = "Ortschaft Handelspartner";
+
+//Mark: GDPR
+"Yes - I confirm that I am over 16 years old" = "Ja – Ich bestätige hiermit älter als 16 Jahre zu sein";
+"Yes - I consent to my personal data being processed for all the below marketing purposes" = "Ja – Ich stimme der Verarbeitung meiner persönlichen Daten für alle aufgelisteten Marketingzwecke zu";
+"Yes - I want to receive personalized newsletters from Unilever Food Solutions on new products, recipes ideas and inspirations" = "Ja – Ich möchte personalisierte Newsletter von Unilever Food Solutions zu neuen Produkten, Rezeptideen und Inspirationen erhalten";
+"Yes - I want to participate to marketing campaigns and to receive discount, promotional, loyalty offers and competition invites" = "Ja – Ich möchte an Marketingkampagnen teilnehmen und Rabatte, Promotionen, Treueangebote und Gewinnspieleinladungen erhalten";
+"Yes - I want to receive personalized communication about event training and surveys invites" = "Ja – Ich möchte personalisierte Kommunikation über Schulungen und Umfrageeinladungen erhalten";
+"TnC Signup" = "Bitte lies dir die Datenschutzerklärung durch, um darüber informiert zu sein, wie wir deine persönlichen Daten verwenden. Durch das Anklicken der untenstehenden Schaltfläche, stimmst du unseren rechtlichen Bedingungen zu.";
+"privacy policy" = "Datenschutzerklärung";
+"Legal Terms" = "rechtlichen Bedingungen";
+"Scan" = "scan";
+"edit" = "ändern";
+"Total:" = "Alle:";
+
+"Switzerland" = "Schweiz";
+"Germany" = "Deutschland";
+"Turkey" = "Türkei";
+"Change trade partner" = "Lieferant ändern";
+
+"category" = "Kategorien";
+"allergens" = "Produkte ohne Allergene";
+"dachClaims" = "Besondere Kennzeichen und Kostformen";
+"No trade partner location available for selected trade partner" = "Kein Großhändler verfügbar zu dem von Ihnen ausgewählten Standort";
+"Are you sure you would like to remove this item from the cart?" = "Sind Sie sicher, dass Sie diesen Artikel aus dem Warenkorb entfernen möchten?";
+"Yes, I am sure" = "Ja, ich bin sicher";
+"Item Removal" = "Artikel entfernen";
+"No" = "Nein";
+"Delivery and Billing" = "Liefer- und Rechnungsadresse";
+"Please enter a valid card detail." = "Please enter a valid card detail.";
+"Enter a valid expiration date" = "Enter a valid expiration date";
+"Enter Security card code" = "Enter Security card code";
+"Enter the card number" = "Enter the card number";
+"Enter Name on Card" = "Enter Name on Card";
+"Select a month" = "Select a month";
+"Select a year" = "Select a year";
+"chat" = "chat";
+"Payment" = "payment";
+"processing" = "processing";
+"Migrated" = "migriert";
+"Shipped" = "Shipped";
+"Delivered" = "Delivered";
+"Partially cancelled" = "Partially cancelled";
+"Refunded" = "Refunded";
+"Are you sure you want to delete card details?" = "Are you sure you want to delete card details?";
+"Delete Card" = "Delete Card";
+"Add another card" = "Add another card";
+"Expiry" = "Expiry";
+"please select saved card" = "please select saved card";
+"item number" = "Artikelnummer";
+"Error" = "Error";
+"Name" = "Name";
+"100g" = "100g enthalten";
+"100ml" = "100ml enthalten";
+"server error" = "server error";
+"No IBAN available" = "No IBAN available";
+"The passwords you entered do not match, please try again." = "The passwords you entered do not match, please try again.";
+"Trade partner is not available"="Trade partner is not available";
+"Error in SignUp" = "Error in SignUp";
+"Error while placing order" = "Error while placing order";
+"Cart not found" = "Cart not found";
+"Hata This field is required" = "Hata This field is required";

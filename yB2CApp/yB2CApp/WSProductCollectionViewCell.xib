@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WSProductCollectionViewCell" id="gTV-IL-0wX" customClass="WSProductCollectionViewCell" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="341"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="341"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dish9" translatesAutoresizingMaskIntoConstraints="NO" id="O6L-Ry-Jrd">
+                        <rect key="frame" x="30" y="15" width="105" height="118"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="118" id="b6x-86-6l7"/>
+                            <constraint firstAttribute="width" constant="105" id="ocJ-zE-CLn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knor Garde d’Or Hollandaise Saus 1L" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix9-2q-8Du">
+                        <rect key="frame" x="10" y="143" width="146" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="KGo-CF-jfx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€ 2,50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdL-T7-wuU">
+                        <rect key="frame" x="10" y="181.5" width="146" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="VWt-z9-Exx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="16"/>
+                        <color key="textColor" red="0.98039215686274506" green="0.3529411764705882" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended price from UFS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jN1-3d-IyA">
+                        <rect key="frame" x="10" y="211.5" width="146" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="G4d-3s-3X0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEG-vA-SAQ">
+                        <rect key="frame" x="25" y="246.5" width="116" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dm-5G-STN">
+                                <rect key="frame" x="1" y="1" width="42" height="33"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.35686274509999999" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="UB4-ut-DZ0"/>
+                                    <constraint firstAttribute="width" constant="42" id="lbQ-hY-Biv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="11.300000190734863"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC4-Sd-RJe" customClass="UFSLoyaltyPointLabel" customModule="UFS" customModuleProvider="target">
+                                <rect key="frame" x="43" y="1" width="71" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="HUp-6n-AZI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="11.300000190734863"/>
+                                <color key="textColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="0m2-4T-TaW"/>
+                            <constraint firstAttribute="height" constant="35" id="QLO-WM-paC"/>
+                            <constraint firstItem="5Dm-5G-STN" firstAttribute="leading" secondItem="VEG-vA-SAQ" secondAttribute="leading" constant="1" id="SAV-Pk-96f"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Wuk-rr-L8Y"/>
+                            <constraint firstItem="fC4-Sd-RJe" firstAttribute="leading" secondItem="5Dm-5G-STN" secondAttribute="trailing" id="XRQ-Dy-Uz4"/>
+                            <constraint firstItem="fC4-Sd-RJe" firstAttribute="top" secondItem="VEG-vA-SAQ" secondAttribute="top" constant="1" id="lig-pp-I3f"/>
+                            <constraint firstItem="5Dm-5G-STN" firstAttribute="top" secondItem="VEG-vA-SAQ" secondAttribute="top" constant="1" id="m66-Lg-ReF"/>
+                            <constraint firstAttribute="trailing" secondItem="fC4-Sd-RJe" secondAttribute="trailing" constant="2" id="ngg-6E-7DJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80N-oT-abo" customClass="WSDesignableButton" customModule="UFS" customModuleProvider="target">
+                        <rect key="frame" x="15" y="291" width="136" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.3529411764705882" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="LEc-JW-0Gr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="13"/>
+                        <state key="normal" title="More information"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="moreInformationButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="3Wq-9m-UfM"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ix9-2q-8Du" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="1H9-a1-vvo"/>
+                <constraint firstAttribute="trailing" secondItem="VEG-vA-SAQ" secondAttribute="trailing" constant="25" id="54m-Bb-o1y"/>
+                <constraint firstItem="jN1-3d-IyA" firstAttribute="top" secondItem="MdL-T7-wuU" secondAttribute="bottom" constant="5" id="5Eh-L3-6cB"/>
+                <constraint firstItem="ix9-2q-8Du" firstAttribute="top" secondItem="O6L-Ry-Jrd" secondAttribute="bottom" constant="10" id="5bI-Kd-n4B"/>
+                <constraint firstItem="O6L-Ry-Jrd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="CE9-IG-ZUb"/>
+                <constraint firstItem="80N-oT-abo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Ja4-yA-dPv"/>
+                <constraint firstAttribute="trailing" secondItem="80N-oT-abo" secondAttribute="trailing" constant="15" id="NJN-kB-a6Q"/>
+                <constraint firstItem="VEG-vA-SAQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="Ovu-kN-9JK"/>
+                <constraint firstAttribute="trailing" secondItem="ix9-2q-8Du" secondAttribute="trailing" constant="10" id="PDl-DN-Jzk"/>
+                <constraint firstItem="80N-oT-abo" firstAttribute="top" secondItem="VEG-vA-SAQ" secondAttribute="bottom" constant="10" id="TyN-MJ-mc1"/>
+                <constraint firstItem="MdL-T7-wuU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Uj3-DJ-RqJ"/>
+                <constraint firstItem="jN1-3d-IyA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="f3s-qn-2nG"/>
+                <constraint firstAttribute="trailing" secondItem="MdL-T7-wuU" secondAttribute="trailing" constant="10" id="ljx-vh-k1H"/>
+                <constraint firstAttribute="trailing" secondItem="jN1-3d-IyA" secondAttribute="trailing" constant="10" id="r8h-1u-ZmD"/>
+                <constraint firstAttribute="bottom" secondItem="80N-oT-abo" secondAttribute="bottom" constant="10" id="rdr-UR-G3S"/>
+                <constraint firstItem="MdL-T7-wuU" firstAttribute="top" secondItem="ix9-2q-8Du" secondAttribute="bottom" constant="5" id="uqB-Zp-Vkd"/>
+                <constraint firstItem="O6L-Ry-Jrd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vBt-CU-1S8"/>
+                <constraint firstItem="VEG-vA-SAQ" firstAttribute="top" secondItem="jN1-3d-IyA" secondAttribute="bottom" constant="5" id="yhu-xf-lED"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="166" height="341"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                    <color key="value" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="LoyaltyPriceViewconstraints" destination="QLO-WM-paC" id="VQt-KL-CXP"/>
+                <outlet property="LoyaltyView" destination="VEG-vA-SAQ" id="RNm-Tu-MGd"/>
+                <outlet property="PriceLabelConstraints" destination="VWt-z9-Exx" id="QYX-EZ-yEn"/>
+                <outlet property="htConstRcmndLbl" destination="G4d-3s-3X0" id="Zow-JV-VhQ"/>
+                <outlet property="loyaltyPointLabel" destination="5Dm-5G-STN" id="28B-b5-CeI"/>
+                <outlet property="moreBtnTopConstraint" destination="TyN-MJ-mc1" id="jys-QE-J1X"/>
+                <outlet property="moreInformationBtn" destination="80N-oT-abo" id="rw7-vp-J7Q"/>
+                <outlet property="moreInformationBtnHeightConstraint" destination="LEc-JW-0Gr" id="QTC-uj-ekt"/>
+                <outlet property="pointsTitle" destination="fC4-Sd-RJe" id="fDA-vf-guq"/>
+                <outlet property="priceLabel" destination="MdL-T7-wuU" id="RSd-V9-FHf"/>
+                <outlet property="productImageView" destination="O6L-Ry-Jrd" id="Qwi-5V-8xd"/>
+                <outlet property="productNameLabel" destination="ix9-2q-8Du" id="2gD-g5-q2T"/>
+                <outlet property="recomendLabel" destination="jN1-3d-IyA" id="U18-0i-6EX"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="36"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Dish9" width="300" height="199"/>
+    </resources>
+</document>

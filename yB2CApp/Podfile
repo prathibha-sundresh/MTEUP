@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+inhibit_all_warnings!
+use_frameworks!
+
+
+def ufsapp_pod
+  
+    pod 'SDWebImage', '~>3.8'
+    pod 'Google/Analytics'
+    pod 'Firebase/Core'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Messaging'
+    pod 'JSQMessagesViewController'
+    pod 'LiveChat', '~> 2.0.10'
+    pod 'Alamofire', '~> 4.7'
+    pod 'FSCalendar'
+    pod 'Adjust', :git => 'https://github.com/adjust/ios_sdk.git', :tag => 'v4.14.1'
+ 
+end
+
+target 'UFSLive'do
+    ufsapp_pod
+end
+
+target 'UFSDev'do
+    ufsapp_pod
+end

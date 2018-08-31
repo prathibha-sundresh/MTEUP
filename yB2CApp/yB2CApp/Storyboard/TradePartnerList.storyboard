@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Bold.otf">
+            <string>DINPro-Bold</string>
+        </array>
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Trade Partner List View Controller-->
+        <scene sceneID="qEN-rQ-bnV">
+            <objects>
+                <viewController storyboardIdentifier="WSTradePartnerListViewControllerID" id="dy8-l1-oOU" customClass="WSTradePartnerListViewController" customModule="UFS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0zQ-hj-13R"/>
+                        <viewControllerLayoutGuide type="bottom" id="xTp-dJ-nza"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AMb-1h-b3w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Trade Partner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CN-LN-2U8">
+                                <rect key="frame" x="0.0" y="14" width="320" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gf6-VX-icB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-2h-nKj">
+                                <rect key="frame" x="98" y="514" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7yQ-eN-kyc"/>
+                                    <constraint firstAttribute="width" constant="124" id="xhd-8v-GZ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButton_Click:" destination="dy8-l1-oOU" eventType="touchUpInside" id="1lZ-df-l6d"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OrG-gg-BAb">
+                                <rect key="frame" x="15" y="59" width="305" height="450"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="UNq-Vn-4SI"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="vWI-Nb-97b">
+                                    <size key="itemSize" width="290" height="440"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TPcell" id="kq7-Bq-vcs" customClass="WSTPListCollectionViewCell" customModule="UFS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5" width="290" height="440"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="440"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX2-Do-KzV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="440"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="TRADE PARTNER CITY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-5w-BaS" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                                                            <rect key="frame" x="10" y="15" width="269" height="50"/>
+                                                            <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="3hr-O4-UHk"/>
+                                                            </constraints>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                                                    <real key="value" value="0.0"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                                                    <real key="value" value="7"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="kq7-Bq-vcs" id="UdP-sU-QPc"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <button hidden="YES" opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mea-5h-Mbp">
+                                                            <rect key="frame" x="220" y="15" width="59" height="50"/>
+                                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="59" id="pdK-Df-LHa"/>
+                                                            </constraints>
+                                                            <state key="normal" image="arrow_down"/>
+                                                        </button>
+                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="TRADE PARTNER NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUf-E5-sMw" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                                                            <rect key="frame" x="10" y="80" width="269" height="50"/>
+                                                            <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="xvf-Ba-Agd"/>
+                                                            </constraints>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                                                    <real key="value" value="0.0"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                                                    <real key="value" value="7"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="kq7-Bq-vcs" id="ZsA-yW-R2z"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <button hidden="YES" opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0k-Mb-8dr">
+                                                            <rect key="frame" x="220" y="80" width="59" height="50"/>
+                                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="59" id="Qn2-Ww-3xT"/>
+                                                            </constraints>
+                                                            <state key="normal" image="arrow_down"/>
+                                                        </button>
+                                                        <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="TRADE PARTNER LOCATION" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Olr-Bn-D0j" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                                                            <rect key="frame" x="10" y="145" width="269" height="50"/>
+                                                            <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                                                    <real key="value" value="0.0"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                                                    <real key="value" value="7"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="kq7-Bq-vcs" id="B28-xI-n2v"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <button hidden="YES" opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gR-yV-sou">
+                                                            <rect key="frame" x="220" y="145" width="59" height="50"/>
+                                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="59" id="4fm-76-Dur"/>
+                                                            </constraints>
+                                                            <state key="normal" image="arrow_down"/>
+                                                        </button>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="ACCOUNT NUMBER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="laH-yw-Vdo" customClass="FloatLabelTextField" customModule="UFS" customModuleProvider="target">
+                                                            <rect key="frame" x="10" y="210" width="269" height="50"/>
+                                                            <color key="tintColor" red="0.98039215690000003" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="DINPro-Bold" family="DINPro" pointSize="13"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="hintYPadding">
+                                                                    <real key="value" value="0.0"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="titleYPadding">
+                                                                    <real key="value" value="7"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="textDidchange:" destination="kq7-Bq-vcs" eventType="editingChanged" id="OkB-xH-9qY"/>
+                                                                <outlet property="delegate" destination="kq7-Bq-vcs" id="7hS-Pb-Vi0"/>
+                                                            </connections>
+                                                        </textField>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Trade Partner Account Number " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmP-y7-dhB">
+                                                            <rect key="frame" x="10" y="275" width="269" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="wgN-gC-cqq"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="10"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c6-9H-nEV">
+                                                            <rect key="frame" x="15" y="312.5" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="2Pa-3h-YrD"/>
+                                                                <constraint firstAttribute="width" constant="20" id="p4j-zO-JcG"/>
+                                                            </constraints>
+                                                            <state key="normal" image="radio_dot" backgroundImage="radio_unsel"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected as my default Trade Partner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH4-Jy-T26">
+                                                            <rect key="frame" x="43" y="310" width="236" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="R59-R8-V0Q"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="12"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tr-1Y-j4c">
+                                                            <rect key="frame" x="24" y="351" width="242" height="40"/>
+                                                            <color key="backgroundColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="lIV-wR-Kho"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="14"/>
+                                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
+                                                            <state key="normal" title="Select this tradepartner"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="5"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="selectTradePartnerWithSender:" destination="kq7-Bq-vcs" eventType="touchUpInside" id="SL0-bb-Cfp"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD1-sb-dVh">
+                                                            <rect key="frame" x="24" y="401" width="242" height="28"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="28" id="19O-oS-68X"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="14"/>
+                                                            <state key="normal" title="Edit tradepartner details">
+                                                                <color key="titleColor" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="editTradePartnerWithSender:" destination="kq7-Bq-vcs" eventType="touchUpInside" id="SDZ-Ws-1Vk"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="UD1-sb-dVh" firstAttribute="top" secondItem="5tr-1Y-j4c" secondAttribute="bottom" constant="10" id="2ag-1M-FDA"/>
+                                                        <constraint firstItem="6gR-yV-sou" firstAttribute="trailing" secondItem="Olr-Bn-D0j" secondAttribute="trailing" id="37V-pN-Eyf"/>
+                                                        <constraint firstItem="Olr-Bn-D0j" firstAttribute="top" secondItem="EUf-E5-sMw" secondAttribute="bottom" constant="15" id="3uI-iG-s89"/>
+                                                        <constraint firstItem="laH-yw-Vdo" firstAttribute="height" secondItem="Olr-Bn-D0j" secondAttribute="height" id="61U-Q1-FAm"/>
+                                                        <constraint firstItem="laH-yw-Vdo" firstAttribute="trailing" secondItem="Olr-Bn-D0j" secondAttribute="trailing" id="A3W-Xq-1ru"/>
+                                                        <constraint firstItem="UD1-sb-dVh" firstAttribute="leading" secondItem="5tr-1Y-j4c" secondAttribute="leading" id="EXO-EI-RiQ"/>
+                                                        <constraint firstItem="6c6-9H-nEV" firstAttribute="top" secondItem="mmP-y7-dhB" secondAttribute="bottom" constant="16.5" id="FfZ-Hw-O0o"/>
+                                                        <constraint firstItem="qH4-Jy-T26" firstAttribute="centerY" secondItem="6c6-9H-nEV" secondAttribute="centerY" id="I7Y-bo-UGs"/>
+                                                        <constraint firstItem="Olr-Bn-D0j" firstAttribute="leading" secondItem="EUf-E5-sMw" secondAttribute="leading" id="IdJ-Mr-mlV"/>
+                                                        <constraint firstItem="UD1-sb-dVh" firstAttribute="trailing" secondItem="5tr-1Y-j4c" secondAttribute="trailing" id="N5x-Sk-IVx"/>
+                                                        <constraint firstItem="laH-yw-Vdo" firstAttribute="top" secondItem="Olr-Bn-D0j" secondAttribute="bottom" constant="15" id="QVE-WO-nDn"/>
+                                                        <constraint firstItem="c0k-Mb-8dr" firstAttribute="bottom" secondItem="EUf-E5-sMw" secondAttribute="bottom" id="TVm-xe-xbd"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hFF-5w-BaS" secondAttribute="trailing" constant="11" id="Tkp-jY-ShO"/>
+                                                        <constraint firstItem="6c6-9H-nEV" firstAttribute="leading" secondItem="mmP-y7-dhB" secondAttribute="leading" constant="5" id="UY5-hd-39a"/>
+                                                        <constraint firstItem="6gR-yV-sou" firstAttribute="bottom" secondItem="Olr-Bn-D0j" secondAttribute="bottom" id="UZf-7K-26I"/>
+                                                        <constraint firstItem="EUf-E5-sMw" firstAttribute="trailing" secondItem="hFF-5w-BaS" secondAttribute="trailing" id="VdD-sb-nsf"/>
+                                                        <constraint firstItem="mmP-y7-dhB" firstAttribute="trailing" secondItem="laH-yw-Vdo" secondAttribute="trailing" id="Ygg-Be-Xbx"/>
+                                                        <constraint firstItem="Olr-Bn-D0j" firstAttribute="trailing" secondItem="EUf-E5-sMw" secondAttribute="trailing" id="Z61-db-UiP"/>
+                                                        <constraint firstAttribute="bottom" secondItem="UD1-sb-dVh" secondAttribute="bottom" constant="11" id="aeV-Md-4ve"/>
+                                                        <constraint firstItem="Mea-5h-Mbp" firstAttribute="bottom" secondItem="hFF-5w-BaS" secondAttribute="bottom" id="bfz-HL-W46"/>
+                                                        <constraint firstItem="c0k-Mb-8dr" firstAttribute="trailing" secondItem="EUf-E5-sMw" secondAttribute="trailing" id="cbc-RF-Mgk"/>
+                                                        <constraint firstItem="EUf-E5-sMw" firstAttribute="top" secondItem="bX2-Do-KzV" secondAttribute="top" constant="80" id="cuG-vf-lPQ"/>
+                                                        <constraint firstItem="qH4-Jy-T26" firstAttribute="trailing" secondItem="mmP-y7-dhB" secondAttribute="trailing" id="dFj-KI-73a"/>
+                                                        <constraint firstItem="c0k-Mb-8dr" firstAttribute="top" secondItem="EUf-E5-sMw" secondAttribute="top" id="eC1-sa-GH2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5tr-1Y-j4c" secondAttribute="trailing" constant="24" id="eNw-2K-U67"/>
+                                                        <constraint firstItem="mmP-y7-dhB" firstAttribute="leading" secondItem="laH-yw-Vdo" secondAttribute="leading" id="ev8-zC-5wA"/>
+                                                        <constraint firstItem="Olr-Bn-D0j" firstAttribute="height" secondItem="EUf-E5-sMw" secondAttribute="height" id="idx-ge-Arz"/>
+                                                        <constraint firstItem="mmP-y7-dhB" firstAttribute="top" secondItem="laH-yw-Vdo" secondAttribute="bottom" constant="15" id="jcr-YK-1iH"/>
+                                                        <constraint firstItem="EUf-E5-sMw" firstAttribute="leading" secondItem="hFF-5w-BaS" secondAttribute="leading" id="klt-r6-lOy"/>
+                                                        <constraint firstItem="laH-yw-Vdo" firstAttribute="leading" secondItem="Olr-Bn-D0j" secondAttribute="leading" id="nyG-Rf-AMp"/>
+                                                        <constraint firstItem="5tr-1Y-j4c" firstAttribute="leading" secondItem="bX2-Do-KzV" secondAttribute="leading" constant="24" id="pTy-TG-w9b"/>
+                                                        <constraint firstItem="hFF-5w-BaS" firstAttribute="leading" secondItem="bX2-Do-KzV" secondAttribute="leading" constant="10" id="sqj-dv-K9P"/>
+                                                        <constraint firstItem="5tr-1Y-j4c" firstAttribute="top" secondItem="qH4-Jy-T26" secondAttribute="bottom" constant="16" id="szF-yI-0Bq"/>
+                                                        <constraint firstItem="Mea-5h-Mbp" firstAttribute="top" secondItem="hFF-5w-BaS" secondAttribute="top" id="tVV-gk-GCG"/>
+                                                        <constraint firstItem="Mea-5h-Mbp" firstAttribute="trailing" secondItem="hFF-5w-BaS" secondAttribute="trailing" id="tp6-Sv-MXN"/>
+                                                        <constraint firstItem="qH4-Jy-T26" firstAttribute="leading" secondItem="6c6-9H-nEV" secondAttribute="trailing" constant="8" id="xE3-x8-3MF"/>
+                                                        <constraint firstItem="hFF-5w-BaS" firstAttribute="top" secondItem="bX2-Do-KzV" secondAttribute="top" constant="15" id="yJU-eq-X6P"/>
+                                                        <constraint firstItem="6gR-yV-sou" firstAttribute="top" secondItem="Olr-Bn-D0j" secondAttribute="top" id="yWA-yH-FJE"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="bX2-Do-KzV" firstAttribute="leading" secondItem="kq7-Bq-vcs" secondAttribute="leading" id="MlL-aC-vkK"/>
+                                            <constraint firstItem="bX2-Do-KzV" firstAttribute="top" secondItem="kq7-Bq-vcs" secondAttribute="top" id="kKR-os-oWY"/>
+                                            <constraint firstAttribute="trailing" secondItem="bX2-Do-KzV" secondAttribute="trailing" id="pkh-Aq-GIK"/>
+                                        </constraints>
+                                        <size key="customSize" width="290" height="440"/>
+                                        <connections>
+                                            <outlet property="accountNumber" destination="laH-yw-Vdo" id="iFA-ds-a1o"/>
+                                            <outlet property="dropDown_TradePartnerCityButton" destination="Mea-5h-Mbp" id="ZWR-gv-pgp"/>
+                                            <outlet property="dropDown_TradePartnerLocationButton" destination="6gR-yV-sou" id="OzI-Be-TN7"/>
+                                            <outlet property="dropDown_TradePartnerNameButton" destination="c0k-Mb-8dr" id="LTh-bq-AUq"/>
+                                            <outlet property="editTradePartnerButton" destination="UD1-sb-dVh" id="J17-O0-oGY"/>
+                                            <outlet property="enterTradePartnerLabel" destination="mmP-y7-dhB" id="MrM-ph-Mv0"/>
+                                            <outlet property="makeDefaultButton" destination="6c6-9H-nEV" id="gBQ-ca-cEe"/>
+                                            <outlet property="selectTradePartnerButton" destination="5tr-1Y-j4c" id="wmC-7g-0ZH"/>
+                                            <outlet property="selectedDefalutTextLabel" destination="qH4-Jy-T26" id="59i-qW-1um"/>
+                                            <outlet property="tpCityH" destination="3hr-O4-UHk" id="g3n-tu-7z4"/>
+                                            <outlet property="tpNameY" destination="cuG-vf-lPQ" id="uid-cH-8Jc"/>
+                                            <outlet property="tradePartnerCity" destination="hFF-5w-BaS" id="yD2-Jg-cgp"/>
+                                            <outlet property="tradePartnerLocation" destination="Olr-Bn-D0j" id="3Qg-g5-UGi"/>
+                                            <outlet property="tradePartnerName" destination="EUf-E5-sMw" id="BYE-eV-2NC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="dy8-l1-oOU" id="AKR-sX-3Tk"/>
+                                    <outlet property="delegate" destination="dy8-l1-oOU" id="gJh-OV-Xuv"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7CN-LN-2U8" firstAttribute="trailing" secondItem="J4w-ge-ptl" secondAttribute="trailing" id="5BT-sH-KUq"/>
+                            <constraint firstItem="TgA-2h-nKj" firstAttribute="centerX" secondItem="AMb-1h-b3w" secondAttribute="centerX" id="JAQ-lH-h6b"/>
+                            <constraint firstItem="OrG-gg-BAb" firstAttribute="top" secondItem="7CN-LN-2U8" secondAttribute="bottom" constant="5" id="f4H-WV-2TF"/>
+                            <constraint firstItem="7CN-LN-2U8" firstAttribute="leading" secondItem="J4w-ge-ptl" secondAttribute="leading" id="gXE-qf-TNM"/>
+                            <constraint firstItem="OrG-gg-BAb" firstAttribute="centerY" secondItem="AMb-1h-b3w" secondAttribute="centerY" id="i1k-oT-d3z"/>
+                            <constraint firstItem="TgA-2h-nKj" firstAttribute="top" secondItem="OrG-gg-BAb" secondAttribute="bottom" constant="5" id="jhj-PS-ad6"/>
+                            <constraint firstItem="J4w-ge-ptl" firstAttribute="trailing" secondItem="OrG-gg-BAb" secondAttribute="trailing" id="lcT-ZY-IrI"/>
+                            <constraint firstItem="OrG-gg-BAb" firstAttribute="leading" secondItem="J4w-ge-ptl" secondAttribute="leading" constant="15" id="uRb-cJ-1aP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J4w-ge-ptl"/>
+                    </view>
+                    <connections>
+                        <outlet property="TPListCollectionView" destination="OrG-gg-BAb" id="Srr-UG-8wr"/>
+                        <outlet property="cancelButton" destination="TgA-2h-nKj" id="tBM-Zu-wJJ"/>
+                        <outlet property="slectTPLabel" destination="7CN-LN-2U8" id="64g-Rc-d1g"/>
+                        <outlet property="tPListCollectionViewH" destination="UNq-Vn-4SI" id="udV-ZF-uRS"/>
+                        <segue destination="HoV-U9-ulo" kind="presentation" identifier="CoustomPopUP" modalPresentationStyle="overCurrentContext" id="leJ-2Y-vvm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDK-3Y-trA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4158.75" y="2400"/>
+        </scene>
+        <!--UFSPopUpViewController-->
+        <scene sceneID="RoF-ul-ZT1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UFSPopUpViewController" storyboardName="CustomPopUp" referencedIdentifier="UFSPopUpViewController" id="HoV-U9-ulo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1GA-Zu-jvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4941" y="1571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_down" width="12" height="7"/>
+        <image name="radio_dot" width="9" height="9"/>
+        <image name="radio_unsel" width="20" height="19"/>
+    </resources>
+</document>

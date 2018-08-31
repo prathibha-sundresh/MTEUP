@@ -1,0 +1,699 @@
+/*
+ Localizable.strings
+ yB2CApp
+ 
+ Created by Anandita on 12/11/17.
+ 
+ */
+"Country selector" = "Ülke Seçimi";
+"Select your country" = "Ülkenizi Seçin";
+"Continue" = "Devam Et";
+"Register with Facebook" = "Facebook ile kayıt ol";
+"Location and Language" = "Lokasyon ve Dil";
+"Selected Language" = "Seçili Dil";
+"Selected Location" = "Seçili Lokasyon";
+"Setting_Change" = "değiştir";
+"Settings" = "Ayarlar";
+"Change Password" = "Parolayı Değiştir";
+"Terms and Conditions" = "Şartlar ve Koşullar";
+"Log out" = "Çıkış";
+"Select a country" = "Ülke Seç";
+"Select language" = "Dili Seç";
+"Austria" = "Avusturya";
+"Email already registered" = "Bu e-posta zaten kayıtlı";
+"Austria" = "Avusturya";
+"Turkey"="Türkiye";
+"Germany"="Almanya";
+"Switzerland"="İsviçre";
+"Last Name" = "Soyadı";
+"Password" = "Parola";
+"Email" = "E-posta";
+"Create a Password" = "Parola oluştur";
+"Order our products and get them delivered by your trusted trade partner" = "Kolayca sipariş ver ürün teslimatın distribütörün tarafından hızlıca yapılsın.";
+"Log in" = "Giriş";
+"Welcome <First Name> to Chef Rewards." = "UFS Ödül Programına hoş geldin <%@>!";
+"Create a FREE account" = "ÜCRETSİZ hesap oluşturun";
+"Create a FREE account - Register Page" = "ÜCRETSİZ hesap oluşturun";
+"Change location and language" = "Lokasyon ve dili değiştirin";
+"Please enter your first name" = "Lütfen adınızı gir";
+"Please enter your last name" = "Lütfen soy adınızı gir";
+"Please enter a correct email address" = "Lütfen geçerli bir e-posta adresi gir";
+"Please enter your business name" = "Lütfen şirket adını gir";
+"Please select your tradepartner name" = "Lütfen ticari ortağınızın adını girin";
+"Your password needs to be minimum 8 characters long one and contain at least one of each: upper case, lowercase, number special character [eg. !. %. +]" = "Parolanız en az 8 karakterden oluşmalı ve aşağıdakilerin her birinden en az bir adet içermelidir: Büyük Harf, Küçük Harf, Sayı, Özel Karakter (ör. @,#,$)";
+"Please verify your email" = "Lütfen e-postanı doğrula";
+"An email has been sent to" = "Eyvah, paralonı mı unuttun? e-posta gönderildi.";
+"Please follow the instructions in the email to verify your address" = "Onay e-postan başarıyla gönderildi, lütfen gelen kutu ile beraber istenmeyen posta kutunu da kontrol etmeyi unutma. Adresini doğrulamak için e-postandaki yönergeleri takip et.";
+"Resend verification email" = "Doğrulama e-postasını yeniden gönder";
+"Yes, I have read the conditions and would like to subscribe to the newsletter." = "Evet, koşullar okudum ve haber bültenine abone olmak istiyorum.";
+"news_letter_Link" = "unter diesem Link";
+"Easily re-order from your Shopping List." = "Easily re-order from your Shopping List.";
+"You may unsubsribe at any time." = "Ich kann mein Einverständnis jederzeit widerrufen.";
+"Login with Facebook" = "Facebook ile Giriş Yap";
+"Please enter a correct password" = "Lütfen geçerli parolayı girin";
+"Forgot Password" = "Parolayı Unuttum";
+"My Detail" = "Bilgilerim";
+"My business" = "Şirketim";
+"Oops, you forgot your password?" = "Eyvah, paralonı mı unuttun?";
+"Email" = "E-MAIL";
+"Please confirm your password" = "Lütfen parolanı doğrula";
+"We have sent an email to" = "Eyvah, paralonı mı unuttun?\n e-posta gönderildi.";
+"Unfortunately we can not find a profile with this e-mail address. Please check the entered e-mail address again." = "Maalesef kullanıcı hesabınızı onaylayamadık. Lütfen e-posta adresini kontrol et";
+"Earn loyalty points with Chef Rewards and save for cool gifts" = "Şef Ödülleriyle sadakat puanı kazanın ve güzel hediyeler için biriktirin";
+"Enter your email" = "E-posta Adresinizi Girin";
+"Points" = "Puan";
+"Get rewarded! Register now and get 50 loyalty points." = "Şimdi kayıt ol ve  anında hediye %@ ödül puanı kazan!";
+"Register now and get" = "Şimdi kayıt ol ve  anında hediye ";
+"Earn loyalty points for kitchen equipment." = "Sipariş verdikçe ödül puanı kazan. Topladığın puanlarla beğendiğin ödülleri ücretsiz al.";
+"Register" = "Kayıt ol";
+"Quick Tips" = "İpuçları";
+"Earn loyalty points when you order with us" = "Sipariş verdikçe ödül puanı kazan.";
+"Save up points and redeem them for great gifts" = "Biriken puanlarla çeşitli ödülleri ücretsiz al.";
+"Next" = "Sonraki";
+"Shopping List" = "Alışveriş Listesi";
+"Easy Re-ordering" = "Hızlı  ve Kolay Sipariş";
+"Quick Tip" = "İpucu";
+"Short for time?" = "Ürüne kolayca ulaş";
+"Order product and get extra loyatly points" = "Sipariş ver ve ekstra ödül puanı kazan %@";
+"extra loyatly points" = "ekstra ödül puanı";
+"Scan products barcodes for quick re-ordering" = "Ürün barkodlarını okutarak hızlı alışveriş yapabilir ve ürünü alışveriş listene ekleyebilirsin";
+"Please select the type of business you are working in" = "Lütfen çalıştığın işletme türünü seç";
+"Order product and get double loyatly points" = "%@ siparişi verin ve kazanın çifte puan";
+"Order product and get triple loyatly points" = "%@ siparişi verin ve kazanın üç katı sadakat";
+"Recipes" = "Reçeteler";
+"recipes" = "tarifler";
+"Please enter what type of business you are working in" = "Lütfen çalıştığınız şirketin türünü seçin";
+"Save recipes by tapping on the heart." = "Kalp simgesine dokunarak beğendiğin reçeteleri kaydedebilirsin";
+"Earn loyalty points with Chef Rewards and save for cool gifts!" = "Earn loyalty points with Chef Rewards and save for cool gifts!";
+"Finish" = "Bitir";
+"50 loyalty points" = "%@ ödül puanı kazan!";
+"1200 points" = "1200 puana";
+"Selected trade partner" = "Seçili Distribütör";
+"Edit account information" = "Hesap Bilgilerimi Düzenle";
+"double loyalty points" = "çifte puan";
+"triple loyatly points" = "üç katı sadakat";
+"Buy and earn Chef rewards" = "Satın Aldıkça Ödül Puanı Kazan";
+"Earn loyalty points on all your orders" = "Her siparişinden ödül puanı kazan";
+"Save for great gifts" = "Mükemmel hediyeler için puan biriktir";
+"Skip" = "Atla";
+"50 points" = "%@ points";
+"%@ Points" = "%@ Points";
+"Save for great gifts-Home" = "Mükemmel hediyeler için puan biriktir";
+"Earn loyalty points on all your orders-Home" = "Her siparişinden ödül puanı kazan";
+"Start ordering and get a free X over XX chefrewards" = "%@TL üzeri siparişlere ücretsiz %@ hediye";
+"Change my goal" = "Hedefimi değiştir";
+"Start ordering and get a free X over XX-Home" = "%@TL üzeri siparişlere ücretsiz %@ hediye";
+"Easy ordering via your lists!  ATENTION: we have just one list" = "Easy ordering via your lists!  ATENTION: we have just one list";
+"Start ordering and get a free X over XX" = "Siparişe başlayın ve XX ile ücretsiz X alın";
+"Learn more about Chef Rewards" = " Ödül Programı hakkında daha fazla bilgi al";
+"Place your first order now and receive a 200 points for free" = "Şimdi ilk siparişinizi verin ve ücretsiz 200 puan kazanın";
+"Shop now" = "Şimdi alışverişe başla";
+"Earn points for great rewards" = "Mükemmel ödüller için puan kazan";
+"Your deal" = "Fırsatlar";
+"Careful these are hot 🔥" = "Kısa bir süre için, avantajlı 🔥";
+"20% off all dairy alternative products" = "Tüm alternatif süt ürünlerinde %20 indirim";
+"Shopping list" = "Alışveriş Listesi";
+"Go to my list" = "Listeme \ngit";
+"All recipes" = "Tüm Reçeteler";
+"Your points balance" = "Ödül Puanı Bakiyen";
+"Shop now to earn more points" = "Daha fazla puan kazanmak için şimdi alışveriş yap";
+"Nice one!" = "Çok iyi!";
+"Nice one!You reached your goal" = "Çok iyi! Hedefinize ulaştınız";
+
+"You reached your goal" = "Hedefinize ulaştınız";
+"Redeem your gift" = "Hediyenizi alın";
+"Congrats on reaching your goal" = "Hedefinize ulaştığınız için tebrikler";
+"Visit UFS.com to redeem your reward" = "UFS.com adresini ziyaret ederek ödülünüzü alabilirsiniz";
+
+"See a product you like? Then favourite it" = "Beğendiğin bir ürün mü var? Favorilere ekle ve hızlı sipariş ver.";
+"Start building your list" = "Listeni oluşturmaya başla";
+"Easy ordering via your lists!" = "Listelerinizle kolay sipariş!";
+
+"Only applicable upon first purchase" = "Sadece ilk alımda geçerlidir";
+
+//***Tutorial**//
+"Quick Tips Tutorail" = "İpuçları";
+"Scan Tutorail" = "Ürün Barkodunu Okut";
+
+"Get 250 FREE points on your first order. Spend over €300 and get a FREE digital roast barometer*." = "İlk siparişinle anında %@ Ödül Puanı kazan. %@TL üzeri siparişlere ücretsiz %@ hediye";
+"FREE digital roast barometer*." = "%@ hediye";
+"250 FREE" = "%@ Ödül";
+"first order" = "İlk siparişinle anında";
+
+"Careful these are hot 🔥" = "Kısa bir süre için, avantajlı fiyatlar🔥";
+
+/***Cart**/
+
+"An empty cart breaks my heart" = "Boş sepet kalbimi kırıyor";
+"Start shopping" = "Alışverişe başla";
+"My Cart" = "Sepetim";
+"Reward Points" = "Ödül Puanı";
+"121 Loyalty points" = "121 Ödül Puanı kazanın";
+"Order now" = "Şimdi Sipariş Ver";
+
+
+
+
+/****SCAN****/
+
+"Scan UFS product barcode" = "UFS ürün barkodunu okut";
+"Add to cart" = "SEPETE EKLE";
+"add to favourites" = "Favorilere ekle";
+
+"Back to cart" = "Sepete dön";
+"Checkout" = "ÖDEME";
+"Delivery" = "Teslimat";
+"Summary" = "Özet";
+"First Name" = "AD";
+"Surname" = "SOY AD";
+"Mobile Phone" = "Cep Telefonu";
+"My trade partner" = "Distribütörüm";
+"Trade partner" = "Distribütör";
+"Trade partner location" = "Distribütör Lokasyonu";
+"Account number" = "HESAP NUMARASI";
+"Continue Shopping" = "Alışverişe Devam Edin";
+"Next Step" = "Sonraki Adım";
+
+"Select tradepartner location" = "Lütfen ticari ortak lokasyonunu seçin";
+"Delivery Address" = "TESLİMAT ADRESİ";
+"Business name (optional)" = "İşletme Adı (isteğe bağlı)";
+"House number" = "EV NUMARASI";
+"Street" =  "SOKAK";
+"City" =  "ŞEHİR";
+"Postal Code" = "POSTA KODU";
+"Billing address is the same as delivery address" = "Fatura adresi teslimat adresiyle aynı.";
+
+
+"Available dates are highlighted in orange" = "Uygun tarihler turuncu ile belirtilir.";
+"Done" = "TAMAM";
+"Billing" = "Fatura";
+"terms and conditions" = "Şartlar ve Koşullar";
+
+"Address" = "ADRESLERİ";
+
+
+"This order will be added to the next delivery" = "Bu sipariş sonraki teslimata eklenecek";
+"Back to details" = "Ayrıntılara dön";
+
+"Billing Address" = "Fatura Adresi";
+
+"Cancel" = "İptal";
+
+"Place Order" = "Sipariş ver";
+"Change" = "değiştir";
+"Change-Summary" = "değiştir";
+"Delivery and Billing" = "Teslimat ve Faturalama";
+"10 Items" = "10 ÜRÜNLER";
+
+"Total Items" = "Ürünlerin toplamı";
+"Total items" = "Ürünlerin toplamı";
+"Rewards points " = "Ödülleri Puanları";
+
+
+"Your order has been sent to your trade partner" = "Sipariş distribütörüne gönderildi.";
+
+"Save for a great reward by setting a goal" = "Almak istediğin ödülü hedef olarak belirle ve puan biriktirmeye başla";
+
+"Hey James, earn 400 points to reach your goal" = "%@ hedefine ulaşmak için %@ puana ihtiyacın var";
+"You reached your goal" = "Hedefinize ulaştınız";
+"Redeem your gift" = "Hediyenizi alın";
+
+
+"Search for a product" = "Ürün ara";
+"Scan" = "Barkod Okut";
+
+"Recommended price from UFS" = "UFS’den tavsiye edilen fiyat";
+"Load more products" = "Daha Fazla Ürün Yükle";
+
+
+"189 Products" = "189 Ürün";
+"Sort by" = "Sırala";
+"Recent orders" = "Son Siparişler";
+"Remove" = "Kaldır";
+"Proceed to order" = "Sipariş için ilerle";
+"Indicative prices from UFS" = "UFS’den hedef fiyat";
+
+"Favourites" = "Favorilere";
+"Favourite items" = "Favori Ürünler";
+"Removed" = "kaldırıldı";
+
+"Shop with us and earn points for great gifts." = "Alışveriş yap ve mükemmel ödüller için puan kazan";
+
+"See a product you like? Then favourite it" = "Beğendiğiniz bir ürün mü gördünüz? O zaman favorilere ekleyin.";
+
+
+"Your points balance" = "Ödül Puanı Bakiyen";
+"Complete your profile" = "Profil bilgilerini tamamla";
+"%@ Complete" = "%@ Tamamlandı";
+"Name" = "Adı";
+"Edit my details" = "Ayrıntılarımı Düzenle";
+"Selected as my default trade partner" = "Varsayılan Ticari Ortağım olarak seçili";
+"Trade partner name" = "Distribütör Adı";
+"Edit Trade Partner Details" = "Varsayılan Distribütörümü değiştir";
+"Add another trade partner" = "Başka bir distribütör ekle";
+"Business details"= "İş Yeri Ayrıntıları";
+"Business name" = "İş Yeri Adı";
+"Business type" = "İş Yeri Türü";
+"Building number" = "Bina Numarası";
+"Area Code" = "Alan Kodu";
+"Edit Business Details" = "Şirket Ayrıntılarını Düzenle";
+"Save Changes" = "Değişiklikleri Kaydet";
+"Back" = "Geri";
+"Add another Trade Partner" = "Başka bir distribütör Ekle";
+"Profile Complete" = "Profil Tamamlandı";
+"Display native gallery and users can select a photo to upload" = "Ana galeriyi göster; kullanıcılar yüklemek için fotoğraf seçebilir.";
+"Use photo" = "Fotoğrafı kullan";
+"Take a photo" = "Fotoğraf çek";
+"Upload from gallery" = "Galeriden yükle";
+"Remove Photo" = "Fotoğrafı kaldır";
+"Retake photo" = "Yeniden fotoğraf çek";
+
+
+"Free sample" = "Ücretsiz Deneme Ürünü";
+"Fill in your details below and get your free sample" = "Bilgilerini gir ve ücretsiz deneme ürünün adresine gelsin.";
+"Details" = "Ayrıntılar";
+"Building number" = "Bina Numarası";
+"Back to my details" = "Ayrıntılarıma dön";
+
+"Order Sample" = "Numune Sipariş Et";
+
+"Discover how UFS products can be used in recipes" = "UFS ürünlerinin tariflerde nasıl kullanılacağını keşfet.";
+"Explore Recipes" = "Tarifleri incele.";
+
+
+"Order with my shopping list" = "Alışveriş Listem ile Sipariş Ver";
+"See all products" = "Tüm Ürünleri Gör";
+"Selected trade partner:" = "Seçili Ticari Ortak:";
+"All products" = "Tüm Ürünler";
+
+
+"More information" = "Daha fazla bilgi";
+"Select the packaging" = "Paket Cinsini Seç";
+"Filter" = "Filtre";
+"Clear all" = "Hepsini temizle";
+
+"Filter 1" = "Filtre 1";
+"Filter 2" = "Filtre 2";
+"Filter 3" = "Filtre 3";
+"Filter 4" = "Filtre 4";
+"Product categories" = "Ürün Kategorileri";
+
+
+"Make this my default trade partner" = "Varsayılan Distribütör Olarak Seç";
+"Add new Trade Partner" = "Yeni Distribütör Ekle";
+"Select a Trade Partner" = "Distribütör Seç";
+
+"Order a Sample" = "Numune sipariş et";
+
+
+
+
+
+"My Order History" = "Sipariş Geçmişim";
+"Review and reorder your previous items." = "Önceki ürünlerinizi gözden geçirin ve tekrar sipariş verin.";
+"You can adjust product quantities in the cart." = "Ürün sayısını sepette düzenleyebilirsiniz.";
+"Order Number:" = "Sipariş Numarası:";
+"Date Ordered:" = "Sipariş Tarihi:";
+
+
+"Status:" = "Durum:";
+"Trade Partner:" = "Ticari Ortak:";
+"See full order details" = "Tüm sipariş ayrıntılarına bak";
+"Points earned:" = "Kazanılan puanlar:";
+"Total price" = "TOPLAM ÜCRET";
+"Points spent:" = "Harcanan Puanlar:";
+
+
+
+
+"Swipe right if you might" = "İsterseniz sağa kaydırın";
+
+"Go to My Recipe" = "Tarifime Git";
+"See more recipes" = "Daha fazla tarife bakın";
+"Your deal" = "Fırsatlar";
+
+"Product Details" = "ÜRÜN AYRINTILARI";
+
+
+"My Recipes" = "Tariflerim";
+
+//MARK: ProductDetail
+"Full product details" = "Tüm Ürün Ayrıntıları";
+"Product Information" = "Ürün Bilgisi";
+"Nutrition" = "Besin Bilgileri ve Alerjenler";
+"Ingredients" = "İçindekiler";
+"Allergy" = "Alerjen Bilgisi";
+"Nutritional Information" = "Besin Değerleri";
+"Quantity" = "Miktar";
+"Loyalty Points" = "Ödül Puanı";
+"Get rewarded with Chef Rewards" = "Puan biriktir, ödül kazan";
+"Delivery and payment via your trusted trade partner" = "Distribütörün aracılığıyla güvenli teslimat ve ödeme";
+"Product Description" = "Ürün Açıklaması";
+"Packaging" = "Birim Ağırlık";
+"Container" = "Paket Tipi";
+"Preparation" = "Hazırlanışı";
+"Storage" = "Depolama";
+
+"My Notifications" = "Bildirimlerim";
+"Start Shopping" = "Alışverişe başla";
+"Log Out" = "Çıkış";
+"Change Password" = "Parolayı Değiştir";
+"Product not avilable" = "Ürün mevcut değil";
+
+
+//MARK: Change Password
+"Your password needs to be minimum 8 characters long and contain at least one of each: Upper Case, Lower Case, Number, Special character (e.g. !,%,+)" = "Parolanız en az 8 karakterden oluşmalı ve aşağıdakilerin her birinden en az bir adet içermelidir: Büyük Harf, Küçük Harf, Sayı, Özel Karakter (ör. !,%,+)";
+"Current password" = "Şimdiki Parola";
+"New password" = "Yeni Parola";
+"Confirm new password" = "Yeni Parolayı Doğrula";
+"Save new password" = "Yeni parola kaydet";
+// No results strings
+
+//MARK: Loyalty Product
+"Reward Categories" = "Ödül Kategorileri";
+"All rewards" = "Tüm Ödüller";
+"Keep & Organize" = "Koru & Organize Et";
+"Dishes, glasses and cutlery" = "Tabaklar, bardaklar, çatal bıçak takımı";
+"Kitchenware & Textiles" = "Mutfak malzemeleri & Tekstiller";
+"kitchen appliances" = "mutfak eşyaları";
+"Kitchen helpers and kitchen utensils" = "Mutfak yardımcıları ve mutfak eşyaları";
+"Pots & pans" = "Tencereler & tavalar";
+"Product presentation & decoration" = "Ürün Sunumu & Dekorasyon";
+
+
+//MARK: Loyalty Product
+"Set as a goal" = "Hedef Olarak Belirle";
+"This reward is set as your goal" = "Bu ödül hedefiniz olarak belirlendi";
+
+//MARK: Email Varificatio
+
+"Please verify your email" = "Lütfen e-postanızı doğrulayın";
+"Re-order all" = "Hepsini tekrar sipariş et";
+
+//MARK: Chef Rewards
+
+"Almost done" = "Almost done";
+"I have read and accepted the terms and conditions" = "Okudum ve kabul ediyorum";
+"I have read the terms and conditions " = "Hüküm ve Koşulları okudum.";
+"Email verified" = "E-Posta doğrulandı";
+
+"Brilliant, thanks for verifying your email" = "Brilliant, thanks for verifying your email";
+"Easily re-order from your Shopping List" = "Easily re-order from your Shopping List";
+"Select a business type" = "İş Yeri Tipini Seç";
+"Here's 50 points ,on us" = "Kayıt olarak %@ ödül puanı kazandın.
+";
+"Build your list of products for easy order and re-order." = "Alışveriş listeni oluşturarak siparişlerini hızlı ve kolayca tekrarlayabilirsin.";
+"Recipes inspiration right at the tip of your fingers." = "İlham alacağın reçeteler burada";
+"Need Help, Call your sales rep" = "Yardıma ihtiyacın mı var? Satış temsilcini ara %@";
+"€ 1" = "1 ₺";
+"ChefReward_1_Point" = "1 PUAN";
+"Easy ordering via your lists!  ATTENTION: we have just one list" = "Easy ordering via your lists!  ATTENTION: we have just one list";
+"Go to" = "Go to";
+"my list" = "my list";
+"We reckon you’ll like these" = "İlgini çekeceğini düşündüğümüz ürünlerimiz";
+"Save for a great reward by setting a goal_Home" = "Almak istediğin ödülü hedef olarak belirle ve puan biriktirmeye başla";
+"Order Knorr Professional Schnaaldierenfond and receive double points" = "Order Knorr Professional Schnaaldierenfond and receive double points";
+"Add more products to you favourites list" = "Favori listenize daha fazla ürün ekleyin";
+"Hey James, you've earned 1500 points" = "Hey %@, %@ ödül puanı kazandın";
+
+
+"1500 points" = "%@ points";
+
+"Hey James, earn 400 points to reaching your goal" = "Hey James, earn 400 points to reaching your goal";
+"Congrats, you now have enough items to get a free <gift name>" = "Congrats, you now have enough items to get a free <gift name>";
+"Delivered by" = "tarafından teslim edilecek";
+"Tap on prefered delivery date" = "Tercih ettiğiniz teslimat tarihine dokunun";
+"Delivered by Deli XL Amsterdam" = "Delivered by Deli XL Amsterdam";
+"Choose different day (optional)" = "BAŞKA BİR TARİH SEÇ (isteğe bağlı)";
+"Delivery notes (optional)" = "TESLİMAT NOTLARI [isteğe bağlı]";
+"Delivery notes" = "Delivery notes";
+"Name (optional)" = "Name (optional)";
+"Tap on prefered delivery date" = "Tercih ettiğiniz teslimat tarihine dokunun";
+"Order Successful" = "Sipariş Gerçekleşti";
+"You have earned 1500 points" = "%@ puan kazandınız";
+"Your points balance <number>" = "Ödül Puanı Bakiyen <number>";
+"Your order number is" = "Sipariş numaranız";
+"296 results" = "296 Sonuçlar";
+"Bought before" = "Satın Almadan Önce";
+"Filter List" = "Filter List";
+"Chef Rewards Terms and Conditions apply" = "Şef Ödül Programı Şartlar ve Koşullar uygula";
+
+//"Up to 500 points" = "500 puana kadar";
+//"501 - 1,500 points" = "501-1.500 puan";
+//"Above 1,501 points" = "1.501 puandan fazla";
+
+"Up to 500 points" = "1-400 puan";
+"501 - 1,500 points" = "400-1.000 puan";
+"Above 1,501 points" = "1.000 puandan fazla";
+
+"No data found" = "Veri bulunamadı";
+"Upper Case, Lower Case, Number, Special character (e.g. !,%,+)" = "Büyük Harf, Küçük Harf, Sayı, Özel Karakter (ör. !,%,+)";
+"minimum 8 characters" = "en az 8 karakterden";
+"Please fill in your phone number" = "Please fill in your phone number";
+"Get favouriting" = "Get favouriting";
+"Most Bought" = "En Çok Satın Alınan";
+"You have not placed an order with us yet" = "You have not placed an order with us yet";
+"My trade partners details" = "Distribütörler/Ortaklar Bilgileri";
+"Your favourites list is empty" = "Your favourites list is empty";
+"Trade Partner's Account Number" = "Distribütör Hesap Numarası";
+"Your trade partner's account number" = "Distribütörünün hesap numarası";
+"Edit trade partner's details" = "Edit trade partner's details";
+"Please fill in your trade partner's location" = "Please fill in your trade partner's location";
+"Previous" = "Önceki";
+"Thank you for ordering a sample of" = "deneme ürünü sipariş ettiğin için teşekkürler.";
+"Thank you for ordering a sample of <product name>" = "Thank you for ordering a sample of <product name>";
+"We will get in touch with you shortly to confirm" = "En kısa sürede onay için iletişime geçeceğiz.";
+"By continuing you are agree with our" = "Devam ederek kabul etmiş olursunuz";
+"By continuing you agree with our terms and conditions" = "By continuing you agree with our terms and conditions";
+"By continuing, you agree with our Terms and Conditions and Online Selling Contract" = "Şartlar ve Koşullar ve Mesafeli Satiş Sözleşmesi ni devam ederek kabul etmiş olursun";
+"Online Selling Contract" = "Mesafeli Satiş Sözleşmesi";
+"Option 1" = "Option 1";
+"Option 2" = "Option 2";
+"Option 3" = "Option 3";
+"Product catergories " = "Product catergories ";
+"Change trade partner" = "Ticari Ortağı Değiştir";
+"Added to cart" = "seperine eklendi.";
+"See details" = "See details";
+"Nutrients per serving" = "Enerji ve Besin Ögeleri";
+"Allergens" = "Allergens";
+
+"Yield" = "Teslim olmak";
+"See all details" = "See all details";
+"Starters" = "Starters ";
+"Main dishes" = "Main dishes";
+"Desserts" = "Tatlı Çeşitleri";
+
+"You're all swiped out" = "Her şeyi tükettiniz";
+"Search recipes" = "Tarif ara";
+
+
+"Your order <order number> has been passed to your trade partner <trade partner name> with your client number <client number>" = "siparişiniz %@ Ticari Ortağınıza %@ iletildi, müşteri numaranız %@ ile.";
+"For further questions about handling of this order please contact <trade partner name>" = "Bu sipariş hakkında daha fazla sorularınız varsa lütfen %@ ile iletişime geçin.";
+
+"Total points" = "Toplam Puan";
+"Buy now" = "Şimdi satın al";
+"Select a new trade partner" = "Yeni Distribütör Seç";
+"Select this Trade Partner" = "Bu ticari ortağı seç";
+
+"Enter Your Trade Partner Account Number" = "Distribütör Hesap Numaranı Gir";
+//MARK: Chef Rewards FAQS
+
+"FAQQ1" = "1. HOW CAN I COLLECT FESTIVALS?";
+"FAQA1" = "As a participant in the UFS loyalty program, you have two options for earning loyalty points:\n\na. Online-Shop loyalty program: Collect loyalty points automatically with every order via the UFS online shop. For each O Euro you receive a loyalty point. ";
+"FAQQ2" = "2. HOW CAN I PARTICIPATE?";
+"FAQA2" = "Registration is only possible online.\n\nOnline-Shop loyalty program :\n\nIf you complete your first order with your personal data in our online shop, you can register for the online shop loyalty program by clicking on the appropriate field.";
+"FAQQ3" = "3. WHERE DO I FIND THE PARTICIPATION TERMS?";
+"FAQA3" = "Şef Ödül programına dair Hüküm ve Koşullar ve sanal alışverişe dair ayrıntılı bilgiye buradan ulaşabilirsin.";
+"FAQQ4" = "4. WHAT DO I GET FOR MY LOYALTY?";
+"FAQA4" = "Hediye Ödül Puanını seçmek için Ödül Puan Programı Genel Bilgilere git.\n\Hediyeler bir kaç kategoriye ayrıldı. Böylece seçtiğin uygun hediyeyi hızla seçebilirsin.\n\Ulaşmak istediğin puana göre ya da sipariş etmek istediğin ürüne göre ödülünü ödül katalogundan seç. Her siparişin sonrası, kaç puanın olduğunu kontrol edebilirsin.";
+"FAQQ5" = "5. HOW DO I RECEIVE MY LOYALTY PREMIUMS AND ADDITIVES?";
+"FAQA5" = "Ödül programında yer alan tüm yazılar ve bıçak, bardak gibi ürünler anlaşmalı firmalar ya da direkt Unilever Food Solutions aracılığıyla tedarik edilir.\n\Eklenen ürünler ya da ödüller distribütör teslimatında işlem süreci sebebiyle ulaştırılamayabilir, fakat sonrasında mutlaka ulaştırılacaktır.";
+"FAQQ6" = "6. HOW DO I SOLVE MY FIDES?";
+"FAQA6" = "Redeem your loyalty points whenever you want: You do not need to place an order in advance if you already have enough loyalty points. You simply order your desired premium with your collected points and that at any time. Choose your preferred bonus and add it to your shopping cart.";
+"FAQQ7" = "7. WHERE DO I EXPERIENCE MY FIDELITY STAND?";
+"FAQA7" = "As a registered user, you can view the current status of your loyalty points through the \"My Account\" section or through the loyalty program page.\n\nYou can also find valuable information in our video loyalty program on this page , or contact the UFS Online Shop Support:\n\nUFS support contact\nTelephone: (0216) 633 90 00 (toll-free)\nMonday to Friday 8:00 to 19:00\n(excluding public holidays)\n\nE-mail: ufsservice@unilever.com";
+"FAQQ8" = "8. WHAT HAPPENS TO MY DATA?";
+"FAQA8" = "The Unilever Group (Unilever Germany GmbH, Unilever Germany Holding GmbH, Unilever Austria GmbH, Unilever Switzerland GmbH, Oswald Nahrungsmittel GmbH, Switzerland) takes the protection of your personal data very seriously. We encourage you to read our Privacy Policy for the principles and procedures we use to protect your privacy and to educate you about how we handle the information you provide to us. Here you can see the privacy policy";
+"No_Internet" = "Şu anda internete bağlı değilsin. Lütfen daha sonra tekrar deneyin.";
+
+"Please give the permission to use Camera/Gallery for this app feature." = "Bu uygulama özelliği için lütfen Kamera/Galeri kullanımına izin verin";
+"Open Settings" = "Ayarları Aç";
+"NotNow" = "NotNow";
+"Play_Video" = "Videoyu oynat";
+"Pause_Video" = "Videoyu duraklat";
+"Chat with your sales representative" = "Satış temsilcinle iletişim kur";
+"Unit" = "Adet";
+"Case" = "Koli";
+"Need help? Chat with our chef." = "Yardıma ihtiyacın mı var? Şefimizle iletişime geç";
+"Complete your details to get personalised pricing and points" = "Sana özel fiyat ve puanlar için bilgilerini tamamla";
+"Complete your details to get your prices" = "Sana özel fiyatlar için bilgilerini tamamla";
+"Business Tax Number" = "Vergi Numarası";
+"My details" = "Bilgilerim";
+
+"Pay by Card" = "Kart ile öde";
+"Pay by Credit Card" = "Kredi Kartı ile öde";
+"Pay by Money Transfer" = "Para Transferi ile öde";
+"Payment by mail order" = "Mail yoluyla ödeme";
+"Portion size" = "Porsiyon Büyüklüğü";
+"Select your city" = "Şehir Seç";
+"We have done some critical enhancements to the app. Please update now." = "Uygulama yeni geliştirmeler yaptık. Şimdi uygulamayı güncelle.";
+"Trade Partner City" = "Distribütör Şehir";
+
+//Mark: GDPR
+"Yes - I confirm that I am over 16 years old" = "Yes - I confirm that I am over 16 years old";
+"Yes - I consent to my personal data being processed for all the below marketing purposes" = "Evet - Tüm kampanyalarda haberdar olmak için bilgilerimin kullanılmasına izin veriyorum. ";
+"Yes - I want to receive personalized newsletters from Unilever Food Solutions on new products, recipes ideas and inspirations" = "Evet - Unilever Food Solutions'tan bana özel yeni ürünler, reçeteler ve ilham verici içeriklerin yer aldığı e-bülteni almak istiyorum.";
+"Yes - I want to participate to marketing campaigns and to receive discount, promotional, loyalty offers and competition invites" = "Evet - Pazarlama kampanyalarından, indirimlerden, promosyonlardan, ödül programı önerilerinden haberdar olmak istiyorum.";
+"Yes - I want to receive personalized communication about event training and surveys invites" = "Evet - Bana özel eğitimler ve anketlerle ilgili benimle iletişime geçilmesini istiyorum.";
+"TnC Signup" = "Lütfen Gizlilik ve Çerez politikamızı kişisel verilerinin nasıl kullanılacağına dikkat ederek okuyun. Aşağıdaki butona tıklayarak, yasal sözleşmemizi kabul edebilirsin.";
+"privacy policy" = "Gizlilik ve Çerez politikamızı";
+"Legal Terms" = "yasal sözleşmemizi";
+"Customer Support" = "Müşteri Destek";
+"Explore all reward and set a goal" = "Tüm ödülleri keşfet ve hedefini belirle";
+"delete" = "SİL";
+"My Cart[value]" = "Sepetim [%@]";
+"Your supplier determines your delivery and payment conditions." = "Tedarikçiniz teslimat ve ödeme koşullarına karar verir.";
+"Recommended price (excl. VAT)" = "Tavsiye edilen fiyat (KDV hariç)";
+"Add promotion code" = "Promosyon kodu ekle";
+"Selected tradepartner:" = "Seçili Ticari Ortak:";
+"Product Codes" = "Ürün Kodları";
+"Use" = "Kullanım Talimatı";
+"Benefits" = "Faydalar";
+"no information available" = "Bilgi bulunmamaktadır";
+"Notifications" = "Bildirimlerim";
+"Mobile Number" = "Cep Telefonu";
+"Trade Partner Account number" = "Distribütör Hesap Numarası";
+"Trade partner account number for popup" = "Distribütör Hesap Numarası";
+"Chef Rewards Frequently Asked Questions" = "Chef Rewards Frequently Asked Questions";
+"Our video on how Chef Rewards work" = "Video videomuz şef ödülleri nasıl işliyor";
+"Easy ordering via your lists!_multiple_products" = "Listelerinizle kolay sipariş!";
+"You have not placed an order with us yet." = "Henüz bir sipariş vermedin.";
+"Easy ordering via your lists!_one_product" = "Listelerinizle kolay sipariş!";
+"edit" = "Düzenle";
+"Total:" = "Toplam:";
+"Have questions about the app, shop, loyalty program, products etc?" = "Uygulama, ödül programı, ürünler ve daha fazlası hakkında sorularınız mı var?";
+"We are available Monday - Friday 08.00 - 19.00" = "Pazartesi-Cuma 08:00-17:00 arası arayabilirsin.";
+"Please provide valid login credentials" = "Lütfen geçerli giriş bilgilerini gir";
+"Change tradepartner" = "Ticari Ortağı Değiştir";
+"Products" = "Ürün";
+"Explore all recipes" = "Tüm tarifleri inceleyin";
+"Search for a recipe" = "Tarif ara";
+"UFS Ingredients in this recipe" = "Bu tarifteki UFS malzemeleri";
+"Portion Selector" = "Porsiyon Seçici";
+"Load More" = "Daha fazla yükle";
+"Order History" = "Sipariş Geçmişi";
+"App Settings" = "Uygulama Ayarları";
+"Chef Rewards" = "Ödül Programı";
+
+"5 sec ago"="%@ saniye önce";
+"5 min ago"="%@ dakika önce";
+"5 hrs ago"="%@ saat önce";
+"5 days ago"="%@ gün önce";
+"5 weeks ago"="%@ hafta önce";
+
+"Total items [value]" = "Ürünlerin toplamı [%@]";
+"My UFS" = "Ana Sayfa";
+"Results" = "Sonuçlar";
+
+"08 00 / 220 096 (free phone)" = "(0216) 444 25 19 (ücretsiz telefon)";
+"Explore the Chef Rewards Catalogue" = "Ödül Kataloğunu İncele";
+"See all Chef Rewards" = "Tüm ödülleri incele";
+"Have more questions?" = "Başka sorunuz mu var?";
+"See Chef Rewards FAQs" = "Şef Ödülleri SSS";
+"Without filter" = "Filtresiz";
+"rewards" = "ödüller";
+"Change my default Trade Partner" = "Varsayılan Ticari Ortağımı değiştir";
+"Call your sales representative" = "Satış danışmanınızı arayın %@";
+"Your order will be delivered on" = "Siparişiniz teslim edilecek";
+"You're £65 away from getting a gift name" = "%@ almaya %@ Lira uzaktasınız";
+"Congrats, you now have enough items to get a gift name" = "Tebrikler, ücretsiz %@ almak için yeterince ürününüz var";
+"Confirmation mail successfully sent." = "Confirmation mail successfully sent.";
+"Billing address is the same as delivery address." = "Fatura adresi teslimat adresiyle aynı.";
+"Items" = "ÜRÜNLER";
+"Please enter the name of your company." = "Lütfen işletme adını gir";
+"Please enter your house number." = "Lütfen bina numaranı gir";
+"Please enter your street." = "Lütfen sokak adı gir";
+"Please enter your location."="Lütfen şehir gir";
+"Please enter your postal code."="Lütfen posta kodu gir";
+
+"Unfortunately, your password could not be changed, please try again later." = "Hata oluştu, şifre değiştirilemedi. Lütfen bir süre sonra dene.";
+"Password Changed Successfully." = "Parola Başarıyla Değiştirildi.";
+"category" = "Kategoriler";
+"allergens" = "allergens";
+"dachClaims" = "dachClaims";
+"Hi %@, we have upgraded you to our direct delivery service." = "Merhaba %@, artık direkt teslimat hizmetimizden yararlanabilirsin.";
+"No trade partner location available for selected trade partner" = "Seçilen distribütör için lokasyon mevcut değil";
+"Product Not found" = "Ürün Bulunamadı.";
+"Minimun order value is 300. You are 120 away from reaching this." = "Minimum sipariş değeri ₺%@. Buna ₺%@ kadar uzaktasınız.";
+"Minimun order value is 300." = "Minimum sipariş değeri ₺%@.";
+"Are you sure you would like to remove this item from the cart?" = "Bu ürünü sepetinizden kaldırmak istediğinize emin misiniz?";
+"Are you sure you want to delete card details?" = "Kart bilgilerini silmek istediğine emin misin?";
+"Delete Card" = "Kartı sil";
+"More product and allergy information" = "Daha fazla ürün ve alerji bilgisi";
+"Chef Rewards Points" = "Şef Ödülleri Puanları";
+"View all rewards" = "Tüm ödülleri gör";
+"Yes, I am sure" = "Evet eminim";
+"Item Removal" = "Öğe Kaldırma";
+"No" = "Yok hayır";
+"(except public holidays)" = "(resmi tatiller hariç)";
+"Get rewarded with Chef Rewards-loyaltyDetail" = "Şef Ödülleriyle ödüllenin";
+"Delivery and payment via your trusted trade partner -loyaltyDetail" = "Güvenilir ticari ortağınız yoluyla teslimat ve ödeme";
+"Save for a great reward by setting a goal-CR" = "Almak istediğin ödülü hedef olarak belirle ve puan biriktirmeye başla";
+"Payment" = "Ödeme";
+"Choose a payment method" = "Ödeme Yöntemi Seçin";
+"Add your card" = "Kart Ekle";
+"Name on Card" = "Kart üzerindeki İsim";
+"CARD NUMBER" = "Kart Numarası";
+"Expiry date" = "Son Ödeme Tarihi";
+"Security Code" = "Güvenlik Kodu";
+"Save these details for next time" = "Gelecek sefer için detayları kaydet";
+"Address Line 1" = "Adres Satırı 1";
+"Address Line 2" = "Adres Satırı 2";
+"Please enter your valid phone number." = "Lütfen geçerli bir telefon numarası gir";
+"Please enter all mandatory fields first" = "Lütfen önce tüm zorunlu alanları doldur";
+"Please enter a valid card detail." = "Geçerli bir kart bilgisi gir";
+"Enter a valid expiration date" = "Geçerli bir son kullanma tarihi gir";
+"Enter Name on Card" = "Kart üzerindeki İsim girin";
+"Enter Security card code" = "Güvenlik kodunu girin";
+"Enter the card number" = "Kart numarasını girin";
+"Select a month" = "Bir ay Seçin";
+"Select a year" = "Bir yıl Seçin";
+"chat" = "iletişim";
+"View all rewards" = "Tüm ödülleri gör";
+"Chef Rewards Points" = "Şef Ödülleri Puanları";
+"More product and allergy information" = "Daha fazla ürün ve alerji bilgisi";
+"processing" = "İşlem sürüyor";
+"Migrated" = "Taşındı";
+"Completed" = "Tamamlandı";
+"Cancelled" = "İptal edildi";
+"Shipped" = "Teslimatta";
+"Delivered" = "Teslim edildi";
+"Partially cancelled" = "Kısmi sevkiyat";
+"Refunded" = "İade edildi";
+"(Placeholder title) Disclaimer. Payment Terms and Conditions" = "Fesih; Ödeme Hüküm ve Koşulları";
+"Card ending in" = "ile biten kart";
+"Expiry date" = "Son Kullanma Tarihi";
+"Vendor already exists in your profile" = "Distribütör zaten profilinde mevcut";
+"This is your default trade partner" = "Bu distribütör senin mevcut distribütörün";
+"No_Favourite_Message" = "Şu an hiç favoriniz yok 😱 \n\n Gezinirken kalp ikonuna dokunarak kendi favori listenizi yapabilirsiniz ❤";
+"Add another card" = "Başka Bir Kart Ekle";
+"Expiry" = "Geçerlilik";
+"please select saved card" = "Lütfen kayıtlı ya da herhangi bir kart seç";
+"item number" = "ürün numarası";
+"Error" = "Hata";
+"This trade partner is already on your list!" = "Bu distribütör zaten listende!";
+"The product is currently not available."="Ürün mevcut değil";
+"Name" = "Enerji ve Besin Ögeleri";
+"100g" = "100 g";
+"100ml" = "100 ml";
+"server error" = "Sunucu hatası";
+"No IBAN available" = "IBAN mevcut değil";
+"The passwords you entered do not match, please try again." = "Giriş yaptığın parola eşleşmiyor, lütfen tekrar dene.";
+"Trade partner is not available"="Distribütör mevcut değil";
+"Error in SignUp" = "Kayıt olurken hata";
+"No orderable unit found for this product!"="Bu ürün için hiçbir güvenilir birim bulunamadı!";
+"Free XXX gift for first order"="İlk siparişine ücretsiz %@ hediye";
+"Shelf Life"="Raf Ömrü";
+"Error while placing order" = "Sipariş verilirken hata oluştu";
+"Cart not found" = "Sepet bulunamadı";
+"Hata This field is required" = "Hata Bu alan zorunludur";

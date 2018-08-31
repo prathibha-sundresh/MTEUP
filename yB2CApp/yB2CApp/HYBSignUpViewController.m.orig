@@ -1,0 +1,1128 @@
+//
+//  HYBSignUpViewController.m
+// [y] hybris Platform
+//
+// Copyright (c) 2000-2016 hybris AG
+// All rights reserved.
+//
+// This software is the confidential and proprietary information of hybris
+// ("Confidential Information"). You shall not disclose such Confidential
+// Information and shall use it only in accordance with the terms of the
+// license agreement you entered into with hybris.
+
+#import "HYBSignUpViewController.h"
+#import "UFS-Swift.h"
+
+#if DEV
+#define SIGNUP_URL @"https://52.31.80.240:51002/rest/v2/ufs/users"
+#define CONFIRM_URL @"http://stage.unileverfoodsolutions.at/profil-erstellen/registration-completion.html"
+#define NEWSLETTER_CONFIRM_URL @"http://stage.unileverfoodsolutions.at/newsletter-abonnieren/newsletter-abonnieren-completion.html"
+#else
+#define SIGNUP_URL @"https://apihbs.ufs.com/rest/v2/ufs/users"
+#define CONFIRM_URL @"https://www.unileverfoodsolutions.at/profil-erstellen/registration-completion.html"
+#define NEWSLETTER_CONFIRM_URL @"https://www.unileverfoodsolutions.at/newsletter-abonnieren/newsletter-abonnieren-completion.html"
+#endif
+
+
+@interface HYBSignUpViewController ()
+
+
+// Constants and var
+@property (nonatomic) NSMutableArray *pickerBusinessData;
+@property (nonatomic) NSMutableArray *businessTypeNameArray;
+@property (nonatomic) NSMutableArray *pickerTradeData;
+@property (nonatomic) NSMutableArray *pickerTempData;
+@property (nonatomic) NSMutableArray *optionsArray;
+@property (nonatomic) NSArray *tradeArr;
+@property (nonatomic) int selectedPicker;
+@property (nonatomic) NSInteger selectUserTitle;
+@property (nonatomic) CGPoint actionCenter;
+@property (nonatomic) UILabel         *cancelPickerLabel;
+@property (nonatomic) int pwdSecureFlag;
+@property (nonatomic) int checkboxFlag;
+@property (nonatomic) int newsLettercheckboxFlag;
+@property (nonatomic) int businessOrTradeFlag;
+@property (nonatomic) NSString *selectedBusiness;
+@property (nonatomic) NSString *business_ID;
+@property (nonatomic) NSString *selectedTrade;
+@property (nonatomic) NSMutableData *dataResponse;
+@property (nonatomic) NSString *apiType;
+@property (nonatomic) NSString *hybToken;
+@property (nonatomic) NSString *signupResStatus;
+@property (nonatomic) NSDictionary *signUpParam;
+
+// Outlets
+@property (weak, nonatomic) IBOutlet UILabel *registerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *myDetailsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *myBusinessLabel;
+@property (weak, nonatomic) IBOutlet UIButton *registerWithFbButton;
+@property (weak, nonatomic) IBOutlet UIButton *createAFreeAccountButton;
+@property (weak, nonatomic) IBOutlet UILabel *createAPasswordLabel;
+@property (nonatomic) IBOutlet FloatLabelTextField         *firstNameTxtField;
+@property (nonatomic) IBOutlet FloatLabelTextField         *lastNameTxtField;
+@property (nonatomic) IBOutlet FloatLabelTextField         *emailTxtField;
+@property (nonatomic) IBOutlet UIImageView                 *firstNameErrorImg;
+@property (nonatomic) IBOutlet UIImageView                 *emailerrorImg;
+@property (nonatomic) IBOutlet UIImageView                 *lastNameerrorImg;
+@property (nonatomic) IBOutlet UILabel         *firstNameErrorLbl;
+@property (nonatomic) IBOutlet UILabel         *lastNameErrorLbl;
+@property (nonatomic) IBOutlet UILabel         *emailErrorLbl;
+@property (nonatomic) IBOutlet UITextField         *businessTypeTxtField;
+@property (nonatomic) IBOutlet UILabel         *businessTypeErrorLbl;
+@property (nonatomic) IBOutlet UITextField         *tradePartnerTxtField;
+@property (nonatomic) IBOutlet UILabel         *tradePartnerErrorLbl;
+@property (nonatomic) IBOutlet UITextField         *passwordTxtField;
+@property (nonatomic) IBOutlet UIImageView         *passwordErrorImg;
+@property (nonatomic) IBOutlet UILabel         *passwordErrorLbl;
+@property (nonatomic) IBOutlet UIButton         *pwdSecureBtn;
+@property (nonatomic) IBOutlet UIButton         *checkBoxBtn;
+@property (nonatomic) IBOutlet UIButton         *newsLetterCheckBoxBtn;
+@property (nonatomic) IBOutlet UILabel          *newsLetterTextLabel;
+@property (nonatomic) IBOutlet UILabel          *newsLetterTextSubLabel;
+@property (nonatomic) IBOutlet UIButton         *termAndCondBtn;
+@property (nonatomic) IBOutlet UIScrollView         *scrollView;
+@property (nonatomic) IBOutlet UIToolbar         *pickerTool;
+@property (nonatomic) IBOutlet UIPickerView    *picker;
+@property (nonatomic) IBOutlet UILabel         *tandCLbl;
+
+@end
+
+@implementation HYBSignUpViewController
+
+
+- (IBAction)emailTFEndEditing:(id)sender {
+  if([self validateEmailWithString:self.emailTxtField.text]){
+    self.emailErrorLbl.hidden = true;
+    self.emailerrorImg.hidden = false;
+    self.emailerrorImg.image = [UIImage imageNamed: @"right_icon"];
+    self.emailTxtField.layer.borderColor =[hybris_gray CGColor];
+  }else {
+    self.emailErrorLbl.hidden = false;
+    self.emailerrorImg.hidden = false;
+    self.emailerrorImg.image = [UIImage imageNamed: @"error_icon"];
+    self.emailTxtField.layer.borderColor =[hybris_red CGColor];
+  }
+}
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  [self applyDefaultStyle];
+  [self varInit];
+  
+  HYBAppDelegate *delegate = (HYBAppDelegate*)[self getDelegate];
+  self.backendService =  delegate.backEndService;
+  
+  self.passwordTxtField.placeholder = [WSUtility getlocalizedStringWithKey:@"Password" lang:[WSUtility getLanguage] table:@"Localizable"];
+  self.firstNameTxtField.placeholder = [WSUtility getlocalizedStringWithKey:@"First Name" lang:[WSUtility getLanguage] table:@"Localizable"];
+  self.lastNameTxtField.placeholder = [WSUtility getlocalizedStringWithKey:@"Last Name" lang:[WSUtility getLanguage] table:@"Localizable"];
+  self.emailTxtField.placeholder = [WSUtility getlocalizedStringWithKey:@"Email" lang:[WSUtility getLanguage] table:@"Localizable"];
+  self.businessTypeTxtField.placeholder = [WSUtility getlocalizedStringWithKey:@"Business type" lang:[WSUtility getLanguage] table:@"Localizable"];
+  self.tradePartnerTxtField.placeholder = [WSUtility getlocalizedStringWithKey:@"Trade partner" lang:[WSUtility getLanguage] table:@"Localizable"];
+  _firstNameErrorLbl.text=[WSUtility getlocalizedStringWithKey:@"Please enter your first name. If the message is long it goes over several lines." lang:[WSUtility getLanguage] table:@"Localizable"];
+  _lastNameErrorLbl.text = [WSUtility getlocalizedStringWithKey:@"Please enter your last name. If the message is long it goes over several lines." lang:[WSUtility getLanguage] table:@"Localizable"];
+  _emailErrorLbl.text = [WSUtility getlocalizedStringWithKey:@"Please enter a correct email address" lang:[WSUtility getLanguage] table:@"Localizable"];
+  _businessTypeErrorLbl.text = [WSUtility getlocalizedStringWithKey:@"Please enter what type of business you are working in" lang:[WSUtility getLanguage] table:@"Localizable"];
+  _tradePartnerErrorLbl.text = [WSUtility getlocalizedStringWithKey:@"Please select your tradepartner name" lang:[WSUtility getLanguage] table:@"Localizable"];
+  _passwordErrorLbl.text = [WSUtility getlocalizedStringWithKey:@"Your password needs to be minimum 8 characters long one and contain at least one of each: upper case, lowercase, number special character [eg. !. %. +]" lang:[WSUtility getLanguage] table:@"Localizable"];
+  _tandCLbl.text = [WSUtility getlocalizedStringWithKey:@"I have read and accepted the terms and conditions" lang:[WSUtility getLanguage] table:@"Localizable"];
+  _registerLabel.text = [WSUtility getlocalizedStringWithKey:@"Register" lang:[WSUtility getLanguage] table:@"Localizable"];
+  
+  _myDetailsLabel.text = [WSUtility getlocalizedStringWithKey:@"My details" lang:[WSUtility getLanguage] table:@"Localizable"];
+  
+  
+  _myBusinessLabel.text = [WSUtility getlocalizedStringWithKey:@"My business" lang:[WSUtility getLanguage] table:@"Localizable"];
+  
+  
+  NSString *tcText = [WSUtility getlocalizedStringWithKey:@"terms and conditions" lang:[WSUtility getLanguage] table:@"Localizable"];
+  NSMutableAttributedString *tcAttriString = [[NSMutableAttributedString alloc] initWithString:tcText];
+  [tcAttriString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [tcText length])];
+  [tcAttriString addAttribute:NSForegroundColorAttributeName value:UIColor.orangeColor range:NSMakeRange(0, [tcText length])];
+  [_termAndCondBtn setAttributedTitle:tcAttriString forState:UIControlStateNormal];
+  [_termAndCondBtn.titleLabel setLineBreakMode:NSLineBreakByWordWrapping];
+  
+  [_createAFreeAccountButton setTitle:[WSUtility getlocalizedStringWithKey:@"Create a FREE account - Register Page" lang:[WSUtility getLanguage] table:@"Localizable"] forState:UIControlStateNormal];
+  [_registerWithFbButton setTitle:[WSUtility getlocalizedStringWithKey:@"Register with Facebook" lang:[WSUtility getLanguage] table:@"Localizable"] forState:UIControlStateNormal];
+  _createAPasswordLabel.text = [WSUtility getlocalizedStringWithKey:@"Create a Password" lang:[WSUtility getLanguage] table:@"Localizable"];
+  
+  [WSUtility addNavigationBarBackButtonWithController:self];
+  
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+  [self getTrustedClientStatus];
+  [self trade_request];
+  [self getBusinessTypesFromAdmin];
+  [self getTrustedClientStatus];
+  
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+}
+
+- (void)applyDefaultStyle{
+  
+  [self.firstNameTxtField setLeftPaddingPoints:10];
+  [self.lastNameTxtField setLeftPaddingPoints:10];
+  [self.emailTxtField setLeftPaddingPoints:10];
+  [self.businessTypeTxtField setLeftPaddingPoints:5];
+  [self.tradePartnerTxtField setLeftPaddingPoints:5];
+  [self.passwordTxtField setLeftPaddingPoints:5];
+  
+  self.firstNameTxtField.layer.cornerRadius = 5;
+  self.firstNameTxtField.layer.borderColor =[hybris_gray CGColor];
+  self.firstNameTxtField.layer.borderWidth = 1;
+  self.lastNameTxtField.layer.cornerRadius = 5;
+  self.lastNameTxtField.layer.borderColor =[hybris_gray CGColor];
+  self.lastNameTxtField.layer.borderWidth = 1;
+  self.emailTxtField.layer.cornerRadius = 5;
+  self.emailTxtField.layer.borderColor =[hybris_gray CGColor];
+  self.emailTxtField.layer.borderWidth = 1;
+  
+  [self AttributedTextInUILabelWithGreenText:@"Your password needs to be minimum 8 characters long and contain at least one of each: " boldText:@"Upper Case, Lower Case, Number, Special character (eg. !,%,+)"];
+  
+  
+  self.newsLetterTextSubLabel.text = [WSUtility getTranslatedStringForString:@"You may unsubsribe at any time."];
+  
+    NSString *text = [WSUtility getTranslatedStringForString:@"Yes, I have read the conditions and would like to subscribe to the newsletter."];
+    NSMutableAttributedString *attributedText =
+    [[NSMutableAttributedString alloc] initWithString:text
+                                           attributes:nil];
+    
+    // gray text attributes
+    UIColor *orangeColor = [UIColor colorWithRed:1.00 green:0.35 blue:0.00 alpha:1.0];;
+    
+    NSRange orangeTextRange = [text rangeOfString:[WSUtility getTranslatedStringForString:@"news_letter_Link"]];
+    [attributedText setAttributes:@{NSForegroundColorAttributeName:orangeColor,
+                                    NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)}
+                            range:orangeTextRange];
+    self.newsLetterTextLabel.attributedText = attributedText;
+  
+
+  
+}
+
+- (void)varInit{
+  self.pwdSecureFlag = 0;
+  self.checkboxFlag = 0;
+  self.newsLettercheckboxFlag = 0;
+    
+  self.businessOrTradeFlag = 0;
+  self.selectedBusiness = @"";
+  self.selectedTrade = @"";
+  self.selectedBusiness = @"";
+  self.selectedTrade = @"";
+  
+  self.dataResponse=[NSMutableData data];
+  self.pickerTradeData = [[NSMutableArray alloc] init];
+  
+  [self.firstNameTxtField addTarget:self action:@selector(fnameTextFieldDidChange:)
+                   forControlEvents:UIControlEventEditingChanged];
+  [self.lastNameTxtField addTarget:self action:@selector(lnameTextFieldDidChange:)
+                  forControlEvents:UIControlEventEditingChanged];
+  [self.emailTxtField addTarget:self action:@selector(emailTextFieldDidChange:)
+               forControlEvents:UIControlEventEditingChanged];
+  [self.passwordTxtField addTarget:self action:@selector(passwordTFDidEndEditing:)
+                  forControlEvents:UIControlEventEditingDidEnd];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(keyboardWillShow:)
+                                               name:UIKeyboardWillShowNotification
+                                             object:nil];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(keyboardWillHide:)
+                                               name:UIKeyboardWillHideNotification
+                                             object:nil];
+  UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                        action:@selector(dismissKeyboard)];
+  tap.cancelsTouchesInView = false;
+  [self.view addGestureRecognizer:tap];
+}
+
+- (void)keyboardWillShow: (NSNotification *) aNotification{
+  // Do something here
+  
+  NSDictionary *info = [aNotification userInfo];
+  
+  CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+  UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+  
+  self.scrollView.contentInset = contentInsets;
+  self.scrollView.scrollIndicatorInsets = contentInsets;
+  
+  // If active text field is hidden by keyboard, scroll it so it's visible
+  // Your app might not need or want this behavior.
+  CGRect aRect = self.view.frame;
+  aRect.size.height -= kbSize.height;
+}
+
+- (void)keyboardWillHide: (NSNotification *) aNotification{
+  // Do something here
+  self.scrollView.contentInset = UIEdgeInsetsZero;
+  self.scrollView.scrollIndicatorInsets = UIEdgeInsetsZero;
+}
+
+- (IBAction)backClicked:(id)sender {
+  [self back];
+}
+
+- (void)backAction:(UIButton*)sender {
+  [self.navigationController popViewControllerAnimated:true];
+}
+- (void)back {
+  [self dismissViewControllerAnimated:YES completion:^{
+    
+  }];
+}
+#pragma mark alert
+
+- (void)saveProblemAlert:(NSString*)message {
+  //   if(error.L)
+  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"account_warning", nil)
+                                                      message:NSLocalizedString(message, nil)
+                                                     delegate:self
+                                            cancelButtonTitle:NSLocalizedString(@"ok", nil)
+                                            otherButtonTitles:nil];
+  
+  [alertView show];
+}
+
+#pragma mark textfield delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  if(textField ==  self.firstNameTxtField){
+    [self.lastNameTxtField becomeFirstResponder];
+  } else if(textField ==  self.lastNameTxtField) {
+    [self.emailTxtField becomeFirstResponder];
+  }else if(textField ==  self.emailTxtField){
+    [self.emailTxtField resignFirstResponder];
+    //self.view.endEditing(true)
+    return false;
+  }else if(textField ==  self.passwordTxtField){
+    [self.passwordTxtField resignFirstResponder];
+    //self.view.endEditing(true)
+    return false;
+  }
+  return NO;
+}
+
+//-(void)textFieldDidBeginEditing:(UITextField *)textField {
+//    CGFloat dHeight = [UIScreen mainScreen].bounds.size.height;
+//    if (textField == self.passwordTxtField) {
+//        [self.scrollView setContentOffset:CGPointMake(0.0, dHeight/2) animated:YES];
+//    }
+//}
+//-(void)textFieldDidEndEditing:(UITextField *)textField {
+//    CGFloat dHeight = [UIScreen mainScreen].bounds.size.height;
+//    if (textField == self.passwordTxtField) {
+//        [self.scrollView setContentOffset:CGPointMake(0.0, -dHeight/20) animated:YES];
+//    }
+//}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+  UIViewController * destinationController = segue.destinationViewController ;
+  if ([destinationController isKindOfClass:[WSEmailVerifictionViewController class]]) {
+    WSEmailVerifictionViewController *vc = (WSEmailVerifictionViewController *) segue.destinationViewController;
+    vc.emailId = self.emailTxtField.text;
+    vc.password = self.passwordTxtField.text;
+    vc.confirmUrl = CONFIRM_URL;
+    vc.isComeFromSignUpScreen = YES;
+  } else if ([destinationController isKindOfClass:[UFSPopUpViewController class]]) {
+    UFSPopUpViewController *popUpVC = (UFSPopUpViewController *) segue.destinationViewController;
+    
+    popUpVC.titleString = (self.businessOrTradeFlag == 0) ? @"Select a business type" : @"Select tradepartner";
+    popUpVC.isSearchBarHidden = YES;
+    popUpVC.arrayItems = (self.businessOrTradeFlag == 0) ?  self.businessTypeNameArray : self.pickerTradeData;
+    popUpVC.selectedItem = (self.businessOrTradeFlag == 0)  ? self.selectedBusiness : self.selectedTrade;
+    
+    popUpVC.callBack = ^(NSString * selectedItemValue) {
+      if(self.businessOrTradeFlag == 0){
+        self.selectedBusiness = selectedItemValue;
+        self.businessTypeTxtField.text = self.selectedBusiness;
+        NSUInteger index = [self.businessTypeNameArray indexOfObject:self.selectedBusiness];
+        NSDictionary *dict = self.pickerBusinessData[index];
+        self.business_ID = [dict objectForKey:@"bt_id"];
+        self.businessTypeErrorLbl.hidden = true;
+      }else{
+        self.selectedTrade = selectedItemValue;
+        self.tradePartnerTxtField.text = self.selectedTrade;
+        self.tradePartnerErrorLbl.hidden = true;
+      }
+    };
+    
+  }
+  else if([segue.identifier isEqualToString: @"newsLetter"]){
+      WSTermsAndConditionsViewController *termsAndCondtionsVC = (WSTermsAndConditionsViewController *) segue.destinationViewController;
+      termsAndCondtionsVC.isFromNewsLetter = true;
+      
+  }
+}
+
+- (IBAction)businessTypeClicked:(id)sender {
+  [self dismissKeyboard];
+  if (self.pickerBusinessData.count > 0) {
+    //self.picker.hidden = false;
+    //self.pickerTool.hidden = false;
+    // self.pickerTempData = self.pickerBusinessData;
+    // [self.picker reloadAllComponents];
+    self.businessOrTradeFlag = 0;
+    [self dismissKeyboard];
+    [self performSegueWithIdentifier:@"CustomPopUpSegue" sender:self];
+  }
+  
+}
+- (IBAction)tradePartnerNameClicked:(id)sender {
+  [self dismissKeyboard];
+  if (self.pickerTradeData.count > 0) {
+    //self.picker.hidden = false;
+    //self.pickerTool.hidden = false;
+    //self.pickerTempData = self.pickerTradeData;
+    //[self.picker reloadAllComponents];
+    self.businessOrTradeFlag = 1;
+    [self performSegueWithIdentifier:@"CustomPopUpSegue" sender:self];
+  }
+  
+}
+
+- (IBAction)pwdSecureClicked:(id)sender {
+  if(self.pwdSecureFlag == 0){
+    UIImage *img = [UIImage imageNamed:@"show_pwd.png"];
+    [self.pwdSecureBtn setImage:img forState:UIControlStateNormal];
+    self.passwordTxtField.secureTextEntry = false;
+    self.pwdSecureFlag = 1;
+  }else{
+    UIImage *img = [UIImage imageNamed:@"hide_pwd_logo.png"];
+    [self.pwdSecureBtn setImage:img forState:UIControlStateNormal];
+    self.passwordTxtField.secureTextEntry = true;
+    self.pwdSecureFlag = 0;
+  }
+}
+
+- (IBAction)checkBoxClicked:(id)sender{
+  //[self tradeSubmit];
+  if(self.checkboxFlag == 0){
+    UIImage *img = [[UIImage imageNamed:@"checkbox_checked.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [self.checkBoxBtn setImage:img forState:UIControlStateNormal];
+    self.checkboxFlag = 1;
+  }else{
+    UIImage *img = [[UIImage imageNamed:@"checkbox_unchecked.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [self.checkBoxBtn setImage:img forState:UIControlStateNormal];
+    self.checkboxFlag = 0;
+  }
+}
+- (IBAction)newsLetterCheckBoxClicked:(id)sender{
+    
+    if(self.newsLettercheckboxFlag == 0){
+        UIImage *img = [[UIImage imageNamed:@"checkbox_checked.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        [self.newsLetterCheckBoxBtn setImage:img forState:UIControlStateNormal];
+        self.newsLettercheckboxFlag = 1;
+    }else{
+        UIImage *img = [[UIImage imageNamed:@"checkbox_unchecked.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        [self.newsLetterCheckBoxBtn setImage:img forState:UIControlStateNormal];
+        self.newsLettercheckboxFlag = 0;
+    }
+}
+- (IBAction)createAccountClicked:(id)sender{
+  Boolean firstNameValid= true;
+  Boolean lastNameValid = true;
+  Boolean emailValid = true;
+  Boolean businessValid = true;
+  Boolean tradeValid  = true;
+  Boolean passwordValid = true;
+  Boolean termsValid = true;
+  
+  if(![self checkFirstNameValidations]){
+    firstNameValid = false;
+  }
+  if(![self checkLastNameValidation]){
+    lastNameValid = false;
+  }
+  if(![self checkEmailValidation]){
+    emailValid = false;
+  }
+  if(![self checkBusinessValidation]){
+    businessValid = false;
+  }
+  if(![self checkTradeValidation]){
+    tradeValid = false;
+  }
+  if(![self checkPasswordValidation] || ![self isValidPassword:self.passwordTxtField.text]){
+    passwordValid = false;
+  }
+  if(![self checkTermAndConditionValidation]){
+    termsValid = false;
+  }
+  
+  if(firstNameValid && lastNameValid && emailValid && businessValid && tradeValid && passwordValid && termsValid){
+    //API call
+    [self processForm];
+  }
+  
+}
+- (IBAction)pickerDoneClicked:(id)sender {
+  //self.picker.hidden = true;
+  //self.pickerTool.hidden = true;
+  if(self.businessOrTradeFlag == 0){
+    self.businessTypeTxtField.text = self.selectedBusiness;
+    self.businessTypeErrorLbl.hidden = true;
+  }else{
+    self.tradePartnerTxtField.text = self.selectedTrade;
+    self.tradePartnerErrorLbl.hidden = true;
+  }
+}
+
+-(Boolean)checkFirstNameValidations{
+  if([self.firstNameTxtField.text isEqualToString:@""]){
+    self.firstNameErrorImg.hidden = false;
+    self.firstNameErrorLbl.hidden = false;
+    self.firstNameErrorImg.image = [UIImage imageNamed: @"error_icon"];
+    self.firstNameTxtField.layer.borderColor =[hybris_red CGColor];
+    return false;
+  }else{
+    return true;
+  }
+}
+
+-(Boolean) checkLastNameValidation{
+  if([self.lastNameTxtField.text isEqualToString:@""]){
+    self.lastNameerrorImg.hidden = false;
+    self.lastNameErrorLbl.hidden = false;
+    self.lastNameerrorImg.image = [UIImage imageNamed: @"error_icon"];
+    self.lastNameTxtField.layer.borderColor =[hybris_red CGColor];
+    
+    return false;
+  }else{
+    return true;
+  }
+}
+
+-(Boolean) checkEmailValidation{
+  if([self validateEmailWithString:self.emailTxtField.text]){
+    return true;
+  }else{
+    self.emailerrorImg.hidden = false;
+    self.emailErrorLbl.hidden = false;
+    self.emailerrorImg.image = [UIImage imageNamed: @"error_icon"];
+    self.emailTxtField.layer.borderColor =[hybris_red CGColor];
+    return false;
+  }
+}
+
+-(Boolean) checkBusinessValidation{
+  if([self.businessTypeTxtField.text isEqualToString:@""]){
+    self.businessTypeErrorLbl.hidden = false;
+    return false;
+  }else{
+    return true;
+  }
+}
+
+-(Boolean) checkTradeValidation{
+  if([self.tradePartnerTxtField.text isEqualToString:@""]){
+    self.tradePartnerErrorLbl.hidden = false;
+    return false;
+  }else{
+    return true;
+  }
+}
+
+-(Boolean) checkPasswordValidation{
+  if([self.passwordTxtField.text isEqualToString:@""]){
+    self.passwordErrorImg.hidden = false;
+    self.passwordErrorLbl.textColor = [UIColor colorWithRed:197.0f/255.0f
+                                                      green:0.0f/255.0f
+                                                       blue:26.0f/255.0f
+                                                      alpha:1.0f];
+    
+    return false;
+  }
+  return true;
+}
+
+-(Boolean) checkTermAndConditionValidation{
+  if(self.checkboxFlag == 0){
+    UIImage *img = [[UIImage imageNamed:@"checkbox_unchecked_red.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [self.checkBoxBtn setImage:img forState:UIControlStateNormal];
+    return false;
+  }else{
+    return true;
+  }
+}
+
+
+-(void)fnameTextFieldDidChange :(UITextField *) textField{
+  
+  if([textField.text length] == 1){
+    self.firstNameErrorLbl.hidden = true;
+    self.firstNameErrorImg.hidden = false;
+    self.firstNameErrorImg.image = [UIImage imageNamed: @"right_icon"];
+    self.firstNameTxtField.layer.borderColor =[hybris_gray CGColor];
+  }else if([textField.text isEqualToString:@""]){
+    self.firstNameErrorLbl.hidden = false;
+    self.firstNameErrorImg.hidden = false;
+    self.firstNameErrorImg.image = [UIImage imageNamed: @"error_icon"];
+    self.firstNameTxtField.layer.borderColor =[hybris_red CGColor];
+  }
+}
+
+-(void)lnameTextFieldDidChange :(UITextField *) textField{
+  
+  if([textField.text length] == 1){
+    self.lastNameErrorLbl.hidden = true;
+    self.lastNameerrorImg.hidden = false;
+    self.lastNameerrorImg.image = [UIImage imageNamed: @"right_icon"];
+    self.lastNameTxtField.layer.borderColor =[hybris_gray CGColor];
+  }else if([textField.text isEqualToString:@""]){
+    self.lastNameErrorLbl.hidden = false;
+    self.lastNameerrorImg.hidden = false;
+    self.lastNameerrorImg.image = [UIImage imageNamed: @"error_icon"];
+    self.lastNameTxtField.layer.borderColor =[hybris_red CGColor];
+  }
+}
+
+-(void)emailTextFieldDidChange :(UITextField *) textField{
+
+  //    if([self validateEmailWithString:self.emailTxtField.text]){
+  //        self.emailErrorLbl.hidden = true;
+  //        self.emailerrorImg.hidden = false;
+  //        self.emailerrorImg.image = [UIImage imageNamed: @"right_icon"];
+  //        self.emailTxtField.layer.borderColor =[hybris_gray CGColor];
+  //    }else {
+  //        self.emailErrorLbl.hidden = false;
+  //        self.emailerrorImg.hidden = false;
+  //        self.emailerrorImg.image = [UIImage imageNamed: @"error_icon"];
+  //        self.emailTxtField.layer.borderColor =[hybris_red CGColor];
+  //    }
+}
+
+-(void)passwordTFDidEndEditing :(UITextField *) textField {
+  
+  if([self isValidPassword:self.passwordTxtField.text]){
+    self.passwordErrorLbl.textColor = [UIColor blackColor];
+    self.passwordErrorImg.hidden = false;
+    self.passwordErrorImg.image = [UIImage imageNamed: @"right_icon"];
+    self.passwordTxtField.layer.borderColor =[hybris_gray CGColor];
+  }else {
+    self.passwordErrorLbl.hidden = false;
+    self.passwordErrorLbl.textColor = [UIColor redColor];
+    self.passwordErrorImg.hidden = false;
+    self.passwordErrorImg.image = [UIImage imageNamed: @"error_icon"];
+    self.passwordTxtField.layer.borderColor =[hybris_red CGColor];
+  }
+}
+
+-(void)dismissKeyboard {
+  [self.firstNameTxtField resignFirstResponder];
+  [self.lastNameTxtField  resignFirstResponder];
+  [self.emailTxtField  resignFirstResponder];
+  [self.passwordTxtField  resignFirstResponder];
+}
+
+- (void)openNewsLetterOptInTermAndCondition {
+  [self performSegueWithIdentifier:@"TermAndConditonSegue" sender:self];
+}
+
+#pragma mark pickerview delegate
+
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+  return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+  return [self.pickerTempData count];
+}
+
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+  if(self.businessOrTradeFlag == 0){
+    NSDictionary *tmpDict = self.pickerTempData[row];
+    self.selectedBusiness = [tmpDict objectForKey:@"bt_name"];
+    self.business_ID = [tmpDict objectForKey:@"bt_id"];
+    return [tmpDict objectForKey:@"bt_name"];
+  }else{
+    self.selectedTrade = self.pickerTempData[row];
+    return self.pickerTempData[row];
+  }
+  
+}
+
+- (void)processForm {
+  
+  NSString *tradeID = @"";
+  for(int i=0; i<self.tradeArr.count; i++){
+    NSDictionary *tmpDict = self.tradeArr[i];
+    NSString *tName = [tmpDict objectForKey:@"name"];
+    if([self.selectedTrade isEqualToString:tName]){
+      tradeID = [tmpDict objectForKey:@"id"];
+      break;
+    }
+  }
+  
+  NSString *newsLetterOptInVal = _newsLettercheckboxFlag == 0 ? @"false" : @"true" ;
+  NSString *newsLetterConfirmURL = _newsLettercheckboxFlag == 0 ? @"" : NEWSLETTER_CONFIRM_URL ;
+
+    NSString *currentDate = [WSUtility fetchurrentWithFormat];
+  
+  NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                          @"ufs-at",@"site",
+                          @"de",@"languageCode",
+                          @"AT",@"countryCode",
+                          self.passwordTxtField.text,@"password",
+                          self.passwordTxtField.text,@"confirmPassword",
+                          @"mr",@"titleCode",
+                          self.emailTxtField.text,@"uid",
+                          self.firstNameTxtField.text,@"firstName",
+                          self.lastNameTxtField.text, @"lastName",
+                          self.selectedBusiness,@"typeOfBusiness",
+                          CONFIRM_URL,@"confirmUrl",
+                          tradeID,@"tradePartnerID",
+                          @"false",@"confirmedOptIn",
+                          newsLetterConfirmURL,@"newsletterConfirmUrl",
+                          newsLetterOptInVal,@"newsletterOptIn",
+<<<<<<< HEAD
+                          @"",@"confirmedOptInDate",
+                          @"true",@"accountOptIn",
+                          currentDate,@"optInDate",
+                          @"false",@"confirmedNewsletterOptIn",
+                          @"true",@"updateNewsletterSubscription",
+                          @"false",@"oldNewsletterOptIn",
+=======
+                          currentDate,@"confirmedOptInDate",
+                          @"false",@"accountOptIn",
+                          currentDate,@"optInDate",
+>>>>>>> place order and signup api changes
+                          nil];
+  
+  [self registerUserWithParams:params];
+  
+}
+
+- (void)registerUserWithParams:(NSDictionary *)params {
+  
+    
+     [self registerUser:(NSDictionary *)params];
+    
+  //[self getTrustedClientStatus]
+ 
+//  .then(^(id responseObject){
+//    [self registerUser:(NSDictionary *)params];
+//  })
+//  .catch(^(NSError *error) {
+//    DDLogDebug(@"Couldn't register user : %@", error.localizedDescription);
+//    [self saveProblemAlert:error.localizedDescription];
+//  });
+    
+   
+//
+- (void)getTrustedClientStatus {
+//  .then(^(id responseObject){
+//    [self registerUser:(NSDictionary *)params];
+//  return [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
+//
+//    [self.backEndService makeGuestTrustedClientAndExecute:^(id responseObject, NSError* error) {
+//      if (error) {
+//        reject(error);
+//      } else {
+//        fulfill(responseObject);
+//        self.hybToken = responseObject;
+//      }
+//    }];
+//  }];
+//  });
+    
+    WSWebServiceBusinessLayer *serviceBussinessLayer = [[WSWebServiceBusinessLayer alloc] init];
+    [serviceBussinessLayer makeGuestTrustedClientAndExecuteWithSuccessResponse:^(id response) {
+        //[UFSProgressView stopWaitingDialog];
+        self.hybToken = [response objectForKey:@"access_token"];
+    } faliureResponse:^(NSString * errorMessage) {
+        //[UFSProgressView stopWaitingDialog];
+        NSLog(@"%@", errorMessage);
+    }];
+}
+
+- (void)getTrustedClientStatus {
+    NSLog(@"PMKPromise getTrustedClientStatus");
+    
+    //  return [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
+    //
+    //    [self.backEndService makeGuestTrustedClientAndExecute:^(id responseObject, NSError* error) {
+    //      if (error) {
+    //        reject(error);
+    //      } else {
+    //        fulfill(responseObject);
+    //        self.hybToken = responseObject;
+    //      }
+    //    }];
+    //  }];
+    
+    
+    WSWebServiceBusinessLayer *serviceBussinessLayer = [[WSWebServiceBusinessLayer alloc] init];
+    [serviceBussinessLayer makeGuestTrustedClientAndExecuteWithSuccessResponse:^(id response) {
+        //[UFSProgressView stopWaitingDialog];
+        self.hybToken = [response objectForKey:@"access_token"];
+    } faliureResponse:^(NSString * errorMessage) {
+        //[UFSProgressView stopWaitingDialog];
+        NSLog(@"%@", errorMessage);
+    }];
+}
+
+//- (PMKPromise *)promiseRegisterUserWithParams:(NSDictionary *)params {
+//
+//  NSLog(@"PMKPromise promiseRegisterUserWithParams");
+//
+//  return [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
+//
+//    [self.backEndService registerUserWithParams:params
+//                                     andExecute:^(id responseObject, NSError* error) {
+//                                       if (error) {
+//                                         reject(error);
+//                                       } else {
+//                                         fulfill(responseObject);
+//                                       }
+//                                     }];
+//  }];
+//}
+
+//-(void)goToHome{
+//  self.masterNavigationController = [[HYBMasterNavigationController alloc] init];
+//  self.masterNavigationController.navigationBarHidden = YES;
+//  [self.masterNavigationController setupDrawers];
+//}
+
+#pragma mark Post Data
+- (void)registerUser:(NSDictionary *)params{
+  self.signUpParam = params;
+  self.apiType = @"Register";
+  NSString *urlString = SIGNUP_URL;
+  NSURL *url = [NSURL URLWithString:urlString];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+  [request setHTTPMethod: @"POST"];
+  [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+  [request setValue:[NSString stringWithFormat:@"Bearer %@",self.hybToken] forHTTPHeaderField:@"Authorization"];
+  //Authorization:Bearer e1132764-a509-4aa5-8e3e-f2622d494d1f
+  NSData *requestData = [NSJSONSerialization dataWithJSONObject:params options:0 error:nil];
+  [request setHTTPBody: requestData];
+  [request setHTTPBody: requestData];
+  [NSURLConnection connectionWithRequest:request delegate:self];
+  //  [HYBActivityIndicator show];
+  [UFSProgressView showWaitingDialog:@""];
+  
+}
+
+- (void)trade_request{
+  
+  
+  [UFSProgressView showWaitingDialog:@""];
+  WSWebServiceBusinessLayer *businesslayer = [[WSWebServiceBusinessLayer alloc] init];
+  [businesslayer getTradePartenersListWithSuccessResponse:^(id response) {
+    [UFSProgressView stopWaitingDialog];
+    
+    [self.pickerTradeData removeAllObjects];
+    //self.tradeArr = [NSJSONSerialization JSONObjectWithData:self.dataResponse options:0 error:nil];
+    self.tradeArr = response;
+    for(int i=0; i<self.tradeArr.count; i++){
+      NSDictionary *tmpDict = self.tradeArr[i];
+      NSString *tName = [tmpDict objectForKey:@"name"];
+      [self.pickerTradeData addObject:tName];
+    }
+    // [self.picker reloadAllComponents];
+    
+  } faliureResponse:^(NSString * errorMessage) {
+    [UFSProgressView stopWaitingDialog];
+  }];
+  
+}
+
+#pragma mark Connection Delegate
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
+  NSLog(@"didReceiveResponse %s##### response  %@",__FUNCTION__,response);
+  NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)response;
+  if ([httpResponse statusCode] == 201) {
+    self.signupResStatus = @"pass";
+    
+  }else{
+    self.signupResStatus = @"failed";
+  }
+  [self.dataResponse setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
+  [self.dataResponse appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
+  @try {
+    NSLog(@"didFailWithError %s   --- %@ ",__FUNCTION__,[error description]);
+    //[loadingView removeView];
+    //[UFSProgressView stopWaitingDialog];
+    [UFSProgressView stopWaitingDialog];
+    
+  }
+  @catch (NSException *exception) {
+    NSLog(@"didFailWithError %s   --- %@ ",__FUNCTION__,exception);
+    //[loadingView removeView];
+    //[HYBActivityIndicator hide];
+    [UFSProgressView stopWaitingDialog];
+  }
+  @finally {
+  }
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+  
+      NSLog(@"connectionDidFinishLoading %@",[[NSString alloc]initWithData:self.dataResponse encoding:4]);
+      [UFSProgressView stopWaitingDialog];
+      if([self.apiType isEqualToString:@"Register"]) {
+        [[NSUserDefaults standardUserDefaults] setObject:self.firstNameTxtField.text forKey:@"FirstName"];
+        [[NSUserDefaults standardUserDefaults] setObject:self.lastNameTxtField.text forKey:@"LastName"];
+        [[NSUserDefaults standardUserDefaults] setObject:self.emailTxtField.text forKey:@"UserEmailId"];
+        [[NSUserDefaults standardUserDefaults] setObject:[self.signUpParam objectForKey:@"tradePartnerID"] forKey:@"TradePartnerID"];
+        [[NSUserDefaults standardUserDefaults] setObject:self.selectedTrade forKey:@"tradePartnerName"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+          //WSWebServiceBusinessLayer *serviceBussinessLayer = [[WSWebServiceBusinessLayer alloc] init];
+          //[serviceBussinessLayer trackingScreensWithScreenName:@"Product Scan Screen"];
+          
+        if([self.signupResStatus isEqualToString:@"pass"]){
+          [UFSProgressView stopWaitingDialog];
+          [self addUserToAdmin];
+          [self performSegueWithIdentifier:@"EmailVerificationSegue" sender:self];
+          [FBSDKAppEvents logEvent:FBSDKAppEventNameCompletedRegistration];
+          
+        }else{
+          [UFSProgressView stopWaitingDialog];
+          
+          NSDictionary *dict=[NSJSONSerialization JSONObjectWithData:self.dataResponse options:0 error:nil];
+          NSArray *errArr = [dict objectForKey:@"errors"];
+          NSDictionary *errDict = errArr[0];
+          NSString *msg = [errDict objectForKey:@"message"];
+          NSString *type = [errDict objectForKey:@"type"];
+          if([type isEqualToString:@"DuplicateUidError"])
+          {
+          
+            [WSUtility showAlertWithMessage:[WSUtility getlocalizedStringWithKey:@"Email already registered" lang:[WSUtility getLanguageCode] table:@"Localizable"] title:@"" forController:self];
+            
+          }
+          else if ([type isEqualToString:@"Error"]){
+              if ([msg containsString:@"Trade partner"]){
+                  [WSUtility showAlertWithMessage:[WSUtility getlocalizedStringWithKey:@"Trade partner is not available" lang:[WSUtility getLanguageCode] table:@"Localizable"] title:@"" forController:self];
+              }
+              else{
+                  [WSUtility showAlertWithMessage:msg title:type forController:self];
+              }
+          }
+          else{
+            [WSUtility showAlertWithMessage:msg title:type forController:self];
+          }
+          
+          
+        }
+        
+     
+      
+    }
+  }
+  
+//  - (void)loginWithUser:(NSString *)user pass:(NSString *)pass {
+//    if (self.backendService.userId) {
+//      //[self.backendService logoutCurrentUser]; // AJAY because User already logged out
+//    }
+//
+//    //go
+//    [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
+//      [self.backendService loginWithUsername:user
+//                                withPassword:pass
+//                                  andExecute:^(id responseObject, NSError* error) {
+//                                    if (error) {
+//                                      reject(error);
+//                                    } else {
+//                                      fulfill(responseObject);
+//                                    }
+//                                  }];
+//    }]
+//    .then(^(id responseObject) {
+//      [PMKPromise new:^(PMKPromiseFulfiller fulfill, PMKPromiseRejecter reject) {
+//
+//        [self.backendService createCartForUserId:self.backendService.userId
+//                                      withParams:nil
+//                                      andExecute:^(id responseObject, NSError* error) {
+//                                        if (error) {
+//                                          reject(error);
+//                                        } else {
+//                                          fulfill(responseObject);
+//                                          HYBCart *cart = [responseObject objectAtIndex:0];
+//                                          [self.backendService saveCartInCacheNotifyObservers:cart];
+//                                        }
+//                                      }];
+//      }];
+//
+//
+//    })
+//
+//
+//    .then(^(HYBCart *cart) {
+//      [self addLoyaltyPoint];
+//    })
+//
+//    .catch(^(NSError *error) {
+//      // [HYBActivityIndicator hide];
+//      [UFSProgressView stopWaitingDialog];
+//      DDLogDebug(@"Error retrieved ...");
+//
+//    });
+//
+//  }
+
+//  - (void)createCartForUser:(NSString *)userId
+//andExecute:(void (^)(HYBCart *, NSError *))block {
+//
+//  [self.backendService createCartForUserId:self.backendService.userId
+//                                withParams:nil
+//                                andExecute:^(id responseObject, NSError * error) {
+//                                  //keep cart in cache
+//                                  HYBCart *cart = [responseObject objectAtIndex:0];
+//                                  [self.backendService saveCartInCacheNotifyObservers:cart];
+//
+//                                  //block(cart,error);
+//                                }];
+//
+//}
+
+//  - (void)addLoyaltyPoint {
+//
+//    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+//                            @"50",@"points",
+//                            @"Added point on Registration",@"description",
+//                            nil];
+//
+//
+//    WSWebServiceBusinessLayer *businesslayer = [[WSWebServiceBusinessLayer alloc] init];
+//    [businesslayer addLoyaltyPointsRequestWithParameter:(params) successResponse:^(id response) {
+//      [UFSProgressView stopWaitingDialog];
+//      /*
+//       HYBAppDelegate * delegate = [self getDelegate];
+//       [delegate openHomeScreen];
+//       */
+//
+//      HYBAppDelegate * delegate = [self getDelegate];
+//      if (![[NSUserDefaults standardUserDefaults] valueForKey:@"isFirstTimeLogin"]) {
+//        [delegate openTutorial];
+//      }
+//      else{
+//        [delegate openHomeScreen];
+//      }
+//    } faliureResponse:^(NSString * errorMessage) {
+//      [UFSProgressView stopWaitingDialog];
+//      HYBAppDelegate * delegate = [self getDelegate];
+//      [delegate openHomeScreen];
+//    }];
+//  }
+
+  - (BOOL)validateEmailWithString:(NSString*)checkString
+  {
+    BOOL stricterFilter = NO; // Discussion http://blog.logichigh.com/2010/09/02/validating-an-e-mail-address/
+    NSString *stricterFilterString = @"[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}";
+    NSString *laxString = @".+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2}[A-Za-z]*";
+    NSString *emailRegex = stricterFilter ? stricterFilterString : laxString;
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:checkString];
+  }
+  
+  -(BOOL)isValidPassword:(NSString *)passwordString
+  {
+    
+   //NSString *regex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&#^()+-._])[A-Za-zäöüÄÖÜß\\d$@$!%*?&#^()+-._]{8,}";
+    
+    //list of reguar expression taken from Wiki
+   // NSString *regex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!#$%&'()*+,-./:;<=>?@^_`{|}~])[A-Za-zäöüÄÖÜß\\d!#$%&'()*+,-./:;<=>?@^_`{|}~]{8,}";
+ 
+    //list of reguar expression supported by Hybris
+    NSString *regex = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[#%!$@^*()_.])[A-Za-z\\d#%!$@^*()_.]{8,}";
+    
+    
+    NSPredicate *passwordTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    
+    BOOL isValid = [passwordTest evaluateWithObject:passwordString];
+    
+    return isValid;
+  }
+
+
+  -(void)addUserToAdmin{
+      NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+      int value = [version intValue];
+      [UFSGATracker trackEventWithCategory:@"UFS Signup" action:@"Sign Up Button Clicked" label:@"Signup" value:[NSNumber numberWithInt:value]];
+
+    NSString *deviceToken = [[NSUserDefaults standardUserDefaults]
+                             stringForKey:@"DeviceToken"];
+    NSMutableDictionary *tmpDict = [[NSMutableDictionary alloc] init];
+    [tmpDict setValue:deviceToken forKey:@"deviceToken"];
+    [tmpDict setValue:self.business_ID forKey:@"bt_id"];
+    WSWebServiceBusinessLayer *businesslayer = [[WSWebServiceBusinessLayer alloc] init];
+    [businesslayer addUserToAdminPanelWithParams:tmpDict actionType:@"create" successResponse:^(id response) {
+       [WSUtility triggerPushnotificationWithAction:@"registration_completed" email:_emailTxtField.text ];
+    } faliureResponse:^(NSString * errorMessage) {
+      
+    }];
+  }
+  
+  -(void)getBusinessTypesFromAdmin{
+    
+    // [HYBActivityIndicator show];
+    WSWebServiceBusinessLayer *businesslayer = [[WSWebServiceBusinessLayer alloc] init];
+    [businesslayer getBusinessTypesFromAdminWithSuccessResponse:^(id response) {
+      
+      self.pickerBusinessData = response[@"data"];
+      self.businessTypeNameArray = [[NSMutableArray alloc]init];
+      for (NSDictionary *dict in self.pickerBusinessData) {
+        [self.businessTypeNameArray addObject:[dict objectForKey:@"bt_name"]];
+      }
+      // [HYBActivityIndicator hide];
+    } failureResponse:^(NSString * errorMessage) {
+      // [HYBActivityIndicator hide];
+    }];
+  }
+  
+  -(void)AttributedTextInUILabelWithGreenText:(NSString *)grayText boldText:(NSString *)boldText {
+    NSString *text = [NSString stringWithFormat:@"%@ %@",
+                      grayText,
+                      boldText];
+    
+    //Check If attributed text is unsupported (below iOS6+)
+    if (![self.passwordErrorLbl respondsToSelector:@selector(setAttributedText:)]) {
+      self.passwordErrorLbl.text = text;
+    }
+    // If attributed text is available
+    else {
+      // Define general attributes like color and fonts for the entire text
+      NSDictionary *attribs = @{
+                                NSForegroundColorAttributeName: self.passwordErrorLbl.textColor,
+                                NSFontAttributeName: self.passwordErrorLbl.font
+                                };
+      NSMutableAttributedString *attributedText =
+      [[NSMutableAttributedString alloc] initWithString:text
+                                             attributes:attribs];
+      
+      // gray text attributes
+      UIColor *grayColor = [UIColor darkGrayColor];
+      UIFont *grayFont = [UIFont fontWithName: @"DINPro-Regular" size: self.passwordErrorLbl.font.pointSize];
+      NSRange greenTextRange = [text rangeOfString:grayText];
+      [attributedText setAttributes:@{NSForegroundColorAttributeName:grayColor,
+                                      NSFontAttributeName:grayFont}
+                              range:greenTextRange];
+      
+      UIColor *blueColor = [UIColor darkGrayColor];
+      UIFont *boldFont = [UIFont fontWithName: @"DINPro-Medium" size: self.passwordErrorLbl.font.pointSize];
+      NSRange blueBoldTextRange = [text rangeOfString:boldText];
+      [attributedText setAttributes:@{NSForegroundColorAttributeName:blueColor,
+                                      NSFontAttributeName:boldFont}
+                              range:blueBoldTextRange];
+      self.passwordErrorLbl.attributedText = attributedText;
+      //[self.passwordErrorLbl setFont:[UIFont fontWithName: @"Avenir" size: self.passwordErrorLbl.font.pointSize]];
+      
+    }
+    
+  }
+  
+  @end

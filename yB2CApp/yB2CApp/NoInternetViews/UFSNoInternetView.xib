@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UFSNoInternetView" customModule="UFS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refreshIcon" translatesAutoresizingMaskIntoConstraints="NO" id="3q3-6h-td1">
+                    <rect key="frame" x="92" y="11" width="71" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="lIH-GX-Th2"/>
+                        <constraint firstAttribute="width" constant="71" id="thx-Pv-nfL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOc-Ko-HTq">
+                    <rect key="frame" x="0.0" y="88" width="255" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="Aqv-cg-H7Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="iOc-Ko-HTq" firstAttribute="top" secondItem="3q3-6h-td1" secondAttribute="bottom" constant="1" id="0wK-4E-Ugj"/>
+                <constraint firstItem="3q3-6h-td1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Fip-1h-IH2"/>
+                <constraint firstItem="iOc-Ko-HTq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Fj3-5f-qEf"/>
+                <constraint firstItem="3q3-6h-td1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fyP-AG-xBV"/>
+                <constraint firstAttribute="trailing" secondItem="iOc-Ko-HTq" secondAttribute="trailing" id="xwF-G3-MWR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="noInternetLabel" destination="iOc-Ko-HTq" id="qoz-Ju-bk2"/>
+                <outletCollection property="gestureRecognizers" destination="54M-0m-f1a" appends="YES" id="T4c-eN-VuB"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-165"/>
+        </view>
+        <tapGestureRecognizer id="54M-0m-f1a">
+            <connections>
+                <action selector="tapOnViewAction:" destination="iN0-l3-epB" id="O3a-zW-AQo"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="refreshIcon" width="81" height="85"/>
+    </resources>
+</document>

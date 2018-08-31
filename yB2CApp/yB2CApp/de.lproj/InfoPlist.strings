@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  yB2CApp
+
+  Created by Ramakrishna on 2/23/18.
+  
+*/
+//NSCameraUsageDescription = "Diese Funktion benötigt Zugriff auf Ihre Kamera";
+NSCameraUsageDescription = "Bitte erteile die Erlaubnis zum Zugriff auf Deine  Kamera und Deine Fotos/Galerie.";
+NSPhotoLibraryUsageDescription = "Bitte erteile die Erlaubnis zum Zugriff auf Deine  Kamera und Deine Fotos/Galerie.";
